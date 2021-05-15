@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1991 1138" enable-background="new 0 0 1991 1138" xml:space="preserve">
+<g>
+	<path fill="#00FFFF" d="M1971,20v1098H20V20H1971 M1991,0H0v1138h1991V0L1991,0z"/>
+</g>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="1637" x2="1991" y2="1637" gradientTransform="matrix(1 0 0 1 0 -1068)">
+	<stop  offset="0" style="stop-color:#00FFFF"/>
+	<stop  offset="1.742691e-03" style="stop-color:#00FEFF"/>
+	<stop  offset="9.623409e-02" style="stop-color:#01CFF0"/>
+	<stop  offset="0.1905" style="stop-color:#01A8E4"/>
+	<stop  offset="0.2831" style="stop-color:#0189DA"/>
+	<stop  offset="0.3733" style="stop-color:#0273D3"/>
+	<stop  offset="0.4603" style="stop-color:#0266CF"/>
+	<stop  offset="0.5403" style="stop-color:#0262CE"/>
+	<stop  offset="0.991" style="stop-color:#0339C1"/>
+	<stop  offset="1" style="stop-color:#0330BE"/>
+</linearGradient>
+<rect fill="url(#SVGID_1_)" width="1991" height="1138"/>
+<g>
+	
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="1491.7593" y1="361.8141" x2="501.2408" y2="-1353.8141" gradientTransform="matrix(1 0 0 -1 0 70)">
+		<stop  offset="0" style="stop-color:#00FFFF"/>
+		<stop  offset="0.3886" style="stop-color:#00FDFE"/>
+		<stop  offset="0.5286" style="stop-color:#00F6FC"/>
+		<stop  offset="0.6284" style="stop-color:#00EBF9"/>
+		<stop  offset="0.709" style="stop-color:#01DAF3"/>
+		<stop  offset="0.7781" style="stop-color:#01C4EC"/>
+		<stop  offset="0.8394" style="stop-color:#01A8E4"/>
+		<stop  offset="0.8948" style="stop-color:#0288DA"/>
+		<stop  offset="0.9457" style="stop-color:#0262CE"/>
+		<stop  offset="0.991" style="stop-color:#0339C1"/>
+		<stop  offset="1" style="stop-color:#0330BE"/>
+	</linearGradient>
+	<path fill="url(#SVGID_2_)" d="M1965,24v1084H28V24H1965 M1992-3H1v1138h1991V-3L1992-3z"/>
+</g>
+</svg>

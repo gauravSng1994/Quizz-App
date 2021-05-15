@@ -1,0 +1,34 @@
+<div class="main-div">
+    <div>
+        <Header :title="headerTitle" :showBackButton="showHeaderBackButton"/>
+        <div class="category-main-div">
+            <img :src="backgroundImage"/>
+            <div class="central-div">
+                <div class="questionImgDiv">
+                    <img v-if="questionType === 'image'" :src="questionImage">
+                </div>
+                <div class="questionsCount">{{questionTitle}}</div>
+                <div class="answerBox">
+                    <span class="answerBlock" v-for="blockIndex in (letterBlock||[]).length">
+                        <LetterBox v-for='index in letterBlock[blockIndex-1]' :letter="typedAnswer[blockIndex-1][index-1]"/>
+                        <!-- <LetterBox v-for='index in letterBlock[blockIndex-1]' :letter="blockIndex+'-'+index"/> -->
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="button-div">
+        <div class="button-inner-div">
+            <BottomButton :button-label="BottomButtonLabel"/>
+        </div>
+    </div>
+    <div class="optionBox">
+        <LetterBox v-for='letter in shuffledAnswer' @click="typeAnswer" :letter="letter"/>
+    </div>
+    <!-- <style>
+        :root {
+          --image-color: {{ accentColor }};
+          --hero-image: url('{{ heroImage }}');
+        }
+      </style> -->
+</div>

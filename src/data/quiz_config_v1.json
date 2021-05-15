@@ -1,0 +1,1366 @@
+{
+  "title": "The Kardashians Quiz",
+  "categories": [
+    {
+      "id": "the_family",
+      "sequence": "1",
+      "title": "The Family",
+      "not_chosen_icon": "https://thekardashians.b-cdn.net/the_family/icons/catagory_icon_not_chosen_the_family.svg",
+      "chosen_icon": "https://thekardashians.b-cdn.net/the_family/icons/catagory_icon_chosen_the_family.svg",
+      "question_answered_icon": "https://thekardashians.b-cdn.net/the_family/icons/answered_question_the_family.svg",
+      "background": "https://thekardashians.b-cdn.net/the_family/background/the_family_background.png",
+      "questions": [
+        {
+          "sequence": "1",
+          "type": "text",
+          "question": "What is the name of Rob Kardashian's baby mama?",
+          "answer": "chyna"
+        },
+        {
+          "sequence": "2",
+          "type": "image",
+          "question": "Whose house is this?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_family/questions/the_family_q2.png",
+          "answer": "KRIS"
+        },
+        {
+          "sequence": "3",
+          "type": "text",
+          "question": "Which sister was presumed to be dating someone older than her when she was underage?",
+          "answer": "KYLIE"
+        },
+        {
+          "sequence": "4",
+          "type": "image",
+          "question": "Who owns this kickass orange Mercedes G-wagon?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_family/questions/the_family_q4.png",
+          "answer": "KYLIE"
+        },
+        {
+          "sequence": "5",
+          "type": "image",
+          "question": "Whose cars are these?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_family/questions/The_family_q5.png",
+          "answer": "KYLIE"
+        },
+        {
+          "sequence": "6",
+          "type": "text",
+          "question": "Who was Khloe Kardashian's first husband?",
+          "answer": "lamar odom"
+        },
+        {
+          "sequence": "7",
+          "type": "text",
+          "question": "What is Khloe's daughter's nickname?",
+          "answer": "tutu"
+        },
+        {
+          "sequence": "8",
+          "type": "text",
+          "question": "Which boyfriend bought one of the sisters a car for her 18th birthday?",
+          "answer": "Tyga"
+        },
+        {
+          "sequence": "9",
+          "type": "image",
+          "question": "Whose house is this?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_family/questions/the_family_q9.png",
+          "answer": "KRIS"
+        },
+        {
+          "sequence": "10",
+          "type": "text",
+          "question": "The Kardashian sisters have a close heritage to which country?",
+          "answer": "armenia"
+        },
+        {
+          "sequence": "11",
+          "type": "text",
+          "question": "Which rapper did Khloe Kardashian date?",
+          "answer": "french montana"
+        },
+        {
+          "sequence": "12",
+          "type": "image",
+          "question": "Whose car is this?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_family/questions/the_family_q12.png",
+          "answer": "KHLOE"
+        },
+        {
+          "sequence": "13",
+          "type": "image",
+          "question": "Whose house is this?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_family/questions/the_family_q13.png",
+          "answer": "KIM KANYE"
+        },
+        {
+          "sequence": "14",
+          "type": "image",
+          "question": "Whose house is this?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_family/questions/the_family_q14.png",
+          "answer": "KOURTNEY"
+        },
+        {
+          "sequence": "15",
+          "type": "text",
+          "question": "What is Kourtney's youngest son's name?",
+          "answer": "reign disick"
+        },
+        {
+          "sequence": "16",
+          "type": "image",
+          "question": "Whose house is this?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_family/questions/the_family_q16.jpg",
+          "answer": "KYLIE"
+        },
+        {
+          "sequence": "17",
+          "type": "image",
+          "question": "Whose house bought this house at age 18?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_family/questions/the_family_q17.png",
+          "answer": "KYLIE"
+        },
+        {
+          "sequence": "18",
+          "type": "text",
+          "question": "What nick do Kris' grandchildren call her?",
+          "answer": "lovey"
+        },
+        {
+          "sequence": "19",
+          "type": "text",
+          "question": "What is the name of Kris Jenner's first grandchild?",
+          "answer": "mason dissick"
+        },
+        {
+          "sequence": "20",
+          "type": "image",
+          "question": "Whose house is this?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_family/questions/the_family_q20.png",
+          "answer": "KIM KANYE"
+        },
+        {
+          "sequence": "21",
+          "type": "text",
+          "question": "What is Kris Jenner's mother's name?",
+          "answer": "mj"
+        },
+        {
+          "sequence": "22",
+          "type": "text",
+          "question": "How long did Khloe and Lamar know each other before geting married?",
+          "answer": "one month"
+        },
+        {
+          "sequence": "23",
+          "type": "image",
+          "question": "Who drives this Bentley Continental?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_family/questions/the_family_q23.png",
+          "answer": "KRIS"
+        },
+        {
+          "sequence": "24",
+          "type": "text",
+          "question": "What is Kourtney's nickname for her daughter?",
+          "answer": "p"
+        },
+        {
+          "sequence": "25",
+          "type": "text",
+          "question": "How many days were Kim and Kris Humphries married?",
+          "answer": "seventy two"
+        },
+        {
+          "sequence": "26",
+          "type": "image",
+          "question": "Whose house is this?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_family/questions/the_family_q26.png",
+          "answer": "KIM KANYE"
+        },
+        {
+          "sequence": "27",
+          "type": "text",
+          "question": "How did the girls' father die?",
+          "answer": "cancer"
+        },
+        {
+          "sequence": "28",
+          "type": "image",
+          "question": "Who did Kendall purchase this Spanish-style, Beverley Hills villa from?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_family/questions/the_family_q28.png",
+          "answer": "charlie sheen"
+        },
+        {
+          "sequence": "29",
+          "type": "image",
+          "question": "Whose house is this?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_family/questions/the_family_q29.png",
+          "answer": "KENDALL"
+        },
+        {
+          "sequence": "30",
+          "type": "image",
+          "question": "Whose house is this?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_family/questions/the_family_q30.png",
+          "answer": "KHLOE"
+        },
+        {
+          "sequence": "31",
+          "type": "text",
+          "question": "Kim has said that her favorite child is...",
+          "answer": "saint"
+        },
+        {
+          "sequence": "32",
+          "type": "image",
+          "question": "Whose car is this?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_family/questions/the_family_q32.png",
+          "answer": "KIM"
+        },
+        {
+          "sequence": "33",
+          "type": "text",
+          "question": "Who's the youngest - Chicago, True, or Stormi?",
+          "answer": "TRUE"
+        },
+        {
+          "sequence": "34",
+          "type": "image",
+          "question": "Whose car is this?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_family/questions/the_family_q34.png",
+          "answer": "KOURTNEY"
+        },
+        {
+          "sequence": "35",
+          "type": "text",
+          "question": "The sisters visited this country with their cousins, whose names also start with a K. What are their names?",
+          "answer": "kourtni and kara"
+        },
+        {
+          "sequence": "36",
+          "type": "image",
+          "question": "Whose house is this?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_family/questions/the_family_q36.png",
+          "answer": "KYLIE"
+        },
+        {
+          "sequence": "37",
+          "type": "text",
+          "question": "How old was Kim when she first got married?",
+          "answer": "nineteen"
+        },
+        {
+          "sequence": "38",
+          "type": "text",
+          "question": "Rumours stated that one of the sisters dated someone from a boy band. What's the name of the band?",
+          "answer": "one direction"
+        },
+        {
+          "sequence": "39",
+          "type": "image",
+          "question": "Who stays in this house?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_family/questions/the_family_q39.png",
+          "answer": "ROB"
+        },
+        {
+          "sequence": "40",
+          "type": "text",
+          "question": "Kendall said that ............. is the best mother.",
+          "answer": "kim"
+        },
+        {
+          "sequence": "41",
+          "type": "image",
+          "question": "Who drives this Ford Raptor?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_family/questions/the_family_q41.png",
+          "answer": "Scott Disick"
+        },
+        {
+          "sequence": "42",
+          "type": "text",
+          "question": "Kourtney is dating the drummer from Blink 182. What's his name?",
+          "answer": "travis barker"
+        }
+      ]
+    },
+    {
+      "id": "the_business",
+      "sequence": "2",
+      "title": "The Business",
+      "not_chosen_icon": "https://thekardashians.b-cdn.net/the_business/icons/catagory_icon_not_chosen_the_buisness.svg",
+      "chosen_icon": "https://thekardashians.b-cdn.net/the_business/icons/catagory_icon_chosen_the_buisness.svg",
+      "question_answered_icon": "https://thekardashians.b-cdn.net/the_business/icons/answered_question_the_buisness.svg",
+      "background": "https://thekardashians.b-cdn.net/the_business/background/the_business_background.png",
+      "questions": [
+        {
+          "sequence": "1",
+          "type": "image",
+          "question": "Which magazine was this shoot for?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_business/questions/the_business_q1.jpg",
+          "answer": "Bazaar"
+        },
+        {
+          "sequence": "2",
+          "type": "image",
+          "question": "Which collection was this KKW photoshoot for?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_business/questions/the_business_q2.jpg",
+          "answer": "Bridal Collection"
+        },
+        {
+          "sequence": "3",
+          "type": "image",
+          "question": "Which brand was this campaign for?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_business/questions/the_business_q3.jpg",
+          "answer": "Calvin Klein"
+        },
+        {
+          "sequence": "4",
+          "type": "text",
+          "question": "What was the name of the sister's clothing store that they had to close down?",
+          "answer": "dash"
+        },
+        {
+          "sequence": "5",
+          "type": "image",
+          "question": "Who is posing in this GQ campaign?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_business/questions/the_business_q5.jpg",
+          "answer": "KHLOE"
+        },
+        {
+          "sequence": "6",
+          "type": "text",
+          "question": "What is the name of Kim's makeup empire?",
+          "answer": "kkw beauty"
+        },
+        {
+          "sequence": "7",
+          "type": "image",
+          "question": "Which campaign was this shoot for?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_business/questions/the_business_q7.jpg",
+          "answer": "KKW X Kris"
+        },
+        {
+          "sequence": "8",
+          "type": "text",
+          "question": "What is the name of Kylie's makeup business?",
+          "answer": "kylie cosmetics"
+        },
+        {
+          "sequence": "9",
+          "type": "image",
+          "question": "What launch party was this for?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_business/questions/the_business_q9.jpg",
+          "answer": "Kylie Skin"
+        },
+        {
+          "sequence": "10",
+          "type": "text",
+          "question": "What is the name of Kim's mobile game?",
+          "answer": "Kim K Hollywood"
+        },
+        {
+          "sequence": "11",
+          "type": "image",
+          "question": "Which magazine was this for?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_business/questions/the_business_q11.jpg",
+          "answer": "Paper"
+        },
+        {
+          "sequence": "12",
+          "type": "text",
+          "question": "Who did Kim famously work for as a stylist before she become famous?",
+          "answer": "Paris Hilton"
+        },
+        {
+          "sequence": "13",
+          "type": "text",
+          "question": "What is the name of Kim's shapewear?",
+          "answer": "Skims"
+        },
+        {
+          "sequence": "14",
+          "type": "image",
+          "question": "Which brand was this photoshoot for?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_business/questions/the_business_q14.jpg",
+          "answer": "Skims"
+        },
+        {
+          "sequence": "15",
+          "type": "text",
+          "question": "What season will be the final season of the Kardashians?",
+          "answer": "twenty"
+        },
+        {
+          "sequence": "16",
+          "type": "image",
+          "question": "Which magazine was this for?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_business/questions/the_business_q16.jpg",
+          "answer": "Vogue"
+        },
+        {
+          "sequence": "17",
+          "type": "text",
+          "question": "In one of the first episodes of KUWTK, what is Kylie Jenner dancing around that makes Bruce go ballistic?",
+          "answer": "a pole"
+        },
+        {
+          "sequence": "18",
+          "type": "image",
+          "question": "What company was this photoshoot for?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_business/questions/the_business_q18.jpg",
+          "answer": "Arthur George"
+        },
+        {
+          "sequence": "19",
+          "type": "text",
+          "question": "Which sister has the highest networth?",
+          "answer": "kim "
+        },
+        {
+          "sequence": "20",
+          "type": "text",
+          "question": "What was the name of Kris Jenner's talkshow?",
+          "answer": "KRIS"
+        },
+        {
+          "sequence": "21",
+          "type": "image",
+          "question": "What collection was this campaign for?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_business/questions/the_business_q21.jpg",
+          "answer": "Kylie x Grinch"
+        },
+        {
+          "sequence": "22",
+          "type": "image",
+          "question": "Which collaboration campaign was this for?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_business/questions/the_business_q22.jpg",
+          "answer": "Kylie x KKW"
+        },
+        {
+          "sequence": "23",
+          "type": "text",
+          "question": "Where was the first Kardashian spinoff show filmed?",
+          "answer": "miami"
+        },
+        {
+          "sequence": "24",
+          "type": "image",
+          "question": "What company did Kendall collaborate with here?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_business/questions/the_business_q24.jpg",
+          "answer": "Pepsi"
+        },
+        {
+          "sequence": "25",
+          "type": "image",
+          "question": "Kourtney collaborate here with?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_business/questions/the_business_q25.jpg",
+          "answer": "Pretty Little Thing"
+        },
+        {
+          "sequence": "26",
+          "type": "text",
+          "question": "What was the name of Khloe Kardashian's makeover show?",
+          "answer": "revenge body"
+        },
+        {
+          "sequence": "27",
+          "type": "image",
+          "question": "Which campaign was this Kylie Cosmetics shoot for?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_business/questions/the_business_q27.jpg",
+          "answer": "Weather Collection"
+        },
+        {
+          "sequence": "28",
+          "type": "text",
+          "question": "What was the name of the first reality tv show that Kourtney Kardashian starred in?",
+          "answer": "filthy rich"
+        },
+        {
+          "sequence": "29",
+          "type": "text",
+          "question": "What job was Kriss Jenner doing when she met Robert Kardashian Snr?",
+          "answer": "flight attendant"
+        },
+        {
+          "sequence": "30",
+          "type": "image",
+          "question": "Which magazine is this photo of Kylie and Tyga from?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_business/questions/the_business_q30.jpg",
+          "answer": "GQ"
+        },
+        {
+          "sequence": "31",
+          "type": "text",
+          "question": "Who is the co-founder of Good American?",
+          "answer": "Emme Grede"
+        },
+        {
+          "sequence": "32",
+          "type": "image",
+          "question": "Which magazine was this for?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_business/questions/the_business_q32.jpg",
+          "answer": "GQ"
+        },
+        {
+          "sequence": "33",
+          "type": "image",
+          "question": "Which campaign was this Kylie Cosmetics shoot for?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_business/questions/the_business_q33.jpg",
+          "answer": "Holiday Collection"
+        },
+        {
+          "sequence": "34",
+          "type": "text",
+          "question": "The family has signed a new, multi-year deal with what streaming giant?",
+          "answer": "hulu"
+        },
+        {
+          "sequence": "35",
+          "type": "text",
+          "question": "What was the name of the song that Kim released?",
+          "answer": "jam turn it up"
+        },
+        {
+          "sequence": "36",
+          "type": "text",
+          "question": "What was the name of Kylie's first company?",
+          "answer": "Kylie Lipkits"
+        },
+        {
+          "sequence": "37",
+          "type": "image",
+          "question": "Which campaign was this Kylie Cosmetics shoot for?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_business/questions/the_business_q37.jpg",
+          "answer": "Money Baby"
+        },
+        {
+          "sequence": "38",
+          "type": "image",
+          "question": "What company did Kylie collaborate with here?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_business/questions/the_business_q38.jpg",
+          "answer": "Puma"
+        },
+        {
+          "sequence": "39",
+          "type": "text",
+          "question": "Which company did Kim sell 20% of KKW Beauty to?",
+          "answer": "Coty"
+        }
+      ]
+    },
+    {
+      "id": "the_friends",
+      "sequence": "3",
+      "title": "The Friends",
+      "not_chosen_icon": "https://thekardashians.b-cdn.net/the_friends/icons/catagory_icon_not_chosen_the_freinds.svg",
+      "chosen_icon": "https://thekardashians.b-cdn.net/the_friends/icons/catagory_icon_chosen_the_friends.svg",
+      "question_answered_icon": "https://thekardashians.b-cdn.net/the_friends/icons/answered_question_the_friends.svg",
+      "background": "https://thekardashians.b-cdn.net/the_friends/background/the_friends_background.png",
+      "questions": [
+        {
+          "sequence": "1",
+          "type": "text",
+          "question": "Which young Tik Tok influencer has Kourtney become really close with?",
+          "answer": "addison rae"
+        },
+        {
+          "sequence": "2",
+          "type": "image",
+          "question": "The family is often featured on this host's talk show",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_friends/questions/the_friends_q2.jpg",
+          "answer": "Ellen Degeneres"
+        },
+        {
+          "sequence": "3",
+          "type": "text",
+          "question": "Who is Kendall Jenner's friend who recently had a baby with an English pop singer?",
+          "answer": "gigi hadid"
+        },
+        {
+          "sequence": "4",
+          "type": "image",
+          "question": "Who is this actress with kim in the photo?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_friends/questions/the_friends_q4.jpg",
+          "answer": "Jennifer Lawrence"
+        },
+        {
+          "sequence": "5",
+          "type": "text",
+          "question": "Who is Kim Kardashian's best friend?",
+          "answer": "jonathan cheban"
+        },
+        {
+          "sequence": "6",
+          "type": "text",
+          "question": "Which family friend is said to have kissed Khloe's boyfriend Tristan?",
+          "answer": "Jordyn Woods"
+        },
+        {
+          "sequence": "7",
+          "type": "text",
+          "question": "Who is Kendall Jenner's friend who's married to an American pop singer?",
+          "answer": "hailey bieber"
+        },
+        {
+          "sequence": "8",
+          "type": "image",
+          "question": "Which of Khloe's friends  recently had this baby?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_friends/questions/the_friends_q8.jpg",
+          "answer": "Malika Haqq"
+        },
+        {
+          "sequence": "9",
+          "type": "image",
+          "question": "Which socialite is Kim good friends with?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_friends/questions/the_friends_q9.jpg",
+          "answer": "Paris Hilton"
+        },
+        {
+          "sequence": "10",
+          "type": "image",
+          "question": "Who is this?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_friends/questions/the_friends_q10.jpg",
+          "answer": "Scott Disick"
+        },
+        {
+          "sequence": "11",
+          "type": "image",
+          "question": "Who is in the picture with Kylie?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_friends/questions/the_friends_q11.jpg",
+          "answer": "Stassie"
+        },
+        {
+          "sequence": "12",
+          "type": "image",
+          "question": "Who is in this picture with Kylie?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_friends/questions/the_friends_q12.jpg",
+          "answer": "Jordyn Woods"
+        },
+        {
+          "sequence": "13",
+          "type": "text",
+          "question": "What is the name of Kim's friend who she's known since elementary school?",
+          "answer": "allison"
+        },
+        {
+          "sequence": "14",
+          "type": "image",
+          "question": "Whose music video did Kris Jenner star in here?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_friends/questions/the_friends_q14.jpg",
+          "answer": "Ariana Grande"
+        },
+        {
+          "sequence": "15",
+          "type": "image",
+          "question": "Teenage Kylie was good friends with this rapper. What's his name?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_friends/questions/the_friends_q15.jpg",
+          "answer": "Jaden Smith"
+        },
+        {
+          "sequence": "16",
+          "type": "text",
+          "question": "Who is the friend who is also a famous food blogger?",
+          "answer": "jonathan"
+        },
+        {
+          "sequence": "17",
+          "type": "text",
+          "question": "Who did Larsa Pippen blame for the Kardashian family deciding to cut ties with her?",
+          "answer": "kanye"
+        },
+        {
+          "sequence": "18",
+          "type": "image",
+          "question": "Which sister was rumoured to be dating the  basketball player in this photo?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_friends/questions/the_friends_q18.jpg",
+          "answer": "Kendall Jenner"
+        },
+        {
+          "sequence": "19",
+          "type": "image",
+          "question": "Who is this?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_friends/questions/the_friends_q19.jpg",
+          "answer": "Kris Humphries"
+        },
+        {
+          "sequence": "20",
+          "type": "text",
+          "question": "What are the names of the twins that the sisters are close friends with?",
+          "answer": "malika and khadijah"
+        },
+        {
+          "sequence": "21",
+          "type": "text",
+          "question": "Who is Khloe's best friend?",
+          "answer": "Malika Haqq"
+        },
+        {
+          "sequence": "22",
+          "type": "image",
+          "question": "Who is in the picture with Kim?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_friends/questions/the_friends_q22.jpg",
+          "answer": "Mario"
+        },
+        {
+          "sequence": "23",
+          "type": "image",
+          "question": "Who is this good friends with the family?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_friends/questions/the_friends_q23.jpg",
+          "answer": "Sia"
+        },
+        {
+          "sequence": "24",
+          "type": "text",
+          "question": "What was the name of the 22-year-old woman that Scott recently broke up with?",
+          "answer": "sofia richie"
+        },
+        {
+          "sequence": "25",
+          "type": "text",
+          "question": "What is the name of the friend who got matching \"Stormi\" tattoos with Kylie?",
+          "answer": "Stassie"
+        },
+        {
+          "sequence": "26",
+          "type": "image",
+          "question": "Who is this?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_friends/questions/the_friends_q26.jpg",
+          "answer": "Tyga"
+        },
+        {
+          "sequence": "27",
+          "type": "text",
+          "question": "Which famous hair stylist is also good friends with all the sisters?",
+          "answer": "Jen Atkin"
+        },
+        {
+          "sequence": "28",
+          "type": "image",
+          "question": "Who is in the picture with Kylie?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_friends/questions/the_friends_q28.jpg",
+          "answer": "Victoria"
+        },
+        {
+          "sequence": "29",
+          "type": "image",
+          "question": "Who is this?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_friends/questions/the_friends_q29.jpg",
+          "answer": "Ben Simmons"
+        },
+        {
+          "sequence": "30",
+          "type": "image",
+          "question": "Who is in the picture with Kendall?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_friends/questions/the_friends_q30.jpg",
+          "answer": "Fai"
+        },
+        {
+          "sequence": "31",
+          "type": "text",
+          "question": "Which sister no longer speaks to Bruce/Caitlin Jenner?",
+          "answer": "KHLOE"
+        },
+        {
+          "sequence": "32",
+          "type": "text",
+          "question": "Who slapped Kim's friend, Jonathan Cheban?",
+          "answer": "KOURTNEY"
+        },
+        {
+          "sequence": "33",
+          "type": "image",
+          "question": "Who is in the picture with Kim?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_friends/questions/the_friends_q33.jpg",
+          "answer": "Lala"
+        },
+        {
+          "sequence": "34",
+          "type": "text",
+          "question": "Which friend did the sisters \"break up with\" in 2020?",
+          "answer": "larsa pippen"
+        },
+        {
+          "sequence": "35",
+          "type": "text",
+          "question": "What is the name of Kim's favorite makeup artist and close friend?",
+          "answer": "Mario"
+        },
+        {
+          "sequence": "36",
+          "type": "image",
+          "question": "Which sister is good friends with the girls in this photo?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_friends/questions/the_friends_q36.jpg",
+          "answer": "Kendall Jenner"
+        },
+        {
+          "sequence": "37",
+          "type": "text",
+          "question": "Who is the famous producer who helped the family get off the ground?",
+          "answer": "ryan seacrest"
+        },
+        {
+          "sequence": "38",
+          "type": "text",
+          "question": "What is the name of Kylie Jenner's assistant and close friend?",
+          "answer": "Victoria"
+        },
+        {
+          "sequence": "39",
+          "type": "image",
+          "question": "Who is in the picture with Kylie?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_friends/questions/the_friends_q39.jpg",
+          "answer": "Yris"
+        }
+      ]
+    },
+    {
+      "id": "the_sisters",
+      "sequence": "4",
+      "title": "The Sisters",
+      "not_chosen_icon": "https://thekardashians.b-cdn.net/the_sisters/icons/catagory_icon_not_chosen_the_sisters.svg",
+      "chosen_icon": "https://thekardashians.b-cdn.net/the_sisters/icons/catagory_icon_chosen_the_sisters.svg",
+      "question_answered_icon": "https://thekardashians.b-cdn.net/the_sisters/icons/answered_question_the_sisters.svg",
+      "background": "https://thekardashians.b-cdn.net/the_sisters/background/the_sisters_background.png",
+      "questions": [
+        {
+          "sequence": "1",
+          "type": "image",
+          "question": "What designer is Kendall wearing?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_sisters/questions/the_sisters_q1.png",
+          "answer": "Balmain"
+        },
+        {
+          "sequence": "2",
+          "type": "text",
+          "question": "Which sister is a Victoria's Secret model?",
+          "answer": "KENDALL"
+        },
+        {
+          "sequence": "3",
+          "type": "text",
+          "question": "Which sister founded Good American?",
+          "answer": "KHLOE"
+        },
+        {
+          "sequence": "4",
+          "type": "text",
+          "question": "Which sister is the organic food and products fanatic?",
+          "answer": "KOURTNEY"
+        },
+        {
+          "sequence": "5",
+          "type": "text",
+          "question": "Which sister - Kardashian or Jenner - has the most Instagram followers?",
+          "answer": "KYLIE"
+        },
+        {
+          "sequence": "6",
+          "type": "text",
+          "question": "Which sister got in trouble for wearing makeup when she was a teenager?",
+          "answer": "KYLIE"
+        },
+        {
+          "sequence": "7",
+          "type": "image",
+          "question": "What designer is Kim wearing?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_sisters/questions/the_sisters_q7.png",
+          "answer": "Thierry Mugler"
+        },
+        {
+          "sequence": "8",
+          "type": "image",
+          "question": "What designer is Kendall wearing?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_sisters/questions/the_sisters_q8.png",
+          "answer": "Versace"
+        },
+        {
+          "sequence": "9",
+          "type": "text",
+          "question": "Which sister is closest to their brother, Rob Kardashian?",
+          "answer": "KHLOE"
+        },
+        {
+          "sequence": "10",
+          "type": "image",
+          "question": "What designer is Kim wearing?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_sisters/questions/the_sisters_q10.png",
+          "answer": "Yeezy"
+        },
+        {
+          "sequence": "11",
+          "type": "text",
+          "question": "What is Kim's middle name?",
+          "answer": "noel"
+        },
+        {
+          "sequence": "12",
+          "type": "image",
+          "question": "What designer is Kylie wearing?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_sisters/questions/the_sisters_q12.png",
+          "answer": "Alexander Wang"
+        },
+        {
+          "sequence": "13",
+          "type": "text",
+          "question": "Which sister got slapped with a handbag after she shut the door in Kim's face?",
+          "answer": "KHLOE"
+        },
+        {
+          "sequence": "14",
+          "type": "text",
+          "question": "Which sister populalized the vampire facial?",
+          "answer": "KIM"
+        },
+        {
+          "sequence": "15",
+          "type": "image",
+          "question": "What designer is Kylie wearing?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_sisters/questions/the_sisters_q15.png",
+          "answer": "Balmain"
+        },
+        {
+          "sequence": "16",
+          "type": "image",
+          "question": "What designer is Kim wearing?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_sisters/questions/the_sisters_q16.png",
+          "answer": "Balmain"
+        },
+        {
+          "sequence": "17",
+          "type": "text",
+          "question": "Which two sisters were cheerleaders?",
+          "answer": "kendall and kylie"
+        },
+        {
+          "sequence": "18",
+          "type": "text",
+          "question": "Which sister wore Givenchy to the Met Gala in 2013?",
+          "answer": "KIM"
+        },
+        {
+          "sequence": "19",
+          "type": "image",
+          "question": "What designer is Kim wearing?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_sisters/questions/the_sisters_q19.png",
+          "answer": "Versace"
+        },
+        {
+          "sequence": "20",
+          "type": "text",
+          "question": "Which two Kardashian sisters fought on camera in a recent season?",
+          "answer": "kim and kourtney"
+        },
+        {
+          "sequence": "21",
+          "type": "text",
+          "question": "Which sister has a collage degree?",
+          "answer": "KOURTNEY"
+        },
+        {
+          "sequence": "22",
+          "type": "image",
+          "question": "What designer is Kendall wearing?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_sisters/questions/the_sisters_q22.png",
+          "answer": "Calvin Klein"
+        },
+        {
+          "sequence": "23",
+          "type": "text",
+          "question": "Which sister is 5.0 feet tall?",
+          "answer": "KOURTNEY"
+        },
+        {
+          "sequence": "24",
+          "type": "text",
+          "question": "Which sister was on the cover of Forbes with the headline, \"Billionaire Baby\"?",
+          "answer": "KYLIE"
+        },
+        {
+          "sequence": "25",
+          "type": "text",
+          "question": "Which sister moved into her own mansion at just 18-years-old?",
+          "answer": "kylie "
+        },
+        {
+          "sequence": "26",
+          "type": "image",
+          "question": "What designer is Kourtney wearing?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_sisters/questions/the_sisters_q26.png",
+          "answer": "Roberto Cavilli"
+        },
+        {
+          "sequence": "27",
+          "type": "text",
+          "question": "What is the name of Kourtney's lifestyle website?",
+          "answer": "poosch"
+        },
+        {
+          "sequence": "28",
+          "type": "image",
+          "question": "What designer is Kylie wearing?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_sisters/questions/the_sisters_q28.png",
+          "answer": "Ralph and Russo"
+        },
+        {
+          "sequence": "29",
+          "type": "image",
+          "question": "What designer is Kylie wearing?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_sisters/questions/the_sisters_q29.png",
+          "answer": "Tom Ford"
+        },
+        {
+          "sequence": "30",
+          "type": "image",
+          "question": "What designer is Kim wearing?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_sisters/questions/the_sisters_q30.png",
+          "answer": "Chanel"
+        },
+        {
+          "sequence": "31",
+          "type": "image",
+          "question": "What designer is Kourtney wearing?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_sisters/questions/the_sisters_q31.png",
+          "answer": "Christian Siriano"
+        },
+        {
+          "sequence": "32",
+          "type": "text",
+          "question": "Which sister first landed on the cover of Vogue?",
+          "answer": "KENDALL"
+        },
+        {
+          "sequence": "33",
+          "type": "image",
+          "question": "What designer is Kendall wearing?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_sisters/questions/the_sisters_q33.png",
+          "answer": "Calvin Klein"
+        },
+        {
+          "sequence": "34",
+          "type": "text",
+          "question": "Which sister first displayed \"the biscuit jar\" in their home?",
+          "answer": "KHLOE"
+        },
+        {
+          "sequence": "35",
+          "type": "image",
+          "question": "What designer is Khloe wearing?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_sisters/questions/the_sisters_q35.png",
+          "answer": "American Apparel"
+        },
+        {
+          "sequence": "36",
+          "type": "text",
+          "question": "Which sister loves horse riding?",
+          "answer": "KHLOE"
+        },
+        {
+          "sequence": "37",
+          "type": "text",
+          "question": "Which sister no longer speaks to Bruce/Caitlin Jenner?",
+          "answer": "KHLOE"
+        },
+        {
+          "sequence": "38",
+          "type": "image",
+          "question": "What designer is Kourtney wearing?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_sisters/questions/the_sisters_q38.png",
+          "answer": "Made for Pearl"
+        },
+        {
+          "sequence": "39",
+          "type": "image",
+          "question": "What designer is Kourtney wearing?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_sisters/questions/the_sisters_q39.png",
+          "answer": "Raoul"
+        },
+        {
+          "sequence": "40",
+          "type": "image",
+          "question": "What designer is Khloe wearing?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_sisters/questions/the_sisters_q40.png",
+          "answer": "Stello"
+        },
+        {
+          "sequence": "41",
+          "type": "image",
+          "question": "What designer is Khloe wearing?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/the_sisters/questions/the_sisters_q41.png",
+          "answer": "Wes Gordon"
+        }
+      ]
+    },
+    {
+      "id": "vacations_and_events",
+      "sequence": "5",
+      "title": "Vacations & Events",
+      "not_chosen_icon": "https://thekardashians.b-cdn.net/vacations_and_events/icons/catagory_icon_not_chosen_vacations_and_events.svg",
+      "chosen_icon": "https://thekardashians.b-cdn.net/vacations_and_events/icons/catagory_icon_chosen_the_vacations_and_event.svg",
+      "question_answered_icon": "https://thekardashians.b-cdn.net/vacations_and_events/icons/answered_question_vacations_and_events.svg",
+      "background": "https://thekardashians.b-cdn.net/vacations_and_events/background/the_vacations_and_events_background.png",
+      "questions": [
+        {
+          "sequence": "1",
+          "type": "image",
+          "question": "What event  this picture for?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/vacations_and_events/questions/vacations_events_q1.jpg",
+          "answer": "CHRISTMAS"
+        },
+        {
+          "sequence": "2",
+          "type": "image",
+          "question": "What party was this for?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/vacations_and_events/questions/vacations_events_q2.jpg",
+          "answer": "CHRISTMAS EVE"
+        },
+        {
+          "sequence": "3",
+          "type": "text",
+          "question": "Which city did Kim and Kanye get married in?",
+          "answer": "florence"
+        },
+        {
+          "sequence": "4",
+          "type": "text",
+          "question": "In which city did Scott Disick officially become a Lord?",
+          "answer": "london"
+        },
+        {
+          "sequence": "5",
+          "type": "image",
+          "question": "What event was this?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/vacations_and_events/questions/vacations_events_q5.jpg",
+          "answer": "Met Gala"
+        },
+        {
+          "sequence": "6",
+          "type": "text",
+          "question": "Which holiday do the sister always have dozens of costumes for?",
+          "answer": "halloween"
+        },
+        {
+          "sequence": "7",
+          "type": "text",
+          "question": "Who hosted the Christmas Eve party for the last 20+ years before Kim took over?",
+          "answer": "KRIS"
+        },
+        {
+          "sequence": "8",
+          "type": "image",
+          "question": "What event was this?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/vacations_and_events/questions/vacations_events_q8.jpg",
+          "answer": "Met Gala"
+        },
+        {
+          "sequence": "9",
+          "type": "text",
+          "question": "Which country did the sisters visit to baptize their children?",
+          "answer": "armenia"
+        },
+        {
+          "sequence": "10",
+          "type": "image",
+          "question": "What event was this?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/vacations_and_events/questions/vacations_events_q10.jpg",
+          "answer": "Met Gala"
+        },
+        {
+          "sequence": "11",
+          "type": "image",
+          "question": "Which award show was this?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/vacations_and_events/questions/vacations_events_q11.jpg",
+          "answer": "PEOPLES CHOICE"
+        },
+        {
+          "sequence": "12",
+          "type": "image",
+          "question": "What award show was this?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/vacations_and_events/questions/vacations_events_q12.jpg",
+          "answer": "Billboard"
+        },
+        {
+          "sequence": "13",
+          "type": "text",
+          "question": "Where did the family go in season six for Kris and Bruce's anniversary?",
+          "answer": "bora bora"
+        },
+        {
+          "sequence": "14",
+          "type": "text",
+          "question": "Where city did Khloe spend most of her time in in 2019?",
+          "answer": "cleveland"
+        },
+        {
+          "sequence": "15",
+          "type": "image",
+          "question": "Which country was the family in when they drove this car?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/vacations_and_events/questions/vacations_events_q15.jpg",
+          "answer": "CUBA"
+        },
+        {
+          "sequence": "16",
+          "type": "image",
+          "question": "What event was this?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/vacations_and_events/questions/vacations_events_q16.jpg",
+          "answer": "ESPN AWARDS"
+        },
+        {
+          "sequence": "17",
+          "type": "image",
+          "question": "Whose birthday party was this?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/vacations_and_events/questions/vacations_events_q17.jpg",
+          "answer": "KIM"
+        },
+        {
+          "sequence": "18",
+          "type": "image",
+          "question": "Who was this lockdown drive-by for?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/vacations_and_events/questions/vacations_events_q18.jpg",
+          "answer": "KOURTNEY"
+        },
+        {
+          "sequence": "19",
+          "type": "text",
+          "question": "In which city was the family when Scott drunkenly shoved a $100 bill in a waiter's mouth?",
+          "answer": "las vegas"
+        },
+        {
+          "sequence": "20",
+          "type": "image",
+          "question": "What award show was this?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/vacations_and_events/questions/vacations_events_q20.jpg",
+          "answer": "MTV awards"
+        },
+        {
+          "sequence": "21",
+          "type": "text",
+          "question": "Which city was Kim robbed in?",
+          "answer": "paris"
+        },
+        {
+          "sequence": "22",
+          "type": "image",
+          "question": "What award show was this?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/vacations_and_events/questions/vacations_events_q22.jpg",
+          "answer": "People's Choice"
+        },
+        {
+          "sequence": "23",
+          "type": "image",
+          "question": "What award show was this?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/vacations_and_events/questions/vacations_events_q23.jpg",
+          "answer": "People's Choice"
+        },
+        {
+          "sequence": "24",
+          "type": "text",
+          "question": "What is the family's current favorite vacation spot?",
+          "answer": "turks and caicos"
+        },
+        {
+          "sequence": "25",
+          "type": "text",
+          "question": "Where did Kylie go to celebrate the launch of her Kylie Skin collection?",
+          "answer": "turks and caicos"
+        },
+        {
+          "sequence": "26",
+          "type": "image",
+          "question": "What award show was this?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/vacations_and_events/questions/vacations_events_q26.jpg",
+          "answer": "VMAs"
+        },
+        {
+          "sequence": "27",
+          "type": "image",
+          "question": "Where did they go on this vacation?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/vacations_and_events/questions/vacations_events_q27.jpg",
+          "answer": "WYOMING"
+        },
+        {
+          "sequence": "28",
+          "type": "text",
+          "question": "What insect did Kim freak out and cry about in Mexico?",
+          "answer": "a spider"
+        },
+        {
+          "sequence": "29",
+          "type": "image",
+          "question": "Where was this picture taken?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/vacations_and_events/questions/vacations_events_q29.jpg",
+          "answer": "BALI"
+        },
+        {
+          "sequence": "30",
+          "type": "text",
+          "question": "Where was the family when the sisters threw their drink in Scott's face after they found out that he had brought a girl with?",
+          "answer": "costa rica"
+        },
+        {
+          "sequence": "31",
+          "type": "image",
+          "question": "Which season was this?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/vacations_and_events/questions/vacations_events_q31.jpg",
+          "answer": "EIGHTEEN"
+        },
+        {
+          "sequence": "32",
+          "type": "image",
+          "question": "What award show was this?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/vacations_and_events/questions/vacations_events_q32.jpg",
+          "answer": "Emmys"
+        },
+        {
+          "sequence": "33",
+          "type": "text",
+          "question": "How many people did Kim fly to a private island last year?",
+          "answer": "fourty"
+        },
+        {
+          "sequence": "34",
+          "type": "text",
+          "question": "Where did Kim and Kourtney go to celebrate her 37th birthday and shoot the Highlight music video for Kanye?",
+          "answer": "iceland"
+        },
+        {
+          "sequence": "35",
+          "type": "text",
+          "question": "In which country was Kim when she had bubblegum pink hair?",
+          "answer": "japan"
+        },
+        {
+          "sequence": "36",
+          "type": "image",
+          "question": "Where was this picture taken?",
+          "questionImageURL": "https://thekardashians.b-cdn.net/vacations_and_events/questions/vacations_events_q36.jpg",
+          "answer": "MEXICO"
+        },
+        {
+          "sequence": "37",
+          "type": "text",
+          "question": "In which city did Kourtney celebrate her 38th birthday party?",
+          "answer": "punta mita"
+        },
+        {
+          "sequence": "38",
+          "type": "text",
+          "question": "Where did Kim and Kanye almost adopt a baby from?",
+          "answer": "thailand"
+        },
+        {
+          "sequence": "39",
+          "type": "text",
+          "question": "Years ago, Kim lost her diamond earing in the ocean. Where were they vacationing?",
+          "answer": "bora bora"
+        },
+        {
+          "sequence": "40",
+          "type": "text",
+          "question": "Which country were they in when Kendall and Kylie pretended to go missing?",
+          "answer": "thailand"
+        }
+      ]
+    }
+  ]
+}

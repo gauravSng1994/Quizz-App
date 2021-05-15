@@ -1,0 +1,32 @@
+.header-main-div{
+    background: url("../../assets/variant/title_background.svg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 42px;
+    text-align: center;
+    color: aqua;
+    position: relative;
+}
+.back-icon{
+    position: relative;
+    top:5%;
+    left: 1%;
+    width: 35px;
+    /*display: inline-block;*/
+    float: left;
+}
+.header-title-div{
+    padding-top: 12px;
+    /*display: inline-block;*/
+    text-align: center;
+    /*float: left;*/
+}
+.header-divider{
+    background: url("../../assets/variant/divider_background.svg") no-repeat;
+    background-size: cover;
+    height: 5px;
+    text-align: center;
+    color: aqua;
+    position: absolute;
+    bottom: 0;
+}

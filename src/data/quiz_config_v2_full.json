@@ -1,0 +1,1676 @@
+{
+	"title": "The Olympics Quiz",
+	"generic": {
+		"background": "https://theolympics.b-cdn.net/generic/default_background.png"
+	},
+    "categories": [
+        {
+            "id": "you_go_girl",
+            "sequence": "1",
+            "title": "You Go Girl!",
+            "not_chosen_icon": "https://theolympics.b-cdn.net/You%20go%20girl!/icons/catagory_icon_not_chosen_you_go_girl.svg",
+            "chosen_icon": "https://theolympics.b-cdn.net/You%20go%20girl!/icons/catagory_icon_chosen_you_go_girl.svg",
+            "question_answered_icon": "https://theolympics.b-cdn.net/You%20go%20girl!/icons/answerd_question_you_go_girl.svg",
+            "background": "https://theolympics.b-cdn.net/You%20go%20girl!/background/you_go_girl_background.png",
+            "questions":[
+        {
+            "id": "1",
+            "type": "image",
+            "question": "What is the name of this sport?",
+            "questionImageURL": "https://theolympics.b-cdn.net/You%20go%20girl!/questions/1.jpg",
+            "answerType": "text",
+            "answer": "rugby"
+        },
+        {
+            "id": "2",
+            "type": "text ",
+            "question": "What color medal does the 2nd place athlete get?",
+            "answerType": "text",
+            "answer": "silver"
+        },
+        {
+            "id": "3",
+            "type": "image",
+            "question": "Who won the women tennis singles at the 2000 Olympics?",
+            "questionImageURL": "https://theolympics.b-cdn.net/You%20go%20girl!/questions/3.jpg",
+            "answerType": "text",
+            "answer": "Venus Williams"
+        },
+        {
+            "id": "4",
+            "type": "image",
+            "question": "What is the name of this sport?",
+            "questionImageURL": "https://theolympics.b-cdn.net/You%20go%20girl!/questions/4.jpg",
+            "answerType": "text",
+            "answer": "golf"
+        },
+        {
+            "id": "5",
+            "type": "text",
+            "question": "Which sport is also known as soccer?",
+            "answerType": "text",
+            "answer": "football"
+        },
+        {
+            "id": "6",
+            "type": "text",
+            "question": "What sport did Billie Jean King play?",
+            "answerType": "text",
+            "answer": "tennis"
+        },
+        {
+            "id": "7",
+            "type": "text",
+            "question": "In total , how many players are there in a tennis doubles match?",
+            "answerType": "number",
+            "answer": "4"
+        },
+        {
+            "id": "8",
+            "type": "image",
+            "question": "Which Williams sister, won gold 3 times in the women’s tennis doubles?",
+            "questionImageURL": "https://theolympics.b-cdn.net/You%20go%20girl!/questions/8.jpg",
+            "answerType": "text",
+            "answer": "Serena"
+        },
+        {
+            "id": "9",
+            "type": "text",
+            "question": "What sport does Serena Williams play?",
+            "answerType": "text",
+            "answer": "tennis"
+        },
+        {
+            "id": "10",
+            "type": "image",
+            "question": "These partners won gold 3 times in a row in which sport? ",
+            "questionImageURL": "https://theolympics.b-cdn.net/You%20go%20girl!/questions/10.jpg",
+            "answerType": "text",
+            "answer": "beach volleyball"
+        },
+        {
+            "id": "11",
+            "type": "text",
+            "question": "Which country will host the Olympics in 2021?",
+            "answerType": "text",
+            "answer": "Japan"
+        },
+        {
+            "id": "12",
+            "type": "text",
+            "question": "At the 2016 Olympics, which gymnast won 5 golds and 1 bronze medal?",
+            "answerType": "text",
+            "answer": "Simone Biles"
+        },
+        {
+            "id": "13",
+            "type": "image",
+            "question": "What is the sport shown in the picture?",
+            "questionImageURL": "https://theolympics.b-cdn.net/You%20go%20girl!/questions/13.jpg",
+            "answerType": "text",
+            "answer": "gymnastics"
+        },
+        {
+            "id": "14",
+            "type": "text",
+            "question": "In 2008, Dara Torres became the oldest athlete to win an Olympic medal in this sport.",
+            "answerType": "text",
+            "answer": "swimming"
+        },
+        {
+            "id": "15",
+            "type": "image",
+            "question": "Who is this Olympic medalist and FIFA World Cup winner?",
+            "questionImageURL": "https://theolympics.b-cdn.net/You%20go%20girl!/questions/15.png",
+            "answerType": "text",
+            "answer": "Mia Hamm"
+        },
+        {
+            "id": "16",
+            "type": "text",
+            "question": "Which Olympic record holder is the sister-in-law of FloJo?",
+            "answerType": "text",
+            "answer": "Jackie Joyner"
+        },
+        {
+            "id": "17",
+            "type": "text",
+            "question": "Women's wrestling was added to the Olympics at the 2004 Games in this city.",
+            "answerType": "text",
+            "answer": "Athens"
+        },
+        {
+            "id": "18",
+            "type": "image",
+            "question": "This swimmer won her first Olympic gold medal 15 years old.",
+            "questionImageURL": "https://theolympics.b-cdn.net/You%20go%20girl!/questions/18.jpg",
+            "answerType": "text",
+            "answer": "Katie Ledecky"
+        },
+        {
+            "id": "19",
+            "type": "image",
+            "question": "She has the most Olympic gold medals (female) in track and field.",
+            "questionImageURL": "https://theolympics.b-cdn.net/You%20go%20girl!/questions/19.jpg",
+            "answerType": "text",
+            "answer": "Alison Felix"
+        },
+        {
+            "id": "20",
+            "type": "image",
+            "question": "Name this soccer player who won gold in the 2008 and 2012 Olympics.",
+            "questionImageURL": "https://theolympics.b-cdn.net/You%20go%20girl!/questions/20.jpg",
+            "answerType": "text",
+            "answer": "Carli Lloyd"
+        },
+        {
+            "id": "21",
+            "type": "text",
+            "question": "Which Olympian also played professional golf and baseball?",
+            "answerType": "text",
+            "answer": "Babe Didrickson"
+        },
+        {
+            "id": "22",
+            "type": "image",
+            "question": "Denmark's women's team has the most Olympic gold medals in which sport?",
+            "questionImageURL": "https://theolympics.b-cdn.net/You%20go%20girl!/questions/22.jpg",
+            "answerType": "text",
+            "answer": "handball"
+        },
+        {
+            "id": "23",
+            "type": "image",
+            "question": "This sprinter won gold in the 100m and 200m at the 2016 Olympics.",
+            "questionImageURL": "https://theolympics.b-cdn.net/You%20go%20girl!/questions/23.jpg",
+            "answerType": "text",
+            "answer": "Elaine Thompson"
+        },
+        {
+            "id": "24",
+            "type": "text",
+            "question": "Women first competed in boxing at the 2012 Olympics in which city?",
+            "answerType": "text",
+            "answer": "London"
+        },
+        {
+            "id": "25",
+            "type": "text",
+            "question": "Which country hosted and won the first women's gymnastics competition? ",
+            "answerType": "text",
+            "answer": "Holland"
+        },
+        {
+            "id": "26",
+            "type": "image",
+            "question": "She is the fastest female runner of all time; what is her name?",
+            "questionImageURL": "https://theolympics.b-cdn.net/You%20go%20girl!/questions/26.jpg",
+            "answerType": "text",
+            "answer": "Florence Griffith"
+        },
+        {
+            "id": "27",
+            "type": "text",
+            "question": "In 1936, Betty Robinson won gold again in the 100m race after surviving a ...... crash.",
+            "answerType": "text",
+            "answer": "plane "
+        },
+        {
+            "id": "28",
+            "type": "text",
+            "question": "Who was the first black woman to win gold in track and field? ",
+            "answerType": "text",
+            "answer": "Alice Coachman"
+        },
+        {
+            "id": "29",
+            "type": "image",
+            "question": "This multi-sport athlete won 2 gold medals at the 1932 Olympics.",
+            "questionImageURL": "https://theolympics.b-cdn.net/You%20go%20girl!/questions/29.jpg",
+            "answerType": "text",
+            "answer": "Babe Didrickson"
+        },
+        {
+            "id": "30",
+            "type": "text",
+            "question": "Pat Summitt coached which sport after competing in it at the 1976 Olympics?",
+            "answerType": "text",
+            "answer": "basketball"
+        },
+        {
+            "id": "31",
+            "type": "text",
+            "question": "Larissa Latynina won 18 medals from the 1956 to 1964 in this sport:",
+            "answerType": "text",
+            "answer": "Gymnastics"
+        },
+        {
+            "id": "32",
+            "type": "image",
+            "question": "This figure-skater is the most medals in her sport in U.S. history.",
+            "questionImageURL": "https://theolympics.b-cdn.net/You%20go%20girl!/questions/32.jpg",
+            "answerType": "text",
+            "answer": "Michelle Kwan"
+        },
+        {
+            "id": "33",
+            "type": "text",
+            "question": "Jackie Joyner-Kersee still holds the world record in this event.",
+            "answerType": "text",
+            "answer": "heptathlon"
+        },
+        {
+            "id": "34",
+            "type": "image",
+            "question": "Who was the first female Caribbean athlete to win an Olympic medal?",
+            "questionImageURL": "https://theolympics.b-cdn.net/You%20go%20girl!/questions/34.jpg",
+            "answerType": "text",
+            "answer": "Merlene Ottey"
+        },
+        {
+            "id": "35",
+            "type": "image",
+            "question": "She became the first  gymnast to score a perfect 10 at the Olympics.",
+            "questionImageURL": "https://theolympics.b-cdn.net/You%20go%20girl!/questions/35.png",
+            "answerType": "text",
+            "answer": "Nadia Comaneci"
+        },
+        {
+            "id": "36",
+            "type": "image",
+            "question": "Who is this soccer player that won silver at the 2004 and 2008 Olympics?",
+            "questionImageURL": "https://theolympics.b-cdn.net/You%20go%20girl!/questions/36.jpg",
+            "answerType": "text",
+            "answer": "Marta"
+        },
+        {
+            "id": "37",
+            "type": "text",
+            "question": "At 70, Lorna Johnstone became the oldest female Olympian in which sport?",
+            "answerType": "text",
+            "answer": "Equestrian"
+        },
+        {
+            "id": "38",
+            "type": "image",
+            "question": "This swimmer won 1 bronze and 4 gold medals at her first Olympics.",
+            "questionImageURL": "https://theolympics.b-cdn.net/You%20go%20girl!/questions/38.jpg",
+            "answerType": "text",
+            "answer": "Missy Franklin"
+        },
+        {
+            "id": "39",
+            "type": "text",
+            "question": "The youngest female Olympic champion won gold in springboard diving at what age?",
+            "answerType": "number",
+            "answer": "13"
+        },
+        {
+            "id": "40",
+            "type": "image",
+            "question": "Esther Vergeer won eight Paralympic medals in which sport?",
+            "questionImageURL": "https://theolympics.b-cdn.net/You%20go%20girl!/questions/40.jpg",
+            "answerType": "text",
+            "answer": "wheelchair tennis"
+        },
+        {
+            "id": "41",
+            "type": "text",
+            "question": "Canadian Tessa Virtue has the most Olympic medals in which sport?",
+            "answerType": "text",
+            "answer": "figure skating"
+        },
+        {
+            "id": "42",
+            "type": "image",
+            "question": "She won the 100m sprint in 2008 and 2012. What is her first name?",
+            "questionImageURL": "https://theolympics.b-cdn.net/You%20go%20girl!/questions/42.jpg",
+            "answerType": "text",
+            "answer": "Shelly Ann"
+        },
+        {
+            "id": "43",
+            "type": "text",
+            "question": "The most decorated female Paralympic athlete represents which team?",
+            "answerType": "text",
+            "answer": "Great Britain"
+        },
+        {
+            "id": "44",
+            "type": "text",
+            "question": "Which athlete overcame paralysis, and won 3 gold medals in track?",
+            "answerType": "text",
+            "answer": "Wilma Rudolph"
+        },
+        {
+            "id": "45",
+            "type": "image",
+            "question": "This basketballer and her team won gold in four consecutive Olympics.",
+            "questionImageURL": "https://theolympics.b-cdn.net/You%20go%20girl!/questions/45.png",
+            "answerType": "text",
+            "answer": "Lisa Leslie"
+        },
+        {
+            "id": "46",
+            "type": "text",
+            "question": "Sarah Storey has 22 medals at the Paralympic games in cycling and which event?",
+            "answerType": "text",
+            "answer": "swimming"
+        }
+    ]
+        },
+    
+        {
+            "id": "winter_olympics",
+            "sequence": "2",
+            "title": "Winter Olympics",
+            "not_chosen_icon": "https://theolympics.b-cdn.net/Winter%20Olympics/icons/catagory_icon_not_chosen_winter_games.svg",
+            "chosen_icon": "https://theolympics.b-cdn.net/Winter%20Olympics/icons/catagory_icon_chosen_winter_games.svg",
+            "question_answered_icon": "https://theolympics.b-cdn.net/Winter%20Olympics/icons/answerd_question_winter_games.svg",
+            "background": "https://theolympics.b-cdn.net/Winter%20Olympics/background/winter_games_background.png",
+            "questions": [
+        {
+            "id": "2",
+            "type": "text",
+            "question": "The Winter Olympics take place every ..... years.",
+            "answerType": "number",
+            "answer": "4"
+        },
+        {
+            "id": "3",
+            "type": "image",
+            "question": "Which winter sport is this?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Winter%20Olympics/questions/3.jpg",
+            "answerType": "text",
+            "answer": "ice hockey"
+        },
+        {
+            "id": "4",
+            "type": "image",
+            "question": "What sport is shown in the picture?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Winter%20Olympics/questions/4.jpg",
+            "answerType": "text",
+            "answer": "skiing"
+        },
+        {
+            "id": "5",
+            "type": "text",
+            "question": "What color medal does the 3rd place athlete get?",
+            "answerType": "text",
+            "answer": "bronze"
+        },
+        {
+            "id": "6",
+            "type": "image",
+            "question": "He has 3 Olympic gold medals in snowboarding. Who is he?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Winter%20Olympics/questions/6.jpg",
+            "answerType": "text",
+            "answer": "Shaun White"
+        },
+        {
+            "id": "7",
+            "type": "text",
+            "question": "Which year is the next Winter Olympics sheduled for?",
+            "answerType": "number",
+            "answer": "2022"
+        },
+        {
+            "id": "8",
+            "type": "image",
+            "question": "What type of sled is shown in the picture?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Winter%20Olympics/questions/8.jpg",
+            "answerType": "text",
+            "answer": "bobsled"
+        },
+        {
+            "id": "9",
+            "type": "text",
+            "question": "In which sport do players kick a ball and can't use their hands?",
+            "answerType": "text",
+            "answer": "football"
+        },
+        {
+            "id": "10",
+            "type": "image",
+            "question": "In this sport, the USA men's team has more medals than Canada's team.",
+            "questionImageURL": "https://theolympics.b-cdn.net/Winter%20Olympics/questions/10.jpg",
+            "answerType": "text",
+            "answer": "ice hockey"
+        },
+        {
+            "id": "11",
+            "type": "text",
+            "question": "Which city will host the 2022 Winter Olympics?",
+            "answerType": "text",
+            "answer": "Beijing"
+        },
+        {
+            "id": "12",
+            "type": "image",
+            "question": "Canada has the most Olympic medals in this sport shown here.",
+            "questionImageURL": "https://theolympics.b-cdn.net/Winter%20Olympics/questions/12.jpg",
+            "answerType": "text",
+            "answer": "curling"
+        },
+        {
+            "id": "13",
+            "type": "text",
+            "question": "In what year was the last Winter Olympics held?",
+            "answerType": "number",
+            "answer": "2018"
+        },
+        {
+            "id": "14",
+            "type": "image",
+            "question": "At the 2006 Games, this speed skater won 1 bronze and 3 gold medals.",
+            "questionImageURL": "https://theolympics.b-cdn.net/Winter%20Olympics/questions/14.jpg",
+            "answerType": "text",
+            "answer": "Victor An"
+        },
+        {
+            "id": "15",
+            "type": "text",
+            "question": "Which winter sport is played with a puck?",
+            "answerType": "text",
+            "answer": "ice hockey"
+        },
+        {
+            "id": "16",
+            "type": "image",
+            "question": "Of all athletes, Ireen Wust has the most Olympic medals in this event shown here.",
+            "questionImageURL": "https://theolympics.b-cdn.net/Winter%20Olympics/questions/16.jpg",
+            "answerType": "text",
+            "answer": "speed skating"
+        },
+        {
+            "id": "17",
+            "type": "text",
+            "question": "In which ice sport do players use brooms?",
+            "answerType": "text",
+            "answer": "curling"
+        },
+        {
+            "id": "18",
+            "type": "image",
+            "question": "Which sport is shown here?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Winter%20Olympics/questions/18.jpg",
+            "answerType": "text",
+            "answer": "biathlon"
+        },
+        {
+            "id": "19",
+            "type": "text",
+            "question": "How old was Chloe Kim when she won gold at the 2018 Olympics?",
+            "answerType": "number",
+            "answer": "17"
+        },
+        {
+            "id": "20",
+            "type": "text",
+            "question": "In which event do athletes do both cross-country skiing and rifle-shooting?",
+            "answerType": "text",
+            "answer": "biathlon"
+        },
+        {
+            "id": "21",
+            "type": "image",
+            "question": "She has 3 Olympic medals in skiing events. Who is she?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Winter%20Olympics/questions/21.jpg",
+            "answerType": "text",
+            "answer": "Lindsey Vonn"
+        },
+        {
+            "id": "22",
+            "type": "text",
+            "question": "How many Olympic medals does Wayne Gretzky have?",
+            "answerType": "number",
+            "answer": "0"
+        },
+        {
+            "id": "23",
+            "type": "image",
+            "question": "What is the name of this winter sport?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Winter%20Olympics/questions/23.jpg",
+            "answerType": "text",
+            "answer": "luge"
+        },
+        {
+            "id": "24",
+            "type": "text",
+            "question": "The first Winter Olympics was held in Chamonix, in this country.",
+            "answerType": "text",
+            "answer": "France"
+        },
+        {
+            "id": "25",
+            "type": "image",
+            "question": "This gold medal is from which edition of the Winter Olympics?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Winter%20Olympics/questions/25.jpg",
+            "answerType": "text",
+            "answer": "first"
+        },
+        {
+            "id": "26",
+            "type": "text",
+            "question": "Which country has the most medals in team figure skating?",
+            "answerType": "text",
+            "answer": "Canada"
+        },
+        {
+            "id": "27",
+            "type": "text",
+            "question": "The first Winter Paralympics was held in which country?",
+            "answerType": "text",
+            "answer": "Sweden"
+        },
+        {
+            "id": "29",
+            "type": "text",
+            "question": "The first woman to win 10 medals at the Winter Games does which sport?",
+            "answerType": "text",
+            "answer": "skiing"
+        },
+        {
+            "id": "30",
+            "type": "text",
+            "question": "At the first Winter Olympics, what was the only women's sport?",
+            "answerType": "text",
+            "answer": "figure skating"
+        },
+        {
+            "id": "31",
+            "type": "image",
+            "question": "Which sport uses this 'stone'?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Winter%20Olympics/questions/31.jpg",
+            "answerType": "text",
+            "answer": "curling"
+        },
+        {
+            "id": "32",
+            "type": "image",
+            "question": "Who was the youngest figure skater to win an Olympic gold medal?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Winter%20Olympics/questions/32.jpg",
+            "answerType": "text",
+            "answer": "Tara Lipinski"
+        },
+        {
+            "id": "33",
+            "type": "text",
+            "question": "Which country is Ireen Wust from?",
+            "answerType": "text",
+            "answer": "Holland"
+        },
+        {
+            "id": "34",
+            "type": "image",
+            "question": "In 2002, this sport returned to the Winter Olympics.",
+            "questionImageURL": "https://theolympics.b-cdn.net/Winter%20Olympics/questions/34.jpg",
+            "answerType": "text",
+            "answer": "skeleton"
+        },
+        {
+            "id": "35",
+            "type": "text",
+            "question": "Which city hosted the 2002 Winter Olympics?",
+            "answerType": "text",
+            "answer": "Vancouver"
+        },
+        {
+            "id": "36",
+            "type": "text",
+            "question": "How many times was the Winter Olympics held in Lake Placid, NY?",
+            "answerType": "number",
+            "answer": "2"
+        },
+        {
+            "id": "37",
+            "type": "image",
+            "question": "Lauryn Williams competed in which event shown here, at the Winter Games?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Winter%20Olympics/questions/37.jpg",
+            "answerType": "text",
+            "answer": "bobsled"
+        },
+        {
+            "id": "38",
+            "type": "text",
+            "question": "In 1968, Jean-Claude Killy won 3 gold medals in what type of skiing.?",
+            "answerType": "text",
+            "answer": "alpine"
+        },
+        {
+            "id": "39",
+            "type": "image",
+            "question": "Who is this snowboarder?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Winter%20Olympics/questions/39.jpg",
+            "answerType": "text",
+            "answer": "Chloe Kim"
+        },
+        {
+            "id": "40",
+            "type": "image",
+            "question": "Uschi Disl competed in 5 Winter Olympics in the sport shown here.",
+            "questionImageURL": "https://theolympics.b-cdn.net/Winter%20Olympics/questions/40.jpg",
+            "answerType": "text",
+            "answer": "biathlon"
+        },
+        {
+            "id": "41",
+            "type": "text",
+            "question": "How many countries were at the first Winter Olympics?",
+            "answerType": "number",
+            "answer": "16"
+        },
+        {
+            "id": "42",
+            "type": "text",
+            "question": "Sven Kramer won the 5000m race 3 times in a row in which sport?",
+            "answerType": "text",
+            "answer": "speed skating"
+        },
+        {
+            "id": "43",
+            "type": "text",
+            "question": "Women were allowed to compete in all sports at Winter Games in what year?",
+            "answerType": "number",
+            "answer": "1992"
+        },
+        {
+            "id": "44",
+            "type": "image",
+            "question": "This gold medal is from the 1988 Olympics, held in what country?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Winter%20Olympics/questions/44.jpg",
+            "answerType": "text",
+            "answer": "Canada"
+        },
+        {
+            "id": "45",
+            "type": "image",
+            "question": "Until 2018, this athlete had the most medals in Olympic speed skating.",
+            "questionImageURL": "https://theolympics.b-cdn.net/Winter%20Olympics/questions/45.jpg",
+            "answerType": "text",
+            "answer": "Claudia Pechstein"
+        },
+        {
+            "id": "46",
+            "type": "text",
+            "question": "Who is the first female snowboarder to do 1080 spins twice in a row at the Games?",
+            "answerType": "text",
+            "answer": "Chloe Kim"
+        },
+        {
+            "id": "47",
+            "type": "text",
+            "question": "Which figure skater planned an attack on her rival, to injure her leg?",
+            "answerType": "text",
+            "answer": "Tonya Harding"
+        }
+    ]
+        },
+        {
+            "id": "betcha_didnt_know",
+            "sequence": "3",
+            "title": "Betcha Didn't Know",
+            "not_chosen_icon": "https://theolympics.b-cdn.net/Betcha%20Didn't%20Know/icons/catagory_icon_not_chosen_betcha_didnt_know.svg",
+            "chosen_icon": "https://theolympics.b-cdn.net/Betcha%20Didn't%20Know/icons/catagory_icon_chosen_betcha_didnt_know.svg",
+            "question_answered_icon": "https://theolympics.b-cdn.net/Betcha%20Didn't%20Know/icons/answerd_question_betcha_didnt_know.svg",
+            "background": "https://theolympics.b-cdn.net/Betcha%20Didn't%20Know/background/betcha_didnt_know_background.png",
+            "questions":   [
+        {
+           "id": "1",
+            "type": "text",
+            "question": "What color medal does the winner get?",
+            "answerType": "text",
+            "answer": "gold"
+        },
+        {
+            "id": "2",
+            "type": "text",
+            "question": "How many years are there between each Olympic Games?",
+            "answerType": "number",
+            "answer": "4"
+        },
+        {
+            "id": "3",
+            "type": "text",
+            "question": "An athlete that gets a bronze medal finished in what place?",
+            "answerType": "text",
+            "answer": "third"
+        },
+        {
+            "id": "4",
+            "type": "text",
+            "question": "Table tennis is also called .... pong.",
+            "answerType": "text",
+            "answer": "ping"
+        },
+        {
+            "id": "5",
+            "type": "image",
+            "question": "Name this continent, which has never hosted an Olympics.",
+            "questionImageURL": "https://theolympics.b-cdn.net/Betcha%20Didn't%20Know/questions/5.png",
+            "answerType": "text",
+            "answer": "Africa"
+        },
+        {
+            "id": "6",
+            "type": "text",
+            "question": "What sport did Michael Jordan play?",
+            "answerType": "text",
+            "answer": "basketball"
+        },
+        {
+            "id": "7",
+            "type": "image",
+            "question": "What sport is shown in the picture?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Betcha%20Didn't%20Know/questions/7.png",
+            "answerType": "text",
+            "answer": "diving"
+        },
+        {
+            "id": "8",
+            "type": "text",
+            "question": "How many rings are on the Olympic flag?",
+            "answerType": "number",
+            "answer": "5"
+        },
+        {
+            "id": "9",
+            "type": "image",
+            "question": "The first Olympic gold medals were made completely of what metal, shown here?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Betcha%20Didn't%20Know/questions/9.jpg",
+            "answerType": "text",
+            "answer": "gold"
+        },
+        {
+            "id": "10",
+            "type": "text",
+            "question": "The 2020 Olympics was postponed until what year?",
+            "answerType": "number",
+            "answer": "2021"
+        },
+        {
+            "id": "11",
+            "type": "image ",
+            "question": "What sport is this?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Betcha%20Didn't%20Know/questions/11.jpg",
+            "answerType": "text",
+            "answer": "sailing"
+        },
+        {
+            "id": "12",
+            "type": "text",
+            "question": "What sport does Tiger Woods play?",
+            "answerType": "text",
+            "answer": "golf"
+        },
+        {
+            "id": "13",
+            "type": "image",
+            "question": "Although he has no arms, Ibrahim Hamadtou plays this sport shown here.",
+            "questionImageURL": "https://theolympics.b-cdn.net/Betcha%20Didn't%20Know/questions/13.jpg",
+            "answerType": "text",
+            "answer": "table tennis"
+        },
+        {
+            "id": "14",
+            "type": "text",
+            "question": "Which city in Brazil hosted the 2016 Olympics? ",
+            "answerType": "text",
+            "answer": "Rio de Janiero"
+        },
+        {
+            "id": "15",
+            "type": "image",
+            "question": "Olympic gold medals are made from this metal shown here, and coated in gold:",
+            "questionImageURL": "https://theolympics.b-cdn.net/Betcha%20Didn't%20Know/questions/15.jpg",
+            "answerType": "text",
+            "answer": "silver"
+        },
+        {
+            "id": "16",
+            "type": "text",
+            "question": "How many years are there between each Paralympic Games?",
+            "answerType": "number",
+            "answer": "2"
+        },
+        {
+            "id": "17",
+            "type": "image",
+            "question": "Bronze Olympic medals are mainly made of which metal shown here?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Betcha%20Didn't%20Know/questions/17.jpg",
+            "answerType": "text",
+            "answer": "copper"
+        },
+        {
+            "id": "18",
+            "type": "text",
+            "question": "To which Greek god was the ancient Olympics dedicated?",
+            "answerType": "text",
+            "answer": "Zeus"
+        },
+        {
+            "id": "19",
+            "type": "image",
+            "question": "What is the name of this former Olympic sport?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Betcha%20Didn't%20Know/questions/19.jpg",
+            "answerType": "text",
+            "answer": "tug of war"
+        },
+        {
+            "id": "20",
+            "type": "text",
+            "question": "How many layers of clothing did the ancient Olympians wear?",
+            "answerType": "number",
+            "answer": "0"
+        },
+        {
+            "id": "21",
+            "type": "image",
+            "question": "What is this called?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Betcha%20Didn't%20Know/questions/21.jpg",
+            "answerType": "text",
+            "answer": "The Olympic Flame"
+        },
+        {
+            "id": "22",
+            "type": "text",
+            "question": "Which metal is an Olympic gold medal mainly made of?",
+            "answerType": "text",
+            "answer": "silver"
+        },
+        {
+            "id": "23",
+            "type": "image",
+            "question": "What is he holding?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Betcha%20Didn't%20Know/questions/23.jpg",
+            "answerType": "text",
+            "answer": "The Olympic Flag"
+        },
+        {
+            "id": "24",
+            "type": "text",
+            "question": "\"Break dancing\" will be added to which Olympic Games?",
+            "answerType": "number",
+            "answer": "2024"
+        },
+        {
+            "id": "25",
+            "type": "image",
+            "question": "This symbol called The 5 .....",
+            "questionImageURL": "https://theolympics.b-cdn.net/Betcha%20Didn't%20Know/questions/25.jpg",
+            "answerType": "text",
+            "answer": "Olympic rings"
+        },
+        {
+            "id": "26",
+            "type": "text",
+            "question": "What does the 5 Olympic rings represent?",
+            "answerType": "text",
+            "answer": "The 5 continents"
+        },
+        {
+            "id": "27",
+            "type": "image",
+            "question": "The Olympics is named after which ancient Greek site, shown here?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Betcha%20Didn't%20Know/questions/27.jpg",
+            "answerType": "text",
+            "answer": "Olympia"
+        },
+        {
+            "id": "28",
+            "type": "text",
+            "question": "Which French city will host the 2024 Summer Olympics?",
+            "answerType": "text",
+            "answer": "Paris"
+        },
+        {
+            "id": "29",
+            "type": "image",
+            "question": "2016 was the first time the Olympics was hosted on this continent.",
+            "questionImageURL": "https://theolympics.b-cdn.net/Betcha%20Didn't%20Know/questions/29.png",
+            "answerType": "text",
+            "answer": "South America"
+        },
+        {
+            "id": "30",
+            "type": "text",
+            "question": "The Olympics was cancelled twice in a row due to the 1st and 2nd .....",
+            "answerType": "text",
+            "answer": "World War"
+        },
+        {
+            "id": "31",
+            "type": "image",
+            "question": "What is the name of this former Olympic sport?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Betcha%20Didn't%20Know/questions/31.jpg",
+            "answerType": "text",
+            "answer": "rope climbing"
+        },
+        {
+            "id": "32",
+            "type": "text",
+            "question": "George Eyser won 6 medals in which sport, although he only had one leg.",
+            "answerType": "text",
+            "answer": "gymnastics"
+        },
+        {
+            "id": "33",
+            "type": "image",
+            "question": "What is she holding?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Betcha%20Didn't%20Know/questions/33.jpg",
+            "answerType": "text",
+            "answer": "The Olympic Torch"
+        },
+        {
+            "id": "34",
+            "type": "text",
+            "question": "How many gold medals did Jesse Owens win at the 1936 Olympics?",
+            "answerType": "number",
+            "answer": "4"
+        },
+        {
+            "id": "35",
+            "type": "image",
+            "question": "These were the mascots at the Olympics in which country?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Betcha%20Didn't%20Know/questions/35.jpg",
+            "answerType": "text",
+            "answer": "Brazil"
+        },
+        {
+            "id": "36",
+            "type": "text",
+            "question": "What type of animal was the first Olympic mascot?",
+            "answerType": "text",
+            "answer": "a dog"
+        },
+        {
+            "id": "37",
+            "type": "image",
+            "question": "Which sport does Hend Zaza, shown here play?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Betcha%20Didn't%20Know/questions/37.jpg",
+            "answerType": "text",
+            "answer": "table tennis"
+        },
+        {
+            "id": "38",
+            "type": "text",
+            "question": "How many sports will there be at the 2020 Games?",
+            "answerType": "number",
+            "answer": "33"
+        },
+        {
+            "id": "39",
+            "type": "image",
+            "question": "This Olympic cauldron was used by which country?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Betcha%20Didn't%20Know/questions/39.jpg",
+            "answerType": "text",
+            "answer": "Brazil"
+        },
+        {
+            "id": "40",
+            "type": "text",
+            "question": "How many 42 venues will be used at the Games?",
+            "answerType": "number",
+            "answer": "42"
+        },
+       
+        {
+            "id": "42",
+            "type": "text",
+            "question": "How many times did countries boycott the Olympics?",
+            "answerType": "number",
+            "answer": "6"
+        },
+        {
+            "id": "43",
+            "type": "image",
+            "question": "At the 1960 Olympic Games, this runner won a marathon barefooted.",
+            "questionImageURL": "https://theolympics.b-cdn.net/Betcha%20Didn't%20Know/questions/43.png",
+            "answerType": "text",
+            "answer": "Abebe Bikila"
+        },
+        {
+            "id": "44",
+            "type": "text",
+            "question": "\"Swifter, Higher, Stronger\" is the ...... of the Olympics.",
+            "answerType": "text",
+            "answer": " motto"
+        },
+        {
+            "id": "46",
+            "type": "text",
+            "question": "What do the top eight finishers in Olympic events get?",
+            "answerType": "text",
+            "answer": "Olympic diploma"
+        },
+        {
+            "id": "47",
+            "type": "image",
+            "question": "Who is this track star?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Betcha%20Didn't%20Know/questions/47.jpg",
+            "answerType": "text",
+            "answer": "Jesse Owens"
+        }
+    ]
+        },
+        {
+            "id": "record_breakers",
+            "sequence": "4",
+            "title": "Record Breakers",
+            "not_chosen_icon": "https://theolympics.b-cdn.net/Record%20Breakers/icons/catagory_icon_not_chosen_record_breakers.svg",
+            "chosen_icon": "https://theolympics.b-cdn.net/Record%20Breakers/icons/catagory_icon_chosen_record_breakers.svg",
+            "question_answered_icon": "https://theolympics.b-cdn.net/Record%20Breakers/icons/answerd_question_record_breakers.svg",
+            "background": "https://theolympics.b-cdn.net/Record%20Breakers/background/record_breakers_background.png",
+            "questions":  [
+        {
+            "id": "1",
+            "type": "text",
+            "question": "Which country has the most gold medals in men's soccer?",
+            "answerType": "text",
+            "answer": "Brazil"
+        },
+        {
+            "id": "2",
+            "type": "image",
+            "question": "The team shown here represents which country?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Record%20Breakers/questions/2.jpg",
+            "answerType": "text",
+            "answer": "Brazil"
+        },
+        {
+            "id": "3",
+            "type": "image",
+            "question": "Who is this world record holder in the men's 200m sprint?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Record%20Breakers/questions/3.png",
+            "answerType": "text",
+            "answer": "Usain Bolt"
+        },
+        {
+            "id": "4",
+            "type": "text",
+            "question": "Who is currently the fastest man in the world?",
+            "answerType": "text",
+            "answer": "Usain Bolt"
+        },
+        {
+            "id": "6",
+            "type": "image",
+            "question": "Yelena Isinbayeva has the world record in which sport?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Record%20Breakers/questions/6.png",
+            "answerType": "text",
+            "answer": "pole vault"
+        },
+        {
+            "id": "7",
+            "type": "text",
+            "question": "Which country does Allyson Felix represent?",
+            "answerType": "text",
+            "answer": "USA"
+        },
+        {
+            "id": "8",
+            "type": "image",
+            "question": "Who is this long-distance runner?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Record%20Breakers/questions/8.jpg",
+            "answerType": "text",
+            "answer": "Mo Farah"
+        },
+        {
+            "id": "9",
+            "type": "image",
+            "question": "What object is he throwing?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Record%20Breakers/questions/9.jpg",
+            "answerType": "text",
+            "answer": " javelin"
+        },
+        {
+            "id": "10",
+            "type": "text",
+            "question": "What country does Michael Phelps represent?",
+            "answerType": "text",
+            "answer": "USA"
+        },
+        {
+            "id": "11",
+            "type": "image",
+            "question": "Who is this swimmer? He has the most Olympic medals ever.",
+            "questionImageURL": "https://theolympics.b-cdn.net/Record%20Breakers/questions/11.jpg",
+            "answerType": "text",
+            "answer": "Michael Phelps"
+        },
+        {
+            "id": "12",
+            "type": "text",
+            "question": "In which year did Usain Bolt first win 3 races at the Olympics?",
+            "answerType": "number",
+            "answer": "2008"
+        },
+        {
+            "id": "13",
+            "type": "image",
+            "question": "This woman has the most Olympic medals in tennis; who is she?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Record%20Breakers/questions/13.jpg",
+            "answerType": "text",
+            "answer": "Venus Williams"
+        },
+        {
+            "id": "15",
+            "type": "image",
+            "question": "This man has 2 Olympic gold medals; who is he?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Record%20Breakers/questions/15.jpg",
+            "answerType": "text",
+            "answer": "Michael Jordan"
+        },
+        {
+            "id": "16",
+            "type": "text",
+            "question": "Which country has the longest winning streak in Olympic basketball?",
+            "answerType": "text",
+            "answer": " USA"
+        },
+        {
+            "id": "17",
+            "type": "image",
+            "question": "The USA scored a record 156 points in the sport shown here:",
+            "questionImageURL": "https://theolympics.b-cdn.net/Record%20Breakers/questions/17.jpg",
+            "answerType": "text",
+            "answer": "basketball"
+        },
+        {
+            "id": "18",
+            "type": "text",
+            "question": "Johnathon Edwards was the first to jump further than 60 feet in which event?",
+            "answerType": "text",
+            "answer": "triple jump"
+        },
+        {
+            "id": "19",
+            "type": "image",
+            "question": "He has 8 Olympic gold medals; who is he?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Record%20Breakers/questions/19.jpg",
+            "answerType": "text",
+            "answer": "Usain Bolt"
+        },
+        {
+            "id": "20",
+            "type": "text",
+            "question": "Javier Sotomayor is the only athlete to jump higher than 8 feet in which sport?",
+            "answerType": "text",
+            "answer": "high jump"
+        },
+        {
+            "id": "21",
+            "type": "image",
+            "question": "Ian Millar competed in 10 Olympics, in which sport shown below?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Record%20Breakers/questions/21.jpg",
+            "answerType": "text",
+            "answer": "Equestrian"
+        },
+        {
+            "id": "22",
+            "type": "text",
+            "question": "Which team holds the record in all men's swimming relay races?",
+            "answerType": "text",
+            "answer": "USA"
+        },
+        {
+            "id": "23",
+            "type": "image",
+            "question": "He has 2 Olympic gold medals; who is he?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Record%20Breakers/questions/23.jpg",
+            "answerType": "text",
+            "answer": "Rafael Nadal"
+        },
+        {
+            "id": "24",
+            "type": "text",
+            "question": "Which country is the runner Kenenisa Bekele from?",
+            "answerType": "text",
+            "answer": "Ethiopia"
+        },
+        {
+            "id": "25",
+            "type": "image",
+            "question": "Twice in a row, Greg Louganis won all events in which sport shown here?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Record%20Breakers/questions/25.png",
+            "answerType": "text",
+            "answer": "diving"
+        },
+        {
+            "id": "26",
+            "type": "text",
+            "question": "Which country is runner David Rudisha from?",
+            "answerType": "text",
+            "answer": "Kenya"
+        },
+        {
+            "id": "27",
+            "type": "image",
+            "question": "Birgit Fischer won 8 gold medals in which sport shown below?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Record%20Breakers/questions/27.jpg",
+            "answerType": "text",
+            "answer": "kayaking"
+        },
+        {
+            "id": "28",
+            "type": "text",
+            "question": "Which country has the most medals in water polo?",
+            "answerType": "text",
+            "answer": "Hungary"
+        },
+        {
+            "id": "29",
+            "type": "image",
+            "question": "Sergey Bubka was the first athlete to clear 6 feet in which sport?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Record%20Breakers/questions/29.png",
+            "answerType": "text",
+            "answer": "pole vault"
+        },
+        {
+            "id": "30",
+            "type": "text",
+            "question": "Marie-José Pérec has the Olympic record in which track race?",
+            "answerType": "text",
+            "answer": "400 m"
+        },
+        {
+            "id": "31",
+            "type": "image",
+            "question": "Who is this world record holder in the 100m sprint?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Record%20Breakers/questions/31.png",
+            "answerType": "text",
+            "answer": "Florence Griffith"
+        },
+        {
+            "id": "32",
+            "type": "text",
+            "question": "How many Olympic gold medals does Michael Phelps have?",
+            "answerType": "number",
+            "answer": "23"
+        },
+        {
+            "id": "33",
+            "type": "image",
+            "question": "Who is this world record holder in the heptathlon and long jump?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Record%20Breakers/questions/33.png",
+            "answerType": "text",
+            "answer": "Jackie Joyner"
+        },
+        {
+            "id": "34",
+            "type": "text",
+            "question": "Which country has the most medals in men's tennis?",
+            "answerType": "text",
+            "answer": "Great Britain"
+        },
+        {
+            "id": "35",
+            "type": "image",
+            "question": "Who had the world record in the 200m before Usain Bolt broke it?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Record%20Breakers/questions/35.jpg",
+            "answerType": "text",
+            "answer": "Michael Johnson"
+        },
+        {
+            "id": "36",
+            "type": "text",
+            "question": "How old was Katie Ledecky when she won gold in the 2012 Olympics?",
+            "answerType": "number",
+            "answer": "15"
+        },
+        {
+            "id": "37",
+            "type": "image",
+            "question": "This swimmer set 3 world records at the 2000 Olympics; who is he?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Record%20Breakers/questions/37.jpg",
+            "answerType": "text",
+            "answer": "Ian Thorpe"
+        },
+        {
+            "id": "38",
+            "type": "text",
+            "question": "Of a total of 100 medals given out for table tennis, how many has China won?",
+            "answerType": "number",
+            "answer": "53"
+        },
+        {
+            "id": "39",
+            "type": "image",
+            "question": "This athlete won gold medals at 4 Olympics in a row; who is he?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Record%20Breakers/questions/39.jpg",
+            "answerType": "text",
+            "answer": "Carl Lewis"
+        },
+        {
+            "id": "40",
+            "type": "text",
+            "question": "Brazilian Oscar Schmidt has the most points (1093) in which sport?",
+            "answerType": "text",
+            "answer": "basketball"
+        },
+        {
+            "id": "41",
+            "type": "image",
+            "question": "This swimmer set 7 world records at one Olympics; who is he?",
+            "questionImageURL": "https://theolympics.b-cdn.net/Record%20Breakers/questions/41.jpg",
+            "answerType": "text",
+            "answer": "Mark Spitz"
+        },
+        {
+            "id": "42",
+            "type": "text",
+            "question": "Which team has the Olympic record in the men's cycling sprint?",
+            "answerType": "text",
+            "answer": "Great Britain"
+        },
+        {
+            "id": "43",
+            "type": "image",
+            "question": "Name this man who set the Olympic record in the long jump.",
+            "questionImageURL": "https://theolympics.b-cdn.net/Record%20Breakers/questions/43.png",
+            "answerType": "text",
+            "answer": "Bob Beamon"
+        }
+       
+        
+    ]
+        },
+        {
+            "id": "2021_olympics",
+            "sequence": "5",
+            "title": "2021 Olympics",
+            "not_chosen_icon": "https://theolympics.b-cdn.net/2021%20olympics/icons/catagory_icon_not_chosen_olympics_2021.svg",
+            "chosen_icon": "https://theolympics.b-cdn.net/2021%20olympics/icons/catagory_icon_chosen_2021_olympics.svg",
+            "question_answered_icon": "https://theolympics.b-cdn.net/2021%20olympics/icons/answerd_question_2021_olympics.svg",
+            "background": "https://theolympics.b-cdn.net/2021%20olympics/background/2021_olympics_background.png",
+            "questions":  [
+        {
+                
+            "id": "1",
+            "type": "text",
+            "question": "In which month will the Tokyo Summer Olympics begin?",
+            "answerType": "text",
+            "answer": "July"
+        },
+        {
+            "id": "2",
+            "type": "image",
+            "question": "Name this sport, which was added to the 2020 Olympics.",
+            "questionImageURL": "https://theolympics.b-cdn.net/2021%20Olympics/questions/2.jpg",
+            "answerType": "text",
+            "answer": "Surfing"
+        },
+        {
+            "id": "3",
+            "type": "text",
+            "question": "How many days will the Tokyo 2020 Olympics go on for?",
+            "answerType": "number",
+            "answer": "16"
+        },
+        {
+            "id": "4",
+            "type": "image",
+            "question": "Which sport is this?",
+            "questionImageURL": "https://theolympics.b-cdn.net/2021%20Olympics/questions/4.jpg",
+            "answerType": "text",
+            "answer": "karate"
+        },
+        {
+            "id": "5",
+            "type": "text",
+            "question": "What is the capital city of Japan?",
+            "answerType": "text",
+            "answer": "Tokyo"
+        },
+        {
+            "id": "7",
+            "type": "text",
+            "question": "The colors of the Olympic rings are red, blue, green, yellow and what?",
+            "answerType": "text",
+            "answer": "black"
+        },
+        {
+            "id": "8",
+            "type": "image",
+            "question": "Name this sport, which will be played at the 2020 Games.",
+            "questionImageURL": "https://theolympics.b-cdn.net/2021%20Olympics/questions/8.jpg",
+            "answerType": "text",
+            "answer": "baseball"
+        },
+        {
+            "id": "9",
+            "type": "text",
+            "question": "Fans from outside of Japan will not be allowed at the Games because of which disease?",
+            "answerType": "text",
+            "answer": "corona virus "
+        },
+        {
+            "id": "10",
+            "type": "image",
+            "question": "In 2008, Japan won gold in this sport shown here.",
+            "questionImageURL": "https://theolympics.b-cdn.net/2021%20Olympics/questions/10.jpg",
+            "answerType": "text",
+            "answer": "softball"
+        },
+        {
+            "id": "11",
+            "type": "text",
+            "question": "What is Japan's national sport?",
+            "answerType": "text",
+            "answer": "Sumo"
+        },
+        {
+            "id": "12",
+            "type": "image",
+            "question": "Which sport shown here, was played at the Olympics after more than 100 years?",
+            "questionImageURL": "https://theolympics.b-cdn.net/2021%20Olympics/questions/12.jpg",
+            "answerType": "text",
+            "answer": "golf"
+        },
+        {
+            "id": "13",
+            "type": "text",
+            "question": "How many days will the Tokyo 2020 Paralympics run for?",
+            "answerType": "number",
+            "answer": "12"
+        },
+        {
+            "id": "14",
+            "type": "image",
+            "question": "Name the sport shown in the picture.",
+            "questionImageURL": "https://theolympics.b-cdn.net/2021%20Olympics/questions/14.jpg",
+            "answerType": "text",
+            "answer": "water polo"
+        },
+        {
+            "id": "15",
+            "type": "text",
+            "question": "In what year will the next Summer Olympics take place?",
+            "answerType": "number",
+            "answer": "2024"
+        },
+        {
+            "id": "16",
+            "type": "image",
+            "question": "Who is Japan's Prime Minister dressed up as here?",
+            "questionImageURL": "https://theolympics.b-cdn.net/2021%20Olympics/questions/16.jpg",
+            "answerType": "text",
+            "answer": "Super Mario"
+        },
+        {
+            "id": "17",
+            "type": "text",
+            "question": "What is the period of 4 years between each Olympic Games called?",
+            "answerType": "text",
+            "answer": "Olympiad"
+        },
+        {
+            "id": "18",
+            "type": "image",
+            "question": "What is this sport, which was added to the Tokyo Paralympics?",
+            "questionImageURL": "https://theolympics.b-cdn.net/2021%20Olympics/questions/18.jpg",
+            "answerType": "text",
+            "answer": "Badminton"
+        },
+        {
+            "id": "19",
+            "type": "text",
+            "question": "How many times has Japan hosted the Summer Olympics?",
+            "answerType": "number",
+            "answer": "1"
+        },
+        {
+            "id": "20",
+            "type": "image",
+            "question": "This athlete will not be competing at the 2020 Olympics; who is he?",
+            "questionImageURL": "https://theolympics.b-cdn.net/2021%20Olympics/questions/20.jpg",
+            "answerType": "text",
+            "answer": "Usain Bolt"
+        },
+        {
+            "id": "21",
+            "type": "text",
+            "question": "How many Summer Olympics Games were cancelled?",
+            "answerType": "number",
+            "answer": "3"
+        },
+        {
+            "id": "22",
+            "type": "image",
+            "question": "The 3 vs 3 version of which sport was added to the 2020 Olympics?",
+            "questionImageURL": "https://theolympics.b-cdn.net/2021%20Olympics/questions/22.jpg",
+            "answerType": "text",
+            "answer": "basketball"
+        },
+        {
+            "id": "23",
+            "type": "text",
+            "question": "What is the most common type of transportation in Tokyo?",
+            "answerType": "text",
+            "answer": "train"
+        },
+        {
+            "id": "24",
+            "type": "image",
+            "question": "Which sport does this Japanese team play?",
+            "questionImageURL": "https://theolympics.b-cdn.net/2021%20Olympics/questions/24.jpg",
+            "answerType": "text",
+            "answer": "football"
+        },
+        {
+            "id": "25",
+            "type": "text",
+            "question": "Which sport will be held at the Fuji International Speedway?",
+            "answerType": "text",
+            "answer": "cycling"
+        },
+        {
+            "id": "26",
+            "type": "image",
+            "question": "Who is this? She will compete at the 2020 Olympics.",
+            "questionImageURL": "https://theolympics.b-cdn.net/2021%20Olympics/questions/26.jpg",
+            "answerType": "text",
+            "answer": "Naomi Osaka"
+        },
+        {
+            "id": "27",
+            "type": "text",
+            "question": "Which flower is the Tokyo 2020 Olympic torch designed after?",
+            "answerType": "text",
+            "answer": "cherry blossom"
+        },
+        {
+            "id": "28",
+            "type": "image",
+            "question": "This represents the 2020 Olympics; what is it called?",
+            "questionImageURL": "https://theolympics.b-cdn.net/2021%20Olympics/questions/28.jpg",
+            "answerType": "text",
+            "answer": "a mascot"
+        },
+        {
+            "id": "29",
+            "type": "text",
+            "question": "In which year was the Japan National Stadium was completed?",
+            "answerType": "number",
+            "answer": "2019"
+        },
+        {
+            "id": "30",
+            "type": "image",
+            "question": "This sport was added to the Olympics; what is it called?",
+            "questionImageURL": "https://theolympics.b-cdn.net/2021%20Olympics/questions/30.jpg",
+            "answerType": "text",
+            "answer": "sport climbing"
+        },
+        {
+            "id": "31",
+            "type": "text",
+            "question": "Japan has the most Olympic medals in which sport?",
+            "answerType": "text",
+            "answer": "Judo"
+        },
+        {
+            "id": "32",
+            "type": "image",
+            "question": "What do these Olympic robots do?",
+            "questionImageURL": "https://theolympics.b-cdn.net/2021%20Olympics/questions/32.jpg",
+            "answerType": "text",
+            "answer": "greet people"
+        },
+        {
+            "id": "33",
+            "type": "text",
+            "question": "How many Winter Olympics did Japan host?",
+            "answerType": "number",
+            "answer": "2"
+        },
+        {
+            "id": "34",
+            "type": "image",
+            "question": "What is the name of this Paralympic sport?",
+            "questionImageURL": "https://theolympics.b-cdn.net/2021%20Olympics/questions/34.jpg",
+            "answerType": "text",
+            "answer": "wheelchair fencing"
+        },
+        {
+            "id": "35",
+            "type": "text",
+            "question": "How many Summer Olympic Games were held before 2020?",
+            "answerType": "number",
+            "answer": "28"
+        },
+        {
+            "id": "36",
+            "type": "image",
+            "question": "Which sport shown here?",
+            "questionImageURL": "https://theolympics.b-cdn.net/2021%20Olympics/questions/36.jpg",
+            "answerType": "text",
+            "answer": "taekwondo "
+        },
+        {
+            "id": "37",
+            "type": "text",
+            "question": "Which Japanese women's team started the torch relay?",
+            "answerType": "text",
+            "answer": "football"
+        },
+        {
+            "id": "38",
+            "type": "image",
+            "question": "What is the name of this Paralympics mascot?",
+            "questionImageURL": "https://theolympics.b-cdn.net/2021%20Olympics/questions/38.jpg",
+            "answerType": "text",
+            "answer": "Someity"
+        },
+        {
+            "id": "39",
+            "type": "text",
+            "question": "How many medals will be given out at Tokyo 2020?",
+            "answerType": "number",
+            "answer": "5000"
+        }
+    ]
+        }
+    ]
+    
+}

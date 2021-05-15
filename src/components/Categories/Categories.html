@@ -1,0 +1,18 @@
+<div class="main-div">
+    <div>
+        <Header :title="headerTitle" :showBackButton="showHeaderBackButton"/>
+        <div class="category-main-div">
+            <img :src="backgroundImage"/>
+            <div class="central-div">
+                <div>{{categoryName}}</div>
+                <img :src="categoryImage">
+                <div class="questionsCount">{{completedQuestionsCount}}/{{totalQuestionsCount}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="button-div">
+        <div class="button-inner-div">
+            <BottomButton button-label="Next"/>
+        </div>
+    </div>
+</div>

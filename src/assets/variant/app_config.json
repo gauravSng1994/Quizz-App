@@ -1,0 +1,68 @@
+{
+    "variant": {
+        "apiBaseURL": "https://cors-anywhere.herokuapp.com/https://quiztest.b-cdn.net/",
+        "variantName": "friends",
+        "jsonVersion": 2,
+        "storeUrlAndroid": "https://play.google.com/store/apps/details?id=il.bitoraz.quiz",
+        "storeUrlIOS": "https://apps.apple.com/us/app/bitoraz-quiz-test/id1555083656",
+        "appName": "Bitoraz Quiz TEST",
+        "applicationId": "il.bitoraz.quiz",
+        "bundleId":"il.bitoraz.quiz"
+    },
+    "theme": {
+        "categoryPageDialogHeader":{
+            "color": "0xFFffffff"
+        },
+        "categoryPageFinished":{
+            "color": "0xFF00ffff"
+        },
+        "categoryPageProgress":{
+            "color": "0xFFffffff"
+        },
+        "genericBody":{
+            "color": "0xFFffffff"
+        },
+        "genericButtonLabel":{
+            "color": "0xFFffffff"
+        },
+        "genericDialogTitle":{
+            "color": "0xFFffffff"
+        },
+        "genericLoadingText":{
+            "color": "0xFF00ffff"
+        },
+        "genericNavTitle":{
+            "color": "0xFF00ffff"
+        },
+        "letterBoxCorrect":{
+            "color": "0xFF00ffff"
+        },
+        "letterBoxNeutral":{
+            "color": "0xFFffffff"
+        },
+        "letterBoxWrong":{
+            "color": "0xFFc1272d"
+        },
+        "questionPageFinished":{
+            "color": "0xFF00ffff"
+        },
+        "questionPageMainQuestion":{
+            "color": "0xFFffffff"
+        },
+        "questionPageSuccess":{
+            "color": "0xFF00ffff"
+        },
+        "questionPageSubtitle":{
+            "color": "0xFFffffff"
+        },
+        "startPageCategoryProgress":{
+            "color": "0xFF00ffff"
+        },
+        "startPageCategoryTitle":{
+            "color": "0xFFffffff"
+        },
+        "startPageError":{
+            "color": "0xFFc1272d"
+        }
+    }
+}
