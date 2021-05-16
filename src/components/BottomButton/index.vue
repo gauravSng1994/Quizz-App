@@ -1,5 +1,5 @@
 <template>
-  <div class="bottom-btn-div">
+  <div class="bottom-btn-div" @click="clickHandler">
     <div class="bottom-btn-middle-div">
       <button>
         {{buttonLabel}}

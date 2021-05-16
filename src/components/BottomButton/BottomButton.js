@@ -1,6 +1,9 @@
 export default {
     name:"BottomButton",
-    props: [
-        'buttonLabel'
-    ]
+    props: ['buttonLabel'],
+    methods:{
+        clickHandler:function (){
+            this.$emit('click');
+        }
+    }
 };

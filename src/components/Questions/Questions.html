@@ -5,9 +5,11 @@
             <img :src="backgroundImage"/>
             <div class="central-div">
                 <div class="questionsCount">{{completedQuestionsCount}}/{{totalQuestionsCount}}</div>
-                <img v-for="question in 10" :src="questionAnsweredIcon"/>
-                <img v-for="question in 10" :src="choosenIcon"/>
-                <img v-for="question in 10" :src="notChoosenIcon"/>
+                <div class="questionList">
+                    <img v-for="question in 15" :src="questionAnsweredIcon"/>
+                    <img v-for="question in 15" :src="choosenIcon"/>
+                    <img v-for="question in 15" :src="notChoosenIcon"/>
+                </div>
             </div>
         </div>
     </div>

@@ -6,12 +6,12 @@
             <div class="central-div">
                 <div class="questionImgDiv">
                     <img v-if="questionType === 'image'" :src="questionImage">
+                    <div v-else class="textQuestion">{{questionTitle}}</div>
                 </div>
-                <div class="questionsCount">{{questionTitle}}</div>
+                <div v-if="questionType === 'image'" class="questionsCount">{{questionTitle}}</div>
                 <div class="answerBox">
                     <span class="answerBlock" v-for="blockIndex in (letterBlock||[]).length">
                         <LetterBox v-for='index in letterBlock[blockIndex-1]' :letter="typedAnswer[blockIndex-1][index-1]"/>
-                        <!-- <LetterBox v-for='index in letterBlock[blockIndex-1]' :letter="blockIndex+'-'+index"/> -->
                     </span>
                 </div>
             </div>
@@ -19,12 +19,13 @@
     </div>
     <div class="button-div">
         <div class="button-inner-div">
-            <BottomButton :button-label="BottomButtonLabel"/>
+            <BottomButton :button-label="BottomButtonLabel" @click="clearAnswer"/>
+        </div>
+        <div class="optionBox">
+            <LetterBox v-for='letter in shuffledAnswer' @click="typeAnswer" :letter="letter"/>
         </div>
     </div>
-    <div class="optionBox">
-        <LetterBox v-for='letter in shuffledAnswer' @click="typeAnswer" :letter="letter"/>
-    </div>
+
     <!-- <style>
         :root {
           --image-color: {{ accentColor }};

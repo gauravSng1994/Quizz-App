@@ -1,5 +1,5 @@
 <template>
-    <div class="letterBox">
+    <div class="letterBox" @click="clickHandler">
         <img src="../../assets/variant/letterbox_background.svg"/>
         <div class="text">
             {{letter}}
@@ -7,27 +7,25 @@
     </div>
 </template>
 <script>
-// import { defineComponent } from '@vue/composition-api'
 
-// export default defineComponent({
-//     setup() {
-        
-//     },
-// })
 export default {
-    name:"LetterBox",
-    props: ['letter'],
+  name:"LetterBox",
+  props: ['letter'],
+  methods:{
+    clickHandler : function () {
+      this.$emit('click',this.letter);
+    }
+  }
 }
 </script>
 
 <style scoped>
 .letterBox{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     position: relative;
     display: inline-block;
     margin: 0 1px;
-    /* background-image: url('../../assets/variant/letterbox_background.svg'); */
     border: 1px solid transparent;
     border-image: url('../../assets/variant/letterbox_border_neutral.svg');
 }
@@ -38,8 +36,8 @@ export default {
 }
 .letterBox > .text{
     position: absolute;
-    left: 12px;
-    top:10px;
+    left: 10px;
+    top: 4px;
     color:white;
 }
 </style>

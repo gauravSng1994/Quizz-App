@@ -12,17 +12,22 @@
     height: 100%;
 }
 .main-div{
+    overflow: hidden;
     position: relative;
     text-align: center;
 }
 .button-div{
     position:absolute;
-    /* left: 120px; */
-    bottom: 30px;
+    left: 1%;
     text-align: center;
+    bottom: 2%;
 }
 .button-inner-div{
-    margin-left: auto;
+    width: 50%;
+    margin: auto;
+}
+.button-div > .optionBox{
+    margin: 5% 0;
 }
 .central-div{
     position: absolute;
@@ -30,22 +35,30 @@
     color:white
 }
 .central-div > .questionImgDiv{
-    border: 6px solid transparent;
-    border-image:url('../../assets/variant/dialog_border.svg') 5 stretch;
-    /* border-image-source:url('../../assets/variant/dialog_border.svg'); */
-    /* border-image-slice:0; */
-    /* border-image-width: 20px; */
-    /* border-image-outset: */
-    /* border-image-repeat:stretch; */
-    /* border-image:  0 20px round; */
+    text-align: center;
+    /*border: 6px solid transparent;*/
+    /*border-image:url('../../assets/variant/dialog_border.svg') 5 stretch;*/
 }
 .central-div > .questionImgDiv > img{
-    width: 100%;
+    width: 95%;
+    border: 6px solid transparent;
+    border-image:url('../../assets/variant/dialog_border.svg') 5 stretch;
+}
+.textQuestion{
+    font-size: 20px;
+    padding: 3%;
+    width: 95%;
+    margin: auto;
+    border: 6px solid transparent;
+    border-image:url('../../assets/variant/dialog_border.svg') 2 stretch;
 }
 .questionsCount{
     color:aqua;
     margin: 10px 0;
 }
+.answerBox{
+    margin: 2% 3%;
+}
 .answerBlock{
-    margin: 0 20px;
+    margin: 2% 5%;
 }
