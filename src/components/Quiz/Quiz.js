@@ -28,6 +28,8 @@ export default {
             typedAnswer:{},
             quizOver:false,
             isAnswerCorrect:false,
+            quizId:'',
+            questionId:'',
         };
     },
     // "id": "you_go_girl",
@@ -48,11 +50,13 @@ export default {
     //     },
     mounted(){
         // console.log('This.router',this.$router);
-        const questionId = this.$router.currentRoute.params.qid;
-        const quizId = this.$router.currentRoute.params.quizId;
-        // console.log('QuizId',quizId,typeof quizId);
-        this.categoryData = data.categories.find( category => category.id === questionId );
-        this.questionData = this.categoryData.questions.find( q => q.id === quizId);
+        this.questionId = this.$router.currentRoute.params.qid;
+        this.quizId = this.$router.currentRoute.params.quizId;
+        this.quizOver=false;
+        this.isAnswerCorrect=false;
+        console.log('QuizId',this.questionId, this.quizId);
+        this.categoryData = data.categories.find( category => category.id === this.questionId );
+        this.questionData = this.categoryData.questions.find( q => q.id === this.quizId);
         // console.log('categoryData',this.categoryData);
         // console.log('questionData',this.questionData);
         let {title,background,questions} = this.categoryData || {};
@@ -60,7 +64,7 @@ export default {
         this.headerTitle = title;
         this.totalQuestionsCount = questions.length;
 
-        let {question, type, questionImageURL,answer, answerType} = this.questionData;
+        let {question, type, questionImageURL,answer, answerType} = this.questionData||{};
         this.questionTitle = question;
         this.questionType = type;
         this.answerType = answerType;
@@ -95,12 +99,19 @@ export default {
                 }
             }
         },
-        clearAnswer:function (){
-            this.typedAnswer = this.letterBlock.reduce( (acc,count,index)=>{
-                acc[index] = [];
-                return acc;
-            },{});
-            this.currentLetterBlock = 0;
+        clearAnswer: async function (){
+            if(this.quizOver){
+                // todo move to next quiz
+                await this.$router.push({ name: 'Quiz', params: { qId:this.questionId, quizId:Number(this.quizId)+1 } });
+                // this.$router.push(`/quiz/${this.questionId}/${Number(this.quizId)+1}`);
+                console.log('quiz over');
+            }else {
+                this.typedAnswer = this.letterBlock.reduce( (acc,count,index)=>{
+                    acc[index] = [];
+                    return acc;
+                },{});
+                this.currentLetterBlock = 0;
+            }
         }
     },
     computed: {
