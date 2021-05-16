@@ -18,10 +18,13 @@
         </div>
     </div>
     <div class="button-div">
+        <h3 v-if="quizOver" class="gameOverText">
+            {{gameOverText}}
+        </h3>
         <div class="button-inner-div">
             <BottomButton :button-label="BottomButtonLabel" @click="clearAnswer"/>
         </div>
-        <div class="optionBox">
+        <div class="optionBox" v-if="!quizOver">
             <LetterBox v-for='letter in shuffledAnswer' @click="typeAnswer" :letter="letter"/>
         </div>
     </div>

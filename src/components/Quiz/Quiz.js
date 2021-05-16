@@ -17,7 +17,7 @@ export default {
             showHeaderBackButton:false,
             backgroundImage:"",
             categoryImage:'',
-            BottomButtonLabel:"Clear",
+            // BottomButtonLabel:"Clear",
             questionTitle : '',
             questionType : '',
             answerType : '',
@@ -25,7 +25,9 @@ export default {
             questionImage : '',
             letterBlock:[],
             currentLetterBlock:0,
-            typedAnswer:{}
+            typedAnswer:{},
+            quizOver:false,
+            isAnswerCorrect:false,
         };
     },
     // "id": "you_go_girl",
@@ -72,19 +74,33 @@ export default {
     },
     methods: {
         typeAnswer(char){
-            if(this.currentLetterBlock === this.letterBlock.length) return console.log('No more entries allowed');
+            if(this.currentLetterBlock >= this.letterBlock.length) {
+                return console.log('No more entries allowed',this.typedAnswer);
+            }
             let newArr = [...this.typedAnswer[this.currentLetterBlock],char]
             this.typedAnswer = {
                 ...this.typedAnswer,
                 [this.currentLetterBlock] : newArr
             }
-            if(this.typedAnswer[this.currentLetterBlock].length >= this.letterBlock[this.currentLetterBlock]) this.currentLetterBlock +=1;
+            if(this.currentLetterBlock < this.letterBlock.length-1
+                && this.typedAnswer[this.currentLetterBlock].length >= this.letterBlock[this.currentLetterBlock]) this.currentLetterBlock +=1;
+            if(this.currentLetterBlock >= this.letterBlock.length-1){
+                let givenAnswer = Object.values(this.typedAnswer).map( el => el.join('')).join(' ');
+                // console.log('givenAnswer',givenAnswer,this.answer)
+                if(givenAnswer.length === this.answer.length){
+                    this.quizOver = true;
+                    this.isAnswerCorrect = this.answer.toLowerCase() === givenAnswer.toLowerCase();
+                    this.currentLetterBlock +=1
+                    // return console.log('No more entries allowed',this.answer, givenAnswer,this.isAnswerCorrect);
+                }
+            }
         },
         clearAnswer:function (){
             this.typedAnswer = this.letterBlock.reduce( (acc,count,index)=>{
                 acc[index] = [];
                 return acc;
             },{});
+            this.currentLetterBlock = 0;
         }
     },
     computed: {
@@ -102,10 +118,16 @@ export default {
             for(let i=0 ; i<n-1 ; ++i) {
                 let j = Math.floor(Math.random() * n);
                 let temp = arr[i];
-                arr[i] = arr[j];
+                arr[i] = arr[j].toLowerCase();
                 arr[j] = temp.toLowerCase();
             }
             return arr.join('');
+        },
+        BottomButtonLabel(){
+            return this.quizOver ? "Next" : "Clear";
+        },
+        gameOverText(){
+          return `Your guess is ${this.isAnswerCorrect ? "correct" : "wrong"}!`
         }
     },
 };
