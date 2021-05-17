@@ -102,8 +102,10 @@ export default {
         clearAnswer: async function (){
             if(this.quizOver){
                 // todo move to next quiz
-                await this.$router.push({ name: 'Quiz', params: { qId:this.questionId, quizId:Number(this.quizId)+1 } });
-                // this.$router.push(`/quiz/${this.questionId}/${Number(this.quizId)+1}`);
+                await this.$router.push({ name: 'Quiz', params: { qId:this.questionId, quizId:Number(this.quizId)+1 } }); 
+                //since we push the same page again, vue ignores it, this.$router.go() reloads the page and 0 means to go back 0 pages
+                this.$router.go(0)
+                
                 console.log('quiz over');
             }else {
                 this.typedAnswer = this.letterBlock.reduce( (acc,count,index)=>{
