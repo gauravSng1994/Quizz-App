@@ -4,11 +4,13 @@
     margin: auto;
     text-align: center;
     vertical-align: middle;
-    background: url('../../assets/variant/button_background1.png') no-repeat;
+    background-image: url('../../assets/variant/olympics/button_background.svg');
+    background-repeat: no-repeat;
+    background-position: 0px -17px;
     background-size: cover;
 }
 .bottom-btn-middle-div{
-    padding: 5% 0 0 10%;
+    padding: 3% 0 0 10%;
     text-align: center;
     color: white;
     font-size: 1em;

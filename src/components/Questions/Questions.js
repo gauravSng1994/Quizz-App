@@ -21,13 +21,15 @@ export default {
             choosenIcon:'',
             notChoosenIcon:'',
             questionData:{},
-            BottomButtonLabel:"Play"
+            BottomButtonLabel:"Play",
+            questionId:'',
         };
     },
     mounted(){
         console.log('This.router',this.$router);
-        const questionId = this.$router.currentRoute.params.qid;
-        this.questionData = data.categories.find( category => category.id === questionId );
+        this.questionId = this.$router.currentRoute.params.qid;
+        if(!this.questionId) alert('No question id found'); // todo handle it properly with modal alert
+        this.questionData = data.categories.find( category => category.id === this.questionId );
         console.log('questionData',this.questionData);
         let {chosen_icon, title, not_chosen_icon, question_answered_icon, questions, background} = this.questionData || {};
         this.backgroundImage = background;
@@ -38,6 +40,10 @@ export default {
         this.totalQuestionsCount = questions.length;
     },
     methods: {
+        goToQuiz:async function(quizId){
+            await this.$router.push({ name: 'Quiz', params: { qId:this.questionId, quizId:Number(quizId) } });
+            // this.$router.push('/quiz')
+        }
     },
     computed: {
 

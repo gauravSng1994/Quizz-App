@@ -6,7 +6,7 @@
             <div class="central-div">
                 <div class="questionsCount">{{completedQuestionsCount}}/{{totalQuestionsCount}}</div>
                 <div class="questionList">
-                    <img v-for="question in 15" :src="questionAnsweredIcon"/>
+                    <img v-for="question in 15" :src="questionAnsweredIcon" @click="()=>goToQuiz(1)"/>
                     <img v-for="question in 15" :src="choosenIcon"/>
                     <img v-for="question in 15" :src="notChoosenIcon"/>
                 </div>

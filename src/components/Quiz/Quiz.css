@@ -1,5 +1,5 @@
 #bottom-btn{
-    background: url('../../assets/variant/button_background.svg')
+    background: url('../../assets/variant/olympics/button_background.svg')
     no-repeat center center fixed !important;
     background-size: cover;
 }
@@ -25,7 +25,8 @@
     bottom: 2%;
 }
 .button-inner-div{
-    width: 50%;
+    width: 100%;
+    /*width: 50%;*/
     margin: auto;
 }
 .button-div > .optionBox{
@@ -44,7 +45,7 @@
 .central-div > .questionImgDiv > img{
     width: 95%;
     border: 6px solid transparent;
-    border-image:url('../../assets/variant/dialog_border.svg') 5 stretch;
+    border-image:url('../../assets/variant/olympics/dialog_border.svg') 5 stretch;
 }
 .textQuestion{
     font-size: 20px;
@@ -52,7 +53,7 @@
     width: 95%;
     margin: auto;
     border: 6px solid transparent;
-    border-image:url('../../assets/variant/dialog_border.svg') 2 stretch;
+    border-image:url('../../assets/variant/olympics/dialog_border.svg') 2 stretch;
 }
 .questionsCount{
     color:aqua;

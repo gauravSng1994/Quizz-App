@@ -1,5 +1,5 @@
 .header-main-div{
-    background: url("../../assets/variant/title_background.svg") no-repeat;
+    background: url("../../assets/variant/olympics/title_background.svg") no-repeat;
     background-size: cover;
     width: 100%;
     height: 42px;
@@ -22,7 +22,7 @@
     /*float: left;*/
 }
 .header-divider{
-    background: url("../../assets/variant/divider_background.svg") no-repeat;
+    background: url("../../assets/variant/olympics/divider_background.svg") no-repeat;
     background-size: cover;
     height: 5px;
     text-align: center;

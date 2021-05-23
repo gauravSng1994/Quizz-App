@@ -33,7 +33,7 @@ export default {
     //   "chosen_icon": "https://thekardashians.b-cdn.net/the_family/icons/catagory_icon_chosen_the_family.svg",
     //   "question_answered_icon": "https://thekardashians.b-cdn.net/the_family/icons/answered_question_the_family.svg",
     //   "background": "https://thekardashians.b-cdn.net/the_family/background/the_family_background.png",
-      
+
         // this.backgroundImage = sortedCategories[0].background;
         this.backgroundImage = GirlImage;
         this.categoryName = sortedCategories[0].title;
@@ -42,6 +42,9 @@ export default {
         // this.backgroundImage = "https://www.imagediamond.com/blog/wp-content/uploads/2020/06/cartoon-boy-images-3-scaled.jpg";
     },
     methods: {
+        bottomBtnClick : function (){
+            console.log('HELLO!!! Please implement me.');
+        }
     },
     computed: {
 

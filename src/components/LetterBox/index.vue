@@ -1,6 +1,6 @@
 <template>
     <div class="letterBox" @click="clickHandler">
-        <img src="../../assets/variant/letterbox_background.svg"/>
+        <img src="../../assets/variant/olympics/letterbox_background.svg"/>
         <div class="text">
             {{letter}}
         </div>
@@ -27,7 +27,7 @@ export default {
     display: inline-block;
     margin: 0 1px;
     border: 1px solid transparent;
-    border-image: url('../../assets/variant/letterbox_border_neutral.svg');
+    border-image: url('../../assets/variant/olympics/letterbox_border_neutral.svg');
 }
 .letterBox > img{
     width: 100%;
