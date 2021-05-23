@@ -54,9 +54,9 @@ export default {
         this.quizId = this.$router.currentRoute.params.quizId;
         this.quizOver=false;
         this.isAnswerCorrect=false;
-        console.log('QuizId',this.questionId, this.quizId);
+        // console.log('QuizId',this.questionId, this.quizId);
         this.categoryData = data.categories.find( category => category.id === this.questionId );
-        this.questionData = this.categoryData.questions.find( q => q.id === this.quizId);
+        this.questionData = this.categoryData.questions.find( q => Number(q.id) === Number(this.quizId) );
         // console.log('categoryData',this.categoryData);
         // console.log('questionData',this.questionData);
         let {title,background,questions} = this.categoryData || {};
@@ -102,10 +102,10 @@ export default {
         clearAnswer: async function (){
             if(this.quizOver){
                 // todo move to next quiz
-                await this.$router.push({ name: 'Quiz', params: { qId:this.questionId, quizId:Number(this.quizId)+1 } }); 
+                await this.$router.push({ name: 'Quiz', params: { qId:this.questionId, quizId:Number(this.quizId)+1 } });
                 //since we push the same page again, vue ignores it, this.$router.go() reloads the page and 0 means to go back 0 pages
                 this.$router.go(0)
-                
+
                 console.log('quiz over');
             }else {
                 this.typedAnswer = this.letterBlock.reduce( (acc,count,index)=>{
