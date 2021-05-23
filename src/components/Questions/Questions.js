@@ -23,6 +23,7 @@ export default {
             questionData:{},
             BottomButtonLabel:"Play",
             questionId:'',
+            questions:[]
         };
     },
     mounted(){
@@ -38,14 +39,24 @@ export default {
         this.notChoosenIcon = not_chosen_icon;
         this.questionAnsweredIcon = question_answered_icon;
         this.totalQuestionsCount = questions.length;
+        this.questions = questions;
     },
     methods: {
         goToQuiz:async function(quizId){
             await this.$router.push({ name: 'Quiz', params: { qId:this.questionId, quizId:Number(quizId) } });
             // this.$router.push('/quiz')
+        },
+        questionListIcon(question){
+            if( (question||{}).isAnswered ) return this.questionAnsweredIcon;
+            if( (question||{}).isChoosen ) return this.choosenIcon;
+            else return this.notChoosenIcon;
         }
     },
     computed: {
-
+        // questionListIcon(question){
+        //     if( (question||{}).isAnswered ) return this.questionAnsweredIcon;
+        //     if( (question||{}).isChoosen ) return this.choosenIcon;
+        //     else return this.notChoosenIcon;
+        // }
     },
 };
