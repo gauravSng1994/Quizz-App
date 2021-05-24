@@ -6,9 +6,8 @@ import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 // optional style for arrows & dots
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 import { getAnsweredQuestions} from "../../services/question";
-import {BackgroundMusicStart, BackgroundMusicStop} from "../../services/sound";
-// import {getAllQuestions} from "../../services/question";
-// import GirlImage from '../../assets/downloadedImages/you_go_girl_background.png';
+import {BackgroundMusic} from "../../services/audio";
+
 export default {
     name:"Categories",
     components:{
@@ -81,10 +80,12 @@ export default {
         toggleBackgroundMusic(on){
             console.log('Toggle background music',on);
             if(on) {
-                BackgroundMusicStart();
+                BackgroundMusic.start()
+                // BackgroundMusicStart();
                 this.isMusicOn = true;
             } else {
-                BackgroundMusicStop();
+                BackgroundMusic.stop();
+                // BackgroundMusicStop();
                 this.isMusicOn = false;
             }
         },

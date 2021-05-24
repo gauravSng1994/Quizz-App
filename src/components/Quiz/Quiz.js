@@ -2,7 +2,7 @@ import BottomButton from "../BottomButton/index";
 import data from "../../data/quiz_config_v2_full.json";
 import Header from "../Header/index";
 import LetterBox from "../LetterBox/index"
-import {getQuestion,updateAnswer} from '../../services/question';
+import {getQuestion, markChosen, updateAnswer} from '../../services/question';
 export default {
     name:"Quiz",
     components:{
@@ -36,6 +36,7 @@ export default {
     mounted(){
         this.questionId = this.$router.currentRoute.params.qid;
         this.quizId = this.$router.currentRoute.params.quizId;
+        markChosen(this.quizId,this.questionId);
         this.quizOver=false;
         this.isAnswerCorrect=false;
         this.categoryData = data.categories.find( category => category.id === this.questionId );

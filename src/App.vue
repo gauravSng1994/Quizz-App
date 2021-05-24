@@ -3,7 +3,7 @@
 </template>
 
 <script>
-// import {BackgroundMusicStart} from "./services/sound";
+// import {BackgroundMusicStart} from "./services/audio";
 export default {
   name: 'App',
   mounted() {
