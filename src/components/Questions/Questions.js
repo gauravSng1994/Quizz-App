@@ -14,7 +14,7 @@ export default {
     data: function () {
         return {
             headerTitle:"",
-            showHeaderBackButton:false,
+            showHeaderBackButton:true,
             backgroundImage:"",
             categoryImage:'',
             completedQuestionsCount : 0,

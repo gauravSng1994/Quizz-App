@@ -15,9 +15,9 @@ export default {
     data: function () {
         return {
             headerTitle:"",
-            showHeaderBackButton:false,
+            showHeaderBackButton:true,
             backgroundImage:"",
-            categoryImage:'',
+            // categoryImage:'',
             // BottomButtonLabel:"Clear",
             questionTitle : '',
             questionType : '',
@@ -34,38 +34,46 @@ export default {
         };
     },
     mounted(){
-        this.questionId = this.$router.currentRoute.params.qid;
-        this.quizId = this.$router.currentRoute.params.quizId;
-        markChosen(this.quizId,this.questionId);
-        this.quizOver=false;
-        this.isAnswerCorrect=false;
-        this.categoryData = data.categories.find( category => category.id === this.questionId );
-        // this.questionData = this.categoryData.questions.find( q => Number(q.id) === Number(this.quizId) );
-        // console.log('categoryData',this.categoryData);
-        // console.log('questionData',this.questionData);
-        let {title,background,questions} = this.categoryData || {};
-        this.backgroundImage = background;
-        this.headerTitle = title;
-        this.totalQuestionsCount = questions.length;
-        this.questionData = getQuestion(this.questionId,this.quizId);
-        console.log('this.qData',this.questionData);
-        let {question, type, questionImageURL,answer, answerType, userAnswer } = this.questionData||{};
-        this.questionTitle = question;
-        this.questionType = type;
-        this.answerType = answerType;
-        this.answer = answer;
-        this.questionImage = questionImageURL;
-        this.letterBlock = answer.split(' ').map( el => el.length);
-        this.typedAnswer = this.letterBlock.reduce( (acc,count,index)=>{
-            acc[index] = [];
-            return acc;
-        },{});
-        if(userAnswer){
-            for(let i = 0; i<userAnswer.length; ++i ) this.typeAnswer(userAnswer[i]);
-        }
+        console.log('mounting');
+        this.init();
     },
     methods: {
+        init(){
+            this.currentLetterBlock = 0;
+            this.questionId = this.$router.currentRoute.params.qid;
+            this.quizId = this.$router.currentRoute.params.quizId;
+            console.log('initialising',this.quizId);
+            markChosen(this.quizId,this.questionId);
+            this.quizOver=false;
+            this.isAnswerCorrect=false;
+            this.categoryData = data.categories.find( category => category.id === this.questionId );
+            // this.questionData = this.categoryData.questions.find( q => Number(q.id) === Number(this.quizId) );
+            // console.log('categoryData',this.categoryData);
+            // console.log('questionData',this.questionData);
+            let {title,background,questions} = this.categoryData || {};
+            this.backgroundImage = background;
+            this.headerTitle = title;
+            this.totalQuestionsCount = questions.length;
+            this.questionData = getQuestion(this.questionId,this.quizId);
+            console.log('this.qData',this.questionData);
+            let {question, type, questionImageURL,answer, answerType, userAnswer } = this.questionData||{};
+            this.questionTitle = question;
+            this.questionType = type;
+            this.answerType = answerType;
+            this.answer = answer;
+            this.questionImage = questionImageURL;
+            this.letterBlock = answer.split(' ').map( el => el.length);
+            this.typedAnswer = this.letterBlock.reduce( (acc,count,index)=>{
+                acc[index] = [];
+                return acc;
+            },{});
+            if( userAnswer){
+                for(let i = 0; i < userAnswer.length; ++i ) this.typeAnswer(userAnswer[i]);
+            }
+        },
         typeAnswer(char){
+            console.log('this.currentLetterBlock',this.currentLetterBlock);
+            console.log('this.letterBlock',this.letterBlock);
             if(this.currentLetterBlock >= this.letterBlock.length) {
                 return console.log('No more entries allowed',this.typedAnswer);
             }
@@ -92,7 +100,7 @@ export default {
                 // todo move to next quiz
                 await this.$router.push({ name: 'Quiz', params: { qId:this.questionId, quizId:Number(this.quizId)+1 } });
                 //since we push the same page again, vue ignores it, this.$router.go() reloads the page and 0 means to go back 0 pages
-                this.$router.go(0)
+                // this.$router.go(0)
 
                 console.log('quiz over');
             }else {
@@ -131,4 +139,14 @@ export default {
           return `Your guess is ${this.isAnswerCorrect ? "correct" : "wrong"}!`
         }
     },
+    watch: {
+        '$route.params.quizId': {
+            handler: function(prev,next) {
+                console.log('watching',prev,next);
+                if(prev && next && prev!==next) this.init(true);
+            },
+            deep: true,
+            immediate: true
+        }
+    }
 };
