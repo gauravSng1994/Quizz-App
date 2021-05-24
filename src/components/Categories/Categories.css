@@ -20,20 +20,40 @@
     height: 300px;
     color:white
 }
-.category-item-box{
+.category-item-box-large{
     height: 250px;
     width: 150px;
     text-align: center;
 }
-.category-item-box > img{
+.category-item-box-small{
+    position: relative;
+    top: 25px;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+}
+.category-item-box-large > img{
     position: relative;
     top:0;
     left: calc(50% - 100px);
     width: 200px;
     height: 200px;
 }
-.category-item-box > div{
+.category-item-box-large > div{
     position: relative;
+    top: 0;
+    left: 0;
+}
+.category-item-box-small > img{
+    position: relative;
+    top: calc(50% - 75px);
+    left: calc(50% - 75px);
+    width: 150px;
+    height: 150px;
+}
+.category-item-box-small > div{
+    position: relative;
+    /*top: calc( 50% - 100px );*/
     top: 0;
     left: 0;
 }

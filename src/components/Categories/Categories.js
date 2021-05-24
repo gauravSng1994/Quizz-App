@@ -32,14 +32,15 @@ export default {
             currentCategory: '',
             carouselSettings:{
                 "centerMode": true,
-                "centerPadding": "70px",
+                "centerPadding": "80px",
                 "focusOnSelect": true,
                 "infinite": false,
                 "arrows":false,
                 "dots":false,
                 "slidesToShow": 1,
                 "slidesToScroll": 1,
-                "ref":"carousel"
+                "ref":"carousel",
+                "initialSlide":0,
             }
         };
     },

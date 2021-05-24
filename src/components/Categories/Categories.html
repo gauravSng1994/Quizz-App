@@ -3,12 +3,17 @@
         <Header :title="headerTitle" :showBackButton="showHeaderBackButton"/>
         <div class="category-main-div">
             <img :src="backgroundImage"/>
+            <div>
+
+            </div>
             <div class="central-div" v-if="sortedCategories">
                 <VueSlickCarousel
                         v-bind="carouselSettings"
                         @afterChange="afterChange"
                 >
-                    <div v-for="category in sortedCategories" class="category-item-box" @click="()=>goToQuestionList(category.id)">
+                    <div v-for="category in sortedCategories"
+                         :class="{'category-item-box-large':category.id===currentCategory,'category-item-box-small':category.id!==currentCategory}"
+                         @click="()=>goToQuestionList(category.id)">
                         <div class="category-name">{{category.title}}</div>
                         <img :src="category.id===currentCategory ? category.chosen_icon : category.not_chosen_icon">
                         <div class="questionsCount">{{completedQuestionsCount(category)}}/{{category.questions.length}}</div>
