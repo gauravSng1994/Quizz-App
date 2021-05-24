@@ -6,6 +6,7 @@ import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 // optional style for arrows & dots
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 import { getAnsweredQuestions} from "../../services/question";
+import {BackgroundMusicStart, BackgroundMusicStop} from "../../services/sound";
 // import {getAllQuestions} from "../../services/question";
 // import GirlImage from '../../assets/downloadedImages/you_go_girl_background.png';
 export default {
@@ -30,6 +31,8 @@ export default {
             selectedCategoryId:'',
             sortedCategories:'',
             currentCategory: '',
+            isSoundOn:false,
+            isMusicOn:false,
             carouselSettings:{
                 "centerMode": true,
                 "centerPadding": "80px",
@@ -75,6 +78,19 @@ export default {
         // swipe(dir){
         //     console.log('swipe',dir);
         // },
+        toggleBackgroundMusic(on){
+            console.log('Toggle background music',on);
+            if(on) {
+                BackgroundMusicStart();
+                this.isMusicOn = true;
+            } else {
+                BackgroundMusicStop();
+                this.isMusicOn = false;
+            }
+        },
+        toggleSound(){
+
+        },
         afterChange(slideInd){
             const allCategories = this.sortedCategories;
             // let currInd;

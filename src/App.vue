@@ -3,10 +3,12 @@
 </template>
 
 <script>
-
+// import {BackgroundMusicStart} from "./services/sound";
 export default {
   name: 'App',
-
+  mounted() {
+    // BackgroundMusicStart();
+  },
   data: () => ({
     //
   }),

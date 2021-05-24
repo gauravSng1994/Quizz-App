@@ -3,8 +3,23 @@
         <Header :title="headerTitle" :showBackButton="showHeaderBackButton"/>
         <div class="category-main-div">
             <img :src="backgroundImage"/>
-            <div>
-
+            <div class="sound-btns">
+<!--                <div class="sound">-->
+<!--                    <img v-if="!isSoundOn"-->
+<!--                         src="../../assets/variant/olympics/sound_on.svg"-->
+<!--                         />-->
+<!--                    <img v-else-->
+<!--                         src="../../assets/variant/olympics/sound_off.svg"-->
+<!--                         />-->
+<!--                </div>-->
+                <div class="sound">
+                    <img v-if="isMusicOn"
+                         src="../../assets/variant/olympics/music_on.svg"
+                         @click="()=>toggleBackgroundMusic(false)"/>
+                    <img v-else
+                         src="../../assets/variant/olympics/music_off.svg"
+                         @click="()=>toggleBackgroundMusic(true)" />
+                </div>
             </div>
             <div class="central-div" v-if="sortedCategories">
                 <VueSlickCarousel
