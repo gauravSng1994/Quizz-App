@@ -11,7 +11,7 @@
                     <div v-for="category in sortedCategories" class="category-item-box" @click="()=>goToQuestionList(category.id)">
                         <div class="category-name">{{category.title}}</div>
                         <img :src="category.id===currentCategory ? category.chosen_icon : category.not_chosen_icon">
-                        <div class="questionsCount">{{completedQuestionsCount}}/{{category.questions.length}}</div>
+                        <div class="questionsCount">{{completedQuestionsCount(category)}}/{{category.questions.length}}</div>
                     </div>
                 </VueSlickCarousel>
             </div>

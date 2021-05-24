@@ -5,6 +5,7 @@ import VueSlickCarousel from 'vue-slick-carousel'
 import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 // optional style for arrows & dots
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+import { getAnsweredQuestions} from "../../services/question";
 // import {getAllQuestions} from "../../services/question";
 // import GirlImage from '../../assets/downloadedImages/you_go_girl_background.png';
 export default {
@@ -24,7 +25,7 @@ export default {
             label: 'Normal Button',
             categoryImage:'',
             categoryName:'',
-            completedQuestionsCount : 0,
+            // completedQuestionsCount : 0,
             totalQuestionsCount : 0,
             selectedCategoryId:'',
             sortedCategories:'',
@@ -47,7 +48,7 @@ export default {
         this.sortedCategories = data.categories.sort( (a,b) => a.sequence - b.sequence);
         // console.log('data',this.sortedCategories);
         this.headerTitle = (data||{}).title || "";
-        const selectedCategory = this.sortedCategories[0];
+        const selectedCategory = this.currentCategory ? this.sortedCategories.find(cat=> cat.id === this.currentCategory) : this.sortedCategories[0];
         this.currentCategory = selectedCategory.id;
         let { background, title, chosen_icon, questions } = selectedCategory;
         this.backgroundImage = background;
@@ -65,6 +66,11 @@ export default {
             console.log('category id',categoryId);
             await this.$router.push({ name: 'QuestionList', params: { qid:categoryId } });
         },
+        completedQuestionsCount(category){
+            let answeredQuestions = getAnsweredQuestions(category.id);
+            if(answeredQuestions && Array.isArray(answeredQuestions)) return answeredQuestions.length;
+            else return 0;
+        },
         // swipe(dir){
         //     console.log('swipe',dir);
         // },
@@ -74,6 +80,7 @@ export default {
             let changedCategory = allCategories.find( (category,ind) => ind === slideInd);
             // console.log('currInd',currInd,allCategories.length-1);
             this.currentCategory = changedCategory.id;
+            this.backgroundImage = changedCategory.background;
             // if(dir==='left' && currInd < allCategories.length-1){
             //     console.log('left swipe');
             //     this.currentCategory = allCategories[currInd+1].id;
