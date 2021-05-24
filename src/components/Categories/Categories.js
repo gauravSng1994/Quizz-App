@@ -5,6 +5,7 @@ import VueSlickCarousel from 'vue-slick-carousel'
 import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 // optional style for arrows & dots
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+// import {getAllQuestions} from "../../services/question";
 // import GirlImage from '../../assets/downloadedImages/you_go_girl_background.png';
 export default {
     name:"Categories",
@@ -27,28 +28,27 @@ export default {
             totalQuestionsCount : 0,
             selectedCategoryId:'',
             sortedCategories:'',
+            currentCategory: '',
             carouselSettings:{
                 "centerMode": true,
-                "centerPadding": "20px",
+                "centerPadding": "70px",
                 "focusOnSelect": true,
                 "infinite": false,
                 "arrows":false,
                 "dots":false,
-                // "slidesToShow": 3,
-                // "speed": 500,
                 "slidesToShow": 1,
                 "slidesToScroll": 1,
-                // "variableWidth": true
+                "ref":"carousel"
             }
-
         };
     },
     mounted(){
+        console.log('refs',this.$refs);
         this.sortedCategories = data.categories.sort( (a,b) => a.sequence - b.sequence);
-        console.log('data',this.sortedCategories);
+        // console.log('data',this.sortedCategories);
         this.headerTitle = (data||{}).title || "";
-
         const selectedCategory = this.sortedCategories[0];
+        this.currentCategory = selectedCategory.id;
         let { background, title, chosen_icon, questions } = selectedCategory;
         this.backgroundImage = background;
         this.categoryName = title;
@@ -63,6 +63,22 @@ export default {
         async goToQuestionList(categoryId){
             console.log('category id',categoryId);
             await this.$router.push({ name: 'QuestionList', params: { qid:categoryId } });
+        },
+        // swipe(dir){
+        //     console.log('swipe',dir);
+        // },
+        afterChange(slideInd){
+            const allCategories = this.sortedCategories;
+            // let currInd;
+            let changedCategory = allCategories.find( (category,ind) => ind === slideInd);
+            // console.log('currInd',currInd,allCategories.length-1);
+            this.currentCategory = changedCategory.id;
+            // if(dir==='left' && currInd < allCategories.length-1){
+            //     console.log('left swipe');
+            //     this.currentCategory = allCategories[currInd+1].id;
+            // }else if(dir==='right' && currInd>0 ){
+            //     this.currentCategory = allCategories[currInd-1].id;
+            // }
         }
     },
     computed: {

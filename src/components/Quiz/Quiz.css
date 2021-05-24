@@ -34,8 +34,15 @@
 }
 .central-div{
     position: absolute;
-    top:50px;
-    color:white
+    top:60px;
+    color:white;
+    /*position: absolute;*/
+    /*top: 30%;*/
+    /*left: 40px;*/
+    width: 96vw;
+    left: 2vw;
+    text-align: center;
+    /*height: 300px;*/
 }
 .central-div > .questionImgDiv{
     text-align: center;
