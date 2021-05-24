@@ -59,6 +59,7 @@ export default {
     methods: {
         bottomBtnClick : function (){
             console.log('HELLO!!! Please implement me.');
+            this.$router.push({ name: 'QuestionList', params: { qid:this.currentCategory } });
         },
         async goToQuestionList(categoryId){
             console.log('category id',categoryId);
