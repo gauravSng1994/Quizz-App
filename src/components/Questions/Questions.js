@@ -20,8 +20,8 @@ export default {
             completedQuestionsCount : 0,
             totalQuestionsCount : 0,
             questionAnsweredIcon:'',
-            choosenIcon:'',
-            notChoosenIcon:'',
+            chosenIcon:'',
+            notChosenIcon:'',
             questionData:{},
             BottomButtonLabel:"Play",
             questionId:'',
@@ -38,8 +38,8 @@ export default {
         let {chosen_icon, title, not_chosen_icon, question_answered_icon, questions, background} = this.questionData || {};
         this.backgroundImage = background;
         this.headerTitle = title;
-        this.choosenIcon = chosen_icon;
-        this.notChoosenIcon = not_chosen_icon;
+        this.chosenIcon = chosen_icon;
+        this.notChosenIcon = not_chosen_icon;
         this.questionAnsweredIcon = question_answered_icon;
         this.totalQuestionsCount = questions.length;
         this.questions = questions;
@@ -52,8 +52,8 @@ export default {
         },
         questionListIcon(question){
             if( (question||{}).isAnswered ) return this.questionAnsweredIcon;
-            if( (question||{}).isChosen ) return this.choosenIcon;
-            else return this.notChoosenIcon;
+            if( (question||{}).isChosen ) return this.chosenIcon;
+            else return this.notChosenIcon;
         }
     },
     computed: {
