@@ -25,7 +25,9 @@
             <BottomButton :button-label="BottomButtonLabel" @click="clearAnswer"/>
         </div>
         <div class="optionBox" v-if="!quizOver">
-            <LetterBox v-for='letter in shuffledAnswer' @click="typeAnswer" :letter="letter"/>
+            <LetterBox v-for='letter in shuffledAnswer.slice(0,9)' @click="typeAnswer" :letter="letter"/>
+            <br/>
+            <LetterBox v-for='letter in shuffledAnswer.slice(9)' @click="typeAnswer" :letter="letter"/>
         </div>
     </div>
 

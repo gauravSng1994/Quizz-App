@@ -1,6 +1,6 @@
 .bottom-btn-div{
-    width: 85%;
-    height: 30px;
+    width: 250px;
+    height: 48px;
     margin: auto;
     text-align: center;
     vertical-align: middle;
@@ -10,7 +10,7 @@
     background-size: cover;
 }
 .bottom-btn-middle-div{
-    padding: 3% 0 0 10%;
+    padding: 6px 0 0 10px;
     text-align: center;
     color: white;
     font-size: 1em;
