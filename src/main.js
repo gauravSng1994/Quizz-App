@@ -7,6 +7,8 @@ import VueFlicking from "@egjs/vue-flicking";
 Vue.use(VueFlicking);
 Vue.config.productionTip = false
 
+import './models/index';
+
 new Vue({
   router,
   store,

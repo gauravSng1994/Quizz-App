@@ -2,6 +2,7 @@ import BottomButton from "../BottomButton/index";
 import data from "../../data/quiz_config_v2_full.json";
 import Header from "../Header/index";
 import LetterBox from "../LetterBox/index"
+import {getQuestion,updateAnswer} from '../../services/question';
 export default {
     name:"Quiz",
     components:{
@@ -32,39 +33,22 @@ export default {
             questionId:'',
         };
     },
-    // "id": "you_go_girl",
-    //         "sequence": "1",
-    //         "title": "You Go Girl!",
-    //         "not_chosen_icon": "https://theolympics.b-cdn.net/You%20go%20girl!/icons/catagory_icon_not_chosen_you_go_girl.svg",
-    //         "chosen_icon": "https://theolympics.b-cdn.net/You%20go%20girl!/icons/catagory_icon_chosen_you_go_girl.svg",
-    //         "question_answered_icon": "https://theolympics.b-cdn.net/You%20go%20girl!/icons/answerd_question_you_go_girl.svg",
-    //         "background": "https://theolympics.b-cdn.net/You%20go%20girl!/background/you_go_girl_background.png",
-    //         "questions":[
-    //     {
-    //         "id": "1",
-    //         "type": "image",
-    //         "question": "What is the name of this sport?",
-    //         "questionImageURL": "https://theolympics.b-cdn.net/You%20go%20girl!/questions/1.jpg",
-    //         "answerType": "text",
-    //         "answer": "rugby"
-    //     },
     mounted(){
-        // console.log('This.router',this.$router);
         this.questionId = this.$router.currentRoute.params.qid;
         this.quizId = this.$router.currentRoute.params.quizId;
         this.quizOver=false;
         this.isAnswerCorrect=false;
-        // console.log('QuizId',this.questionId, this.quizId);
         this.categoryData = data.categories.find( category => category.id === this.questionId );
-        this.questionData = this.categoryData.questions.find( q => Number(q.id) === Number(this.quizId) );
+        // this.questionData = this.categoryData.questions.find( q => Number(q.id) === Number(this.quizId) );
         // console.log('categoryData',this.categoryData);
         // console.log('questionData',this.questionData);
         let {title,background,questions} = this.categoryData || {};
         this.backgroundImage = background;
         this.headerTitle = title;
         this.totalQuestionsCount = questions.length;
-
-        let {question, type, questionImageURL,answer, answerType} = this.questionData||{};
+        this.questionData = getQuestion(this.questionId,this.quizId);
+        console.log('this.qData',this.questionData);
+        let {question, type, questionImageURL,answer, answerType, userAnswer } = this.questionData||{};
         this.questionTitle = question;
         this.questionType = type;
         this.answerType = answerType;
@@ -75,6 +59,9 @@ export default {
             acc[index] = [];
             return acc;
         },{});
+        if(userAnswer){
+            for(let i = 0; i<userAnswer.length; ++i ) this.typeAnswer(userAnswer[i]);
+        }
     },
     methods: {
         typeAnswer(char){
@@ -90,11 +77,11 @@ export default {
                 && this.typedAnswer[this.currentLetterBlock].length >= this.letterBlock[this.currentLetterBlock]) this.currentLetterBlock +=1;
             if(this.currentLetterBlock >= this.letterBlock.length-1){
                 let givenAnswer = Object.values(this.typedAnswer).map( el => el.join('')).join(' ');
-                // console.log('givenAnswer',givenAnswer,this.answer)
                 if(givenAnswer.length === this.answer.length){
                     this.quizOver = true;
                     this.isAnswerCorrect = this.answer.toLowerCase() === givenAnswer.toLowerCase();
-                    this.currentLetterBlock +=1
+                    this.currentLetterBlock +=1;
+                    updateAnswer(this.quizId,this.questionId,givenAnswer.toLowerCase());
                     // return console.log('No more entries allowed',this.answer, givenAnswer,this.isAnswerCorrect);
                 }
             }

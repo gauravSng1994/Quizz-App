@@ -1,6 +1,8 @@
 import BottomButton from "../BottomButton/index";
-import data from "../../data/quiz_config_v2_full.json";
+// import data from "../../data/quiz_config_v2_full.json";
 import Header from "../Header/index";
+import {getAllQuestions, getAnsweredQuestions, markChosen} from "../../services/question";
+
 export default {
     name:"Questions",
     components:{
@@ -27,10 +29,11 @@ export default {
         };
     },
     mounted(){
-        console.log('This.router',this.$router);
         this.questionId = this.$router.currentRoute.params.qid;
         if(!this.questionId) alert('No question id found'); // todo handle it properly with modal alert
-        this.questionData = data.categories.find( category => category.id === this.questionId );
+        const allQuestions = getAllQuestions();
+        let answeredQuestions = getAnsweredQuestions(this.questionId);
+        this.questionData = allQuestions[this.questionId]//.categories.find( category => category.id === this.questionId );
         console.log('questionData',this.questionData);
         let {chosen_icon, title, not_chosen_icon, question_answered_icon, questions, background} = this.questionData || {};
         this.backgroundImage = background;
@@ -40,23 +43,19 @@ export default {
         this.questionAnsweredIcon = question_answered_icon;
         this.totalQuestionsCount = questions.length;
         this.questions = questions;
+        this.completedQuestionsCount = (answeredQuestions||[]).length;
     },
     methods: {
         goToQuiz:async function(quizId){
+            markChosen(quizId,this.questionId);
             await this.$router.push({ name: 'Quiz', params: { qId:this.questionId, quizId:Number(quizId) } });
-            // this.$router.push('/quiz')
         },
         questionListIcon(question){
             if( (question||{}).isAnswered ) return this.questionAnsweredIcon;
-            if( (question||{}).isChoosen ) return this.choosenIcon;
+            if( (question||{}).isChosen ) return this.choosenIcon;
             else return this.notChoosenIcon;
         }
     },
     computed: {
-        // questionListIcon(question){
-        //     if( (question||{}).isAnswered ) return this.questionAnsweredIcon;
-        //     if( (question||{}).isChoosen ) return this.choosenIcon;
-        //     else return this.notChoosenIcon;
-        // }
     },
 };

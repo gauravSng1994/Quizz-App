@@ -11,6 +11,7 @@
     "@egjs/flicking-plugins": "^3.3.0",
     "@egjs/vue-flicking": "^3.7.2",
     "core-js": "^3.6.5",
+    "lodash": "^4.17.21",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vuetify": "^2.4.0",
