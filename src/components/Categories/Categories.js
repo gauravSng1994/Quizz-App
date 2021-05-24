@@ -1,12 +1,17 @@
 import BottomButton from "../BottomButton/index";
 import data from "../../data/quiz_config_v2_full.json";
 import Header from "../Header/index";
+import VueSlickCarousel from 'vue-slick-carousel'
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+// optional style for arrows & dots
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 // import GirlImage from '../../assets/downloadedImages/you_go_girl_background.png';
 export default {
     name:"Categories",
     components:{
       BottomButton,
-      Header
+      Header,
+      VueSlickCarousel
     },
     props: {
     },
@@ -20,17 +25,32 @@ export default {
             categoryName:'',
             completedQuestionsCount : 0,
             totalQuestionsCount : 0,
-            selectedCategoryId:''
+            selectedCategoryId:'',
+            sortedCategories:'',
+            carouselSettings:{
+                "centerMode": true,
+                "centerPadding": "20px",
+                "focusOnSelect": true,
+                "infinite": false,
+                "arrows":false,
+                "dots":false,
+                // "slidesToShow": 3,
+                // "speed": 500,
+                "slidesToShow": 1,
+                "slidesToScroll": 1,
+                // "variableWidth": true
+            }
+
         };
     },
     mounted(){
-        const sortedCategories = data.categories.sort( (a,b) => a.sequence - b.sequence);
-        console.log('data',sortedCategories);
+        this.sortedCategories = data.categories.sort( (a,b) => a.sequence - b.sequence);
+        console.log('data',this.sortedCategories);
         this.headerTitle = (data||{}).title || "";
-        const selectedCategory = sortedCategories[0];
+
+        const selectedCategory = this.sortedCategories[0];
         let { background, title, chosen_icon, questions } = selectedCategory;
         this.backgroundImage = background;
-        // this.backgroundImage = GirlImage;
         this.categoryName = title;
         this.categoryImage = chosen_icon;
         this.totalQuestionsCount = questions.length;
@@ -39,6 +59,10 @@ export default {
     methods: {
         bottomBtnClick : function (){
             console.log('HELLO!!! Please implement me.');
+        },
+        async goToQuestionList(categoryId){
+            console.log('category id',categoryId);
+            await this.$router.push({ name: 'QuestionList', params: { qid:categoryId } });
         }
     },
     computed: {

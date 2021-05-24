@@ -29,6 +29,7 @@ export default {
         };
     },
     mounted(){
+        console.log('this',this.$router.currentRoute.params);
         this.questionId = this.$router.currentRoute.params.qid;
         if(!this.questionId) alert('No question id found'); // todo handle it properly with modal alert
         const allQuestions = getAllQuestions();

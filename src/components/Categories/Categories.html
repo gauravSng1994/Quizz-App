@@ -3,11 +3,33 @@
         <Header :title="headerTitle" :showBackButton="showHeaderBackButton"/>
         <div class="category-main-div">
             <img :src="backgroundImage"/>
-            <div class="central-div">
-                <div>{{categoryName}}</div>
-                <img :src="categoryImage">
-                <div class="questionsCount">{{completedQuestionsCount}}/{{totalQuestionsCount}}</div>
+            <div class="central-div" v-if="sortedCategories">
+                <VueSlickCarousel v-bind="carouselSettings">
+                    <div v-for="category in sortedCategories" class="category-item-box" @click="()=>goToQuestionList(category.id)">
+                        <div class="category-name">{{category.title}}</div>
+                        <img :src="category.chosen_icon">
+                        <div class="questionsCount">{{completedQuestionsCount}}/{{category.questions.length}}</div>
+                    </div>
+<!--                    <div class="category-item-box">-->
+<!--                        <div>{{categoryName}}</div>-->
+<!--                        <img :src="categoryImage">-->
+<!--                        <div class="questionsCount">{{completedQuestionsCount}}/{{totalQuestionsCount}}</div>-->
+<!--                    </div>-->
+<!--                    <div class="category-item-box">-->
+<!--                        <div>{{categoryName}}</div>-->
+<!--                        <img :src="categoryImage">-->
+<!--                        <div class="questionsCount">{{completedQuestionsCount}}/{{totalQuestionsCount}}</div>-->
+<!--                    </div>-->
+<!--                    <div>2</div>-->
+<!--                    <div>3</div>-->
+<!--                    <div>4</div>-->
+                </VueSlickCarousel>
             </div>
+<!--            <div class="central-div">-->
+<!--                <div>{{categoryName}}</div>-->
+<!--                <img :src="categoryImage">-->
+<!--                <div class="questionsCount">{{completedQuestionsCount}}/{{totalQuestionsCount}}</div>-->
+<!--            </div>-->
         </div>
     </div>
     <div class="button-div">

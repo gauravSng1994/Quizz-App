@@ -1,16 +1,14 @@
-/*#bottom-btn{*/
-/*  background: url('../../assets/variant/olympics/button_background.svg')*/
-/*  no-repeat center center fixed !important;*/
-/*  background-size: cover;*/
-/*}*/
 .category-main-div{
     width: 100%;
     height: 100%;
 }
-.category-main-div img{
-    width: 100%;
-    height: 100%;
-}
+/*.category-main-div img{*/
+/*    position: absolute;*/
+/*    top: 42px;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*}*/
 .main-div{
     position: relative;
     text-align: center;
@@ -26,9 +24,32 @@
 /*}*/
 .central-div{
     position: absolute;
-    top:30%;
-    left: 30%;
+    top: 30%;
+    left: 40px;
+    width: 80vw;
+    height: 300px;
+    /*top:30%;*/
+    /*left: 30%;*/
     color:white
+}
+.category-item-box{
+    /*position: absolute;*/
+    height: 250px;
+    width: 150px;
+    text-align: center;
+    /*top*/
+}
+.category-item-box > img{
+    position: relative;
+    top:0;
+    left: 30px;
+    width: 200px;
+    height: 200px;
+}
+.category-item-box > div{
+    position: relative;
+    top: 0;
+    left: 0;
 }
 .questionsCount{
     color:aqua
@@ -46,24 +67,3 @@
     /*width: 50%;*/
     margin: auto;
 }
-/*@media (min-width: 576px) {*/
-/*    .modal-dialog {*/
-/*        max-width: 770px;*/
-/*        display: flex;*/
-/*        align-items: center;*/
-/*        height: 100%;*/
-/*        margin: auto;*/
-/*    }*/
-/*}*/
-
-/*@media (max-width: 767px) {*/
-/*    #addAssignment .modal-body {*/
-/*        padding: 1rem 0px 0 !important;*/
-/*    }*/
-
-/*}*/
-/*@media (max-width: 556px){*/
-/*    .modal-header .close {*/
-/*        top: 26px;*/
-/*    }*/
-/*}*/
