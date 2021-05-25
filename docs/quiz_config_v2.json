@@ -1,0 +1,1636 @@
+{
+    "title": "Logo Quiz",
+    "generic": {
+		"background": "https://logoquiz.b-cdn.net//generic/default_background.png"
+	},
+    "categories": [
+        {
+            "id": "food",
+            "sequence": "1",
+            "title": "Food",
+            "not_chosen_icon": "https://logoquiz.b-cdn.net/food/icons/food_not_chosen_icon.svg",
+            "chosen_icon": "https://logoquiz.b-cdn.net/food/icons/food_chosen_icon.svg",
+            "question_answered_icon": "https://logoquiz.b-cdn.net/food/icons/food_answerd_question_icon.svg",
+            "background": "https://logoquiz.b-cdn.net/food/background/food_background.png",
+            "questions": [
+                {
+            "id": "1",
+            "type": "image",
+            "question": "A brand of mineral water",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q1.png",
+            "answerType": "text",
+            "answer": "Evian"
+        },
+        {
+            "id": "2",
+            "type": "image",
+            "question": "A German food and beverage brand",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q2.png",
+            "answerType": "text",
+            "answer": "Knorr"
+        },
+        {
+            "id": "3",
+            "type": "image",
+            "question": "An American food manufacturing and processing conglomerate",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q3.png",
+            "answerType": "text",
+            "answer": "Kraft"
+        },
+        {
+            "id": "4",
+            "type": "image",
+            "question": "An international brand of seasonings, instant soups, and noodles",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q4.png",
+            "answerType": "text",
+            "answer": "Maggi"
+        },
+        {
+            "id": "5",
+            "type": "image",
+            "question": "An American multinational chain of hamburger fast food restaurants",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q5.png",
+            "answerType": "text",
+            "answer": "Burger King"
+        },
+        {
+            "id": "6",
+            "type": "image",
+            "question": "A Vermont company that manufactures ice cream, frozen yogurt, and sorbet",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q6.png",
+            "answerType": "text",
+            "answer": "Ben & Jerry's"
+        },
+        {
+            "id": "7",
+            "type": "image",
+            "question": "An American chain of fast casual restaurants",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q7.png",
+            "answerType": "text",
+            "answer": "Chipotle"
+        },
+        {
+            "id": "8",
+            "type": "image",
+            "question": "An American producer and distributor of bananas and other produce",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q8.png",
+            "answerType": "text",
+            "answer": "Chiquita"
+        },
+        {
+            "id": "9",
+            "type": "image",
+            "question": "An American multinational coffee and doughnut company",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q9.png",
+            "answerType": "text",
+            "answer": "Dunkin' Donuts"
+        },
+        {
+            "id": "10",
+            "type": "image",
+            "question": "A brand of fruit-flavored carbonated soft drink",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q10.png",
+            "answerType": "text",
+            "answer": "Fanta"
+        },
+        {
+            "id": "11",
+            "type": "image",
+            "question": "A chocolate-covered wafer bar confection",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q11.png",
+            "answerType": "text",
+            "answer": "KitKat"
+        },
+        {
+            "id": "12",
+            "type": "image",
+            "question": "An American-based chain of fast food restaurants",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q12.png",
+            "answerType": "text",
+            "answer": "Taco Bell"
+        },
+        {
+            "id": "13",
+            "type": "image",
+            "question": "An American food conglomerate",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q13.png",
+            "answerType": "text",
+            "answer": "Quaker"
+        },
+        {
+            "id": "14",
+            "type": "image",
+            "question": "An American doughnut company and coffeehouse chain",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q14.png",
+            "answerType": "text",
+            "answer": "Krispy Kreme"
+        },
+        {
+            "id": "15",
+            "type": "image",
+            "question": "A British brand of tea",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q15.png",
+            "answerType": "text",
+            "answer": "Lipton"
+        },
+        {
+            "id": "16",
+            "type": "image",
+            "question": "An American fast food restaurant chain",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q16.png",
+            "answerType": "text",
+            "answer": "KFC"
+        },
+        {
+            "id": "17",
+            "type": "image",
+            "question": "An American brand of stackable potato-based chips",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q17.png",
+            "answerType": "text",
+            "answer": "Pringles"
+        },
+        {
+            "id": "18",
+            "type": "image",
+            "question": "An energy drink",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q18.png",
+            "answerType": "text",
+            "answer": "Red Bull"
+        },
+        {
+            "id": "19",
+            "type": "image",
+            "question": "A brand name chocolate bar",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q19.png",
+            "answerType": "text",
+            "answer": "Snickers"
+        },
+        {
+            "id": "20",
+            "type": "image",
+            "question": "A colorless, lemon and lime-flavored soft drink",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q20.png",
+            "answerType": "text",
+            "answer": "Sprite"
+        },
+        {
+            "id": "21",
+            "type": "image",
+            "question": "An American brand of flavored tortilla chips",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q21.png",
+            "answerType": "text",
+            "answer": "Doritos"
+        },
+        {
+            "id": "22",
+            "type": "image",
+            "question": "An American casual dining restaurant chain",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q22.png",
+            "answerType": "text",
+            "answer": "Chili's"
+        },
+        {
+            "id": "23",
+            "type": "image",
+            "question": "An American regional chain of fast food restaurants",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q23.png",
+            "answerType": "text",
+            "answer": "In n out"
+        },
+        {
+            "id": "24",
+            "type": "image",
+            "question": "Brand of potato chip varieties",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q24.png",
+            "answerType": "text",
+            "answer": "Lays"
+        },
+        {
+            "id": "25",
+            "type": "image",
+            "question": "An American fast food sandwich restaurant chain",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q25.png",
+            "answerType": "text",
+            "answer": "Arbys"
+        },
+        {
+            "id": "26",
+            "type": "image",
+            "question": "A carbonated soft drink",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q26.png",
+            "answerType": "text",
+            "answer": "Coca Cola"
+        },
+        {
+            "id": "27",
+            "type": "image",
+            "question": "One of the largest privately held, family-owned spirits company in the world",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q27.png",
+            "answerType": "text",
+            "answer": "Bacardi"
+        },
+        {
+            "id": "28",
+            "type": "image",
+            "question": "A Swiss chocolate bar brand",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q28.png",
+            "answerType": "text",
+            "answer": "Toblerone"
+        },
+        {
+            "id": "29",
+            "type": "image",
+            "question": "An American multinational pizza restaurant chain",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q29.png",
+            "answerType": "text",
+            "answer": "Domino Pizza"
+        },
+        {
+            "id": "30",
+            "type": "image",
+            "question": "An American multinational food manufacturing company",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q30.png",
+            "answerType": "text",
+            "answer": "Kellog's"
+        },
+        {
+            "id": "31",
+            "type": "image",
+            "question": "A German confectionery company",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q31.png",
+            "answerType": "text",
+            "answer": "Haribo"
+        },
+        {
+            "id": "32",
+            "type": "image",
+            "question": "A pale lager beer with 5% alcohol",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q32.png",
+            "answerType": "text",
+            "answer": "heineken"
+        },
+        {
+            "id": "33",
+            "type": "image",
+            "question": "A carbonated soft drink",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q33.png",
+            "answerType": "text",
+            "answer": "Pepsi"
+        },
+        {
+            "id": "34",
+            "type": "image",
+            "question": "An American fast food company",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q34.png",
+            "answerType": "text",
+            "answer": "McDonald's"
+        },
+        {
+            "id": "35",
+            "type": "image",
+            "question": "An American multinational chain of coffeehouses and roastery reserves",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q35.png",
+            "answerType": "text",
+            "answer": "Starbucks"
+        },
+        {
+            "id": "36",
+            "type": "image",
+            "question": "An American fast food restaurant franchise that primarily sells submarine sandwiches",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q36.png",
+            "answerType": "text",
+            "answer": "Subway"
+        },
+        {
+            "id": "37",
+            "type": "image",
+            "question": "An energy drink that was introduced by Hansen Natural Company ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q37.png",
+            "answerType": "text",
+            "answer": "Monster"
+        },
+        {
+            "id": "38",
+            "type": "image",
+            "question": "An American restaurant chain and international franchise",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q38.png",
+            "answerType": "text",
+            "answer": "Pizza Hut"
+        },
+        {
+            "id": "39",
+            "type": "image",
+            "question": "An American international fast food restaurant chain",
+            "questionImageURL": "https://logoquiz.b-cdn.net/food/questions/food_q39.png",
+            "answerType": "text",
+            "answer": "Wendy's"
+        }
+    ]
+        },
+        
+        {
+            "id": "fashion",
+            "sequence": "2",
+            "title": "Fashion",
+            "not_chosen_icon": "https://logoquiz.b-cdn.net/fashion/icons/fashion_not_chosen_icon.svg",
+            "chosen_icon": "https://logoquiz.b-cdn.net/fashion/icons/fashion_chosen_icon.svg",
+            "question_answered_icon": "https://logoquiz.b-cdn.net/fashion/icons/fashion_answerd_question_icon.svg",
+            "background": "https://logoquiz.b-cdn.net/fashion/background/fashion_background.png",
+            "questions": [
+                 {
+            "id": "1",
+            "type": "image",
+            "question": "French luxury fashion house",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q1.png",
+            "answerType": "text",
+            "answer": "Chanel"
+        },
+        {
+            "id": "2",
+            "type": "image",
+            "question": "A Japanese multinational corporation which produces sports equipment",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q2.png",
+            "answerType": "text",
+            "answer": "Asics "
+        },
+        {
+            "id": "3",
+            "type": "image",
+            "question": "A German multinational corporation,",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q3.png",
+            "answerType": "text",
+            "answer": "Adidas"
+        },
+        {
+            "id": "4",
+            "type": "image",
+            "question": "An American lifestyle, clothing, and accessories retailer",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q4.png",
+            "answerType": "text",
+            "answer": "American Eagle"
+        },
+        {
+            "id": "5",
+            "type": "image",
+            "question": "A French company sells clothing, footwear, sportswear, eyewear, leather goods, perfume, towels and watches.",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q5.png",
+            "answerType": "text",
+            "answer": "Lacoste"
+        },
+        {
+            "id": "6",
+            "type": "image",
+            "question": "An Italian luxury fashion house producing fur, ready-to-wear, leather goods, shoes, fragrances, eyewear, timepieces and accessories.",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q6.png",
+            "answerType": "text",
+            "answer": "Fendi"
+        },
+        {
+            "id": "7",
+            "type": "image",
+            "question": "An American manufacturer of clothing, specializing in sportswear",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q7.png",
+            "answerType": "text",
+            "answer": "Champion"
+        },
+        {
+            "id": "8",
+            "type": "image",
+            "question": "A French fashion house and luxury goods company ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q8.png",
+            "answerType": "text",
+            "answer": "Louis Vuitton"
+        },
+        {
+            "id": "9",
+            "type": "image",
+            "question": "An Italian luxury fashion house",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q9.png",
+            "answerType": "text",
+            "answer": "Dolce & Gabbana"
+        },
+        {
+            "id": "10",
+            "type": "image",
+            "question": "An American clothing company",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q10.png",
+            "answerType": "text",
+            "answer": "Levi's"
+        },
+        {
+            "id": "11",
+            "type": "image",
+            "question": "A luxury watch manufacturer based in Geneva, Switzerland.",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q11.png",
+            "answerType": "text",
+            "answer": "rolex"
+        },
+        {
+            "id": "12",
+            "type": "image",
+            "question": "An apparel manufacturing company primarily known for its largest brand",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q12.png",
+            "answerType": "text",
+            "answer": "Dickies"
+        },
+        {
+            "id": "13",
+            "type": "image",
+            "question": "An Italian sport apparel company ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q13.png",
+            "answerType": "text",
+            "answer": "Ellesse "
+        },
+        {
+            "id": "14",
+            "type": "image",
+            "question": "A company that manufactures and distributes outerwear, sportswear, and footwear",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q14.png",
+            "answerType": "text",
+            "answer": "Columbia"
+        },
+        {
+            "id": "15",
+            "type": "image",
+            "question": "An American clothing brand and retailer",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q15.png",
+            "answerType": "text",
+            "answer": "Guess"
+        },
+        {
+            "id": "16",
+            "type": "image",
+            "question": "A French luxury goods manufacturer",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q16.png",
+            "answerType": "text",
+            "answer": "Hermes Paris"
+        },
+        {
+            "id": "17",
+            "type": "image",
+            "question": "A London-based skateboard shop and clothing brand",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q17.png",
+            "answerType": "text",
+            "answer": "Palace"
+        },
+        {
+            "id": "18",
+            "type": "image",
+            "question": "An Italian high quality sportswear brand",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q18.png",
+            "answerType": "text",
+            "answer": "Kappa"
+        },
+        {
+            "id": "19",
+            "type": "image",
+            "question": "A British luxury fashion house headquartered in London",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q19.png",
+            "answerType": "text",
+            "answer": "Burberry"
+        },
+        {
+            "id": "20",
+            "type": "image",
+            "question": "A German multinational corporation",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q20.png",
+            "answerType": "text",
+            "answer": "Puma"
+        },
+        {
+            "id": "21",
+            "type": "image",
+            "question": "A British-American footwear and clothing company",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q21.png",
+            "answerType": "text",
+            "answer": "Reebok"
+        },
+        {
+            "id": "22",
+            "type": "image",
+            "question": "An American outdoor recreation products company",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q22.png",
+            "answerType": "text",
+            "answer": "The North Face"
+        },
+        {
+            "id": "23",
+            "type": "image",
+            "question": "An American manufacturer and retailer of outdoors wear",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q23.png",
+            "answerType": "text",
+            "answer": "Timberland"
+        },
+        {
+            "id": "24",
+            "type": "image",
+            "question": "An American premium clothing brand",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q24.png",
+            "answerType": "text",
+            "answer": "Tommmy Hilfiger"
+        },
+        {
+            "id": "25",
+            "type": "image",
+            "question": "An Italian retail clothing company, located in Breganze",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q25.png",
+            "answerType": "text",
+            "answer": "Diesel"
+        },
+        {
+            "id": "26",
+            "type": "image",
+            "question": "A sportswear manufacturer that designs shoes and apparel",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q26.png",
+            "answerType": "text",
+            "answer": "Fila"
+        },
+        {
+            "id": "27",
+            "type": "image",
+            "question": "An Italian luxury fashion company and trade name",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q27.png",
+            "answerType": "text",
+            "answer": "Versace"
+        },
+        {
+            "id": "28",
+            "type": "image",
+            "question": "An Italian luxury fashion house",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q28.png",
+            "answerType": "text",
+            "answer": "Giorgio Armani"
+        },
+        {
+            "id": "29",
+            "type": "image",
+            "question": "A global teen and young adult retail brand",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q29.png",
+            "answerType": "text",
+            "answer": "Hollister"
+        },
+        {
+            "id": "30",
+            "type": "image",
+            "question": " A U.S.-based apparel company ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q30.png",
+            "answerType": "text",
+            "answer": "Carhartt"
+        },
+        {
+            "id": "31",
+            "type": "image",
+            "question": "A Japanese fashion brand",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q31.png",
+            "answerType": "text",
+            "answer": "Bape"
+        },
+        {
+            "id": "32",
+            "type": "image",
+            "question": "A French luxury fashion house",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q32.png",
+            "answerType": "text",
+            "answer": "Yves Saint Laurent"
+        },
+        {
+            "id": "33",
+            "type": "image",
+            "question": "An American multinational corporation that is engaged in the design, development, manufacturing",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q33.png",
+            "answerType": "text",
+            "answer": "Nike"
+        },
+        {
+            "id": "34",
+            "type": "image",
+            "question": "A American fashion company producing products ranging from the mid-range to the luxury segments.",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q34.png",
+            "answerType": "text",
+            "answer": "Ralph Laurent"
+        },
+        {
+            "id": "35",
+            "type": "image",
+            "question": " A multinational fashion holding company",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q35.png",
+            "answerType": "text",
+            "answer": "Micheal Kores"
+        },
+        {
+            "id": "36",
+            "type": "image",
+            "question": "A multinational fashion holding company",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q36.png",
+            "answerType": "text",
+            "answer": "Calvin Klein"
+        },
+        {
+            "id": "37",
+            "type": "image",
+            "question": "An American apparel brand",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q37.png",
+            "answerType": "text",
+            "answer": "Nautica"
+        },
+        {
+            "id": "38",
+            "type": "image",
+            "question": "An American sports equipment company that manufactures footwear, sports and casual apparel",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q38.png",
+            "answerType": "text",
+            "answer": "Under Armour"
+        },
+        {
+            "id": "39",
+            "type": "image",
+            "question": "A British appeal company",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q39.png",
+            "answerType": "text",
+            "answer": "Fred Perry"
+        },
+        {
+            "id": "40",
+            "type": "image",
+            "question": "A luxury fashion house based in Florence, Italy",
+            "questionImageURL": "https://logoquiz.b-cdn.net/fashion/questions/fash_q40.png",
+            "answerType": "text",
+            "answer": "Gucci"
+        }
+    ]
+        },
+        {
+            "id": "technology",
+            "sequence": "3",
+            "title": "Technology",
+            "not_chosen_icon": "https://logoquiz.b-cdn.net/technology/icons/technology_not_chosen_icon.svg",
+            "chosen_icon": "https://logoquiz.b-cdn.net/technology/icons/technology_chosen_icon.svg",
+            "question_answered_icon": "https://logoquiz.b-cdn.net/technology/icons/technology_answerd_question_icon.svg",
+            "background": "https://logoquiz.b-cdn.net/technology/background/technology_background.png",
+            "questions":[
+                
+    
+        {
+            "id": "1",
+            "type": "image",
+            "question": "American multinational technology company",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q1.png",
+            "answerType": "text",
+            "answer": "Apple"
+        },
+        {
+            "id": "2",
+            "type": "image",
+            "question": "A family of audio compression technologies",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q2.png",
+            "answerType": "text",
+            "answer": "Dolby"
+        },
+        {
+            "id": "3",
+            "type": "image",
+            "question": "A Dutch multinational conglomerate corporation",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q3.png",
+            "answerType": "text",
+            "answer": "Philips"
+        },
+        {
+            "id": "4",
+            "type": "image",
+            "question": "A Chinese multinational technology company specializing in e-commerce,",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q4.png",
+            "answerType": "text",
+            "answer": "Alibaba"
+        },
+        {
+            "id": "6",
+            "type": "image",
+            "question": "An American multinational technology conglomerate",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q6.png",
+            "answerType": "text",
+            "answer": "Cisco"
+        },
+        {
+            "id": "7",
+            "type": "image",
+            "question": "An American multinational corporation and technology company ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q7.png",
+            "answerType": "text",
+            "answer": "Intel"
+        },
+        {
+            "id": "8",
+            "type": "image",
+            "question": "An American multinational computer software company.",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q8.png",
+            "answerType": "text",
+            "answer": "Adobe"
+        },
+        {
+            "id": "9",
+            "type": "image",
+            "question": "A French/Chinese brand of mobile handsets",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q9.png",
+            "answerType": "text",
+            "answer": "Alcatel"
+        },
+        {
+            "id": "10",
+            "type": "image",
+            "question": "An American multinational technology company",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q10.png",
+            "answerType": "text",
+            "answer": "Amazon"
+        },
+        {
+            "id": "11",
+            "type": "image",
+            "question": "An American multinational semiconductor company ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q11.png",
+            "answerType": "text",
+            "answer": "AMD"
+        },
+        {
+            "id": "12",
+            "type": "image",
+            "question": "A Taiwanese multinational computer and phone hardware and electronics company",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q12.png",
+            "answerType": "text",
+            "answer": "ASUS"
+        },
+        {
+            "id": "13",
+            "type": "image",
+            "question": "An American multinational conglomerate holding company",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q13.png",
+            "answerType": "text",
+            "answer": "AT&T"
+        },
+        {
+            "id": "14",
+            "type": "image",
+            "question": "An American multinational computer technology company",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q14.png",
+            "answerType": "text",
+            "answer": "Dell"
+        },
+        {
+            "id": "15",
+            "type": "image",
+            "question": "An American consumer electronics and fitness company",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q15.png",
+            "answerType": "text",
+            "answer": "Fitbit"
+        },
+        {
+            "id": "16",
+            "type": "image",
+            "question": "A Japanese multinational information and communications technology equipment and services company",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q16.png",
+            "answerType": "text",
+            "answer": "Fujitsu"
+        },
+        {
+            "id": "17",
+            "type": "image",
+            "question": "An online marketplace for lodging, primarily homestays for vacation rentals, and tourism activities.",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q17.png",
+            "answerType": "text",
+            "answer": "Airbnb"
+        },
+        {
+            "id": "18",
+            "type": "image",
+            "question": "A Chinese multinational technology company",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q18.png",
+            "answerType": "text",
+            "answer": "Huawei"
+        },
+        {
+            "id": "19",
+            "type": "image",
+            "question": "The mobile communications subsidiaries of the German telecommunications company",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q19.png",
+            "answerType": "text",
+            "answer": "T-Mobile"
+        },
+        {
+            "id": "20",
+            "type": "image",
+            "question": "A South Korean multinational conglomerate corporation",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q20.png",
+            "answerType": "text",
+            "answer": "LG"
+        },
+        {
+            "id": "21",
+            "type": "image",
+            "question": "An American multinational technology company ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q21.png",
+            "answerType": "text",
+            "answer": "Microsoft"
+        },
+        {
+            "id": "22",
+            "type": "image",
+            "question": "An American multinational telecommunications company ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q22.png",
+            "answerType": "text",
+            "answer": "Motorola "
+        },
+        {
+            "id": "23",
+            "type": "image",
+            "question": "An American multinational technology company",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q23.png",
+            "answerType": "text",
+            "answer": "Nvidia"
+        },
+        {
+            "id": "24",
+            "type": "image",
+            "question": "A Chinese consumer electronics manufacturer an American company operating an online payments",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q24.png",
+            "answerType": "text",
+            "answer": "Oneplus"
+        },
+        {
+            "id": "25",
+            "type": "image",
+            "question": "An American company operating an online payments system ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q25.png",
+            "answerType": "text",
+            "answer": "Paypal"
+        },
+        {
+            "id": "26",
+            "type": "image",
+            "question": "An Irish ultra low-cost airline ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q26.png",
+            "answerType": "text",
+            "answer": "Ryanair"
+        },
+        {
+            "id": "27",
+            "type": "image",
+            "question": "A South Korean multinational conglomerate",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q27.png",
+            "answerType": "text",
+            "answer": "Samsung"
+        },
+        {
+            "id": "28",
+            "type": "image",
+            "question": "An American data storage company",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q28.png",
+            "answerType": "text",
+            "answer": "Seagate"
+        },
+        {
+            "id": "29",
+            "type": "image",
+            "question": "A Swedish multinational networking and telecommunications company ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q29.png",
+            "answerType": "text",
+            "answer": "Ericsson"
+        },
+        {
+            "id": "30",
+            "type": "image",
+            "question": "An American consumer audio products manufacturer",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q30.png",
+            "answerType": "text",
+            "answer": "Beats"
+        },
+        {
+            "id": "31",
+            "type": "image",
+            "question": "Chinese multinational electronics ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q31.png",
+            "answerType": "text",
+            "answer": "Xiaomi"
+        },
+        {
+            "id": "32",
+            "type": "image",
+            "question": "An American technology company",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q32.png",
+            "answerType": "text",
+            "answer": "Uber"
+        },
+        {
+            "id": "33",
+            "type": "image",
+            "question": "An online video platform owned by Google.",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q33.png",
+            "answerType": "text",
+            "answer": "Youtube"
+        },
+        {
+            "id": "34",
+            "type": "image",
+            "question": "An American microblogging and social networking service ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q34.png",
+            "answerType": "text",
+            "answer": "Twitter"
+        },
+        {
+            "id": "35",
+            "type": "image",
+            "question": "A brand of smartphones, tablets, and services o",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q35.png",
+            "answerType": "text",
+            "answer": "Blackberry"
+        },
+        {
+            "id": "36",
+            "type": "image",
+            "question": "A file hosting service operated by the American company ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q36.png",
+            "answerType": "text",
+            "answer": "Dropbox"
+        },
+        {
+            "id": "37",
+            "type": "image",
+            "question": "An American online social media and social networking service ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q37.png",
+            "answerType": "text",
+            "answer": "Facebook"
+        },
+        {
+            "id": "38",
+            "type": "image",
+            "question": "An American multinational technology company",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q38.png",
+            "answerType": "text",
+            "answer": "Google"
+        },
+        {
+            "id": "39",
+            "type": "image",
+            "question": "An American multimedia messaging app ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q39.png",
+            "answerType": "text",
+            "answer": "Snapchat"
+        },
+        {
+            "id": "40",
+            "type": "image",
+            "question": "An American electric vehicle and clean energy company ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/technology/questions/tech_q40.png",
+            "answerType": "text",
+            "answer": "Tesla"
+        }
+    ]
+        }, 
+        {
+            "id": "entertaiment",
+            "sequence": "4",
+            "title": "Entertaiment",
+            "not_chosen_icon": "https://logoquiz.b-cdn.net/entertaiment/icons/enterteinment_not_chosen_icon.svg",
+            "chosen_icon": "https://logoquiz.b-cdn.net/entertaiment/icons/enterteinment_chosen_icon.svg",
+            "question_answered_icon": "https://logoquiz.b-cdn.net/entertaiment/icons/entertainment_answerd_question_icon.svg",
+            "background": "https://logoquiz.b-cdn.net/entertaiment/background/entertainment_background.png",
+            "questions": [
+                 {
+            "id": "1",
+            "type": "image",
+            "question": "American over-the-top content platform and production company",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q1.png",
+            "answerType": "text",
+            "answer": "Netflix"
+        },
+        {
+            "id": "2",
+            "type": "image",
+            "question": "A Japanese multinational consumer electronics and video game company",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q2.png",
+            "answerType": "text",
+            "answer": "Nintendo"
+        },
+        {
+            "id": "3",
+            "type": "image",
+            "question": "A film studio and theme park in the San Fernando Valley area of Los Angeles County, California.",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q3.png",
+            "answerType": "text",
+            "answer": "Universal Studios"
+        },
+        {
+            "id": "4",
+            "type": "image",
+            "question": "A media franchise created by Robert Kirkman",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q4.png",
+            "answerType": "text",
+            "answer": "The Walking Dead"
+        },
+        {
+            "id": "5",
+            "type": "image",
+            "question": "A French video game publisher based in Paris",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q5.png",
+            "answerType": "text",
+            "answer": "Gameloft"
+        },
+        {
+            "id": "6",
+            "type": "image",
+            "question": "An American fantasy drama television series",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q6.png",
+            "answerType": "text",
+            "answer": "Game of Thrones"
+        },
+        {
+            "id": "7",
+            "type": "image",
+            "question": "An American multinational pay television network and flagship channel ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q7.png",
+            "answerType": "text",
+            "answer": "Discovery"
+        },
+        {
+            "id": "8",
+            "type": "image",
+            "question": "A board game currently published by Hasbro",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q8.png",
+            "answerType": "text",
+            "answer": "Monopoly"
+        },
+        {
+            "id": "9",
+            "type": "image",
+            "question": "A Japanese entertainment, video game, and gambling conglomerate",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q9.png",
+            "answerType": "text",
+            "answer": "Konami"
+        },
+        {
+            "id": "10",
+            "type": "image",
+            "question": "A video streaming platform ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q10.png",
+            "answerType": "text",
+            "answer": "Crackle"
+        },
+        {
+            "id": "11",
+            "type": "image",
+            "question": "A Japanese multinational video game developer and publisher",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q11.png",
+            "answerType": "text",
+            "answer": "Bandai Namco"
+        },
+        {
+            "id": "12",
+            "type": "image",
+            "question": "An American streaming television service",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q12.png",
+            "answerType": "text",
+            "answer": "FuboTV"
+        },
+        {
+            "id": "13",
+            "type": "image",
+            "question": "An American diversified multinational mass media and entertainment conglomerate",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q13.png",
+            "answerType": "text",
+            "answer": "Warner Bros"
+        },
+        {
+            "id": "14",
+            "type": "image",
+            "question": "An American video game publisher based in New York City",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q14.png",
+            "answerType": "text",
+            "answer": "Rockstar Games"
+        },
+        {
+            "id": "15",
+            "type": "image",
+            "question": "A media franchise centered on a series of action films",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q15.png",
+            "answerType": "text",
+            "answer": "Fast & Furious"
+        },
+        {
+            "id": "16",
+            "type": "image",
+            "question": "A word game in which two to four players score points by placing tiles,",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q16.png",
+            "answerType": "text",
+            "answer": "Scrabble"
+        },
+        {
+            "id": "17",
+            "type": "image",
+            "question": "An American video game publisher based in Santa Monica, California",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q17.png",
+            "answerType": "text",
+            "answer": "Activision"
+        },
+        {
+            "id": "18",
+            "type": "image",
+            "question": "An American telecommunications conglomerate",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q18.png",
+            "answerType": "text",
+            "answer": "Comcast"
+        },
+        {
+            "id": "19",
+            "type": "image",
+            "question": "An American entrepreneur, animator, writer, voice actor, and film producer",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q19.png",
+            "answerType": "text",
+            "answer": "WaltDisney"
+        },
+        {
+            "id": "20",
+            "type": "image",
+            "question": "An American video live streaming service that focuses on video game live streaming",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q20.png",
+            "answerType": "text",
+            "answer": "Twitch"
+        },
+        {
+            "id": "21",
+            "type": "image",
+            "question": "An American subscription video on demand streaming service",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q21.png",
+            "answerType": "text",
+            "answer": "HBO Max"
+        },
+        {
+            "id": "22",
+            "type": "image",
+            "question": "An American subscription video on demand service ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q22.png",
+            "answerType": "text",
+            "answer": "Hulu"
+        },
+        {
+            "id": "23",
+            "type": "image",
+            "question": "A 2015 American science fiction adventure film",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q23.png",
+            "answerType": "text",
+            "answer": "Jurastic World"
+        },
+        {
+            "id": "24",
+            "type": "image",
+            "question": "Is an American film studio",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q24.png",
+            "answerType": "text",
+            "answer": "Century Fox"
+        },
+        {
+            "id": "25",
+            "type": "image",
+            "question": "A British crime television series",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q25.png",
+            "answerType": "text",
+            "answer": "Sherlock"
+        },
+        {
+            "id": "26",
+            "type": "image",
+            "question": "An American entertainment company ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q26.png",
+            "answerType": "text",
+            "answer": "Marvel"
+        },
+        {
+            "id": "27",
+            "type": "image",
+            "question": "A Swedish video game developer based in Stockholm.",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q27.png",
+            "answerType": "text",
+            "answer": "Mojang"
+        },
+        {
+            "id": "28",
+            "type": "image",
+            "question": "A brand of several television channels",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q28.png",
+            "answerType": "text",
+            "answer": "Paramount Channel"
+        },
+        {
+            "id": "29",
+            "type": "image",
+            "question": "A Japanese multinational video game developer and publisher headquartered in Shinagawa",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q29.png",
+            "answerType": "text",
+            "answer": "Sega"
+        },
+        {
+            "id": "30",
+            "type": "image",
+            "question": "An American epic space opera media franchise",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q30.png",
+            "answerType": "text",
+            "answer": "Star Wars"
+        },
+        {
+            "id": "31",
+            "type": "image",
+            "question": "A Chinese multinational technology conglomerate holding company",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q31.png",
+            "answerType": "text",
+            "answer": "Tencent Games "
+        },
+        {
+            "id": "32",
+            "type": "image",
+            "question": " 1984 science fiction film",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q32.png",
+            "answerType": "text",
+            "answer": "The Terminator"
+        },
+        {
+            "id": "33",
+            "type": "image",
+            "question": "A video sharing social networking service",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q33.png",
+            "answerType": "text",
+            "answer": "Tik Tok"
+        },
+        {
+            "id": "34",
+            "type": "image",
+            "question": "A 1997 American epic romance and disaster film",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q34.png",
+            "answerType": "text",
+            "answer": "Titanic"
+        },
+        {
+            "id": "35",
+            "type": "image",
+            "question": "An online audio distribution platform and music sharing website",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q35.png",
+            "answerType": "text",
+            "answer": "Soundcloud"
+        },
+        {
+            "id": "36",
+            "type": "image",
+            "question": "A French video game company",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q36.png",
+            "answerType": "text",
+            "answer": "Ubisoft "
+        },
+        {
+            "id": "37",
+            "type": "image",
+            "question": "A line of plastic construction toys ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q37.png",
+            "answerType": "text",
+            "answer": "Lego"
+        },
+        {
+            "id": "38",
+            "type": "image",
+            "question": "A VoIP, instant messaging and digital distribution platform",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q38.png",
+            "answerType": "text",
+            "answer": "Discrd"
+        },
+        {
+            "id": "39",
+            "type": "image",
+            "question": "A Swedish audio streaming and media services provider",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q39.png",
+            "answerType": "text",
+            "answer": "Spotify"
+        },
+        {
+            "id": "40",
+            "type": "image",
+            "question": "A video game digital distribution service by Valve",
+            "questionImageURL": "https://logoquiz.b-cdn.net/entertaiment/questions/ente_q40.png",
+            "answerType": "text",
+            "answer": "Steam"
+        }
+    ]
+        }, 
+    
+        {
+            "id": "Automotive",
+            "sequence": "5",
+            "title": "Automotive",
+            "not_chosen_icon": "https://logoquiz.b-cdn.net/Automotive/icons/automotive_not_chosen_icon.svg",
+            "chosen_icon": "https://logoquiz.b-cdn.net/Automotive/icons/automotive_chosen_icon.svg",
+            "question_answered_icon": "https://logoquiz.b-cdn.net/Automotive/icons/automotive_answerd_question_icon.svg",
+            "background": "https://logoquiz.b-cdn.net/Automotive/background/automotive_background.png",
+            "questions": [
+        {
+            "id": "2",
+            "type": "image",
+            "question": "A division of the American automobile manufacturer",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q2.png",
+            "answerType": "text",
+            "answer": "Cadilac"
+        },
+        {
+            "id": "3",
+            "type": "image",
+            "question": "An American automobile division ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q3.png",
+            "answerType": "text",
+            "answer": "Chervolet"
+        },
+        {
+            "id": "4",
+            "type": "image",
+            "question": "A British automotive marque founded in 1969",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q4.png",
+            "answerType": "text",
+            "answer": "Mini Cooper"
+        },
+        {
+            "id": "5",
+            "type": "image",
+            "question": "A German automobile manufacturer specializing in high-performance sports cars, SUVs and sedans",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q5.png",
+            "answerType": "text",
+            "answer": "Porcshe"
+        },
+        {
+            "id": "6",
+            "type": "image",
+            "question": "A French automobile manufacturer.",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q6.png",
+            "answerType": "text",
+            "answer": "Citroen"
+        },
+        {
+            "id": "7",
+            "type": "image",
+            "question": "A major South Korean chaebol (type of conglomerate) and car manufacturer.",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q7.png",
+            "answerType": "text",
+            "answer": "Daewoo"
+        },
+        {
+            "id": "8",
+            "type": "image",
+            "question": "Is the luxury vehicle division of Japanese automaker Nissan",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q8.png",
+            "answerType": "text",
+            "answer": "Infiniti"
+        },
+        {
+            "id": "9",
+            "type": "image",
+            "question": "Is the luxury vehicle brand of Jaguar Land Rover",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q9.png",
+            "answerType": "text",
+            "answer": "Jaguar"
+        },
+        {
+            "id": "10",
+            "type": "image",
+            "question": "A German motor vehicle manufacturer founded in 1937",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q10.png",
+            "answerType": "text",
+            "answer": "VolksWagen"
+        },
+        {
+            "id": "11",
+            "type": "image",
+            "question": "A japanese multinational automaker ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q11.png",
+            "answerType": "text",
+            "answer": "Lexus"
+        },
+        {
+            "id": "12",
+            "type": "image",
+            "question": "A French automobile manufacturer.",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q12.png",
+            "answerType": "text",
+            "answer": "Peugeot"
+        },
+        {
+            "id": "13",
+            "type": "image",
+            "question": "A group of autonomous Japanese multinational companies in a variety of industries.",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q13.png",
+            "answerType": "text",
+            "answer": "Mitsubishi"
+        },
+        {
+            "id": "14",
+            "type": "image",
+            "question": "A Japanese multinational corporation headquartered in Minami-ku, Hamamatsu",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q14.png",
+            "answerType": "text",
+            "answer": "Suzuki"
+        },
+        {
+            "id": "15",
+            "type": "image",
+            "question": "A British independent manufacturer of luxury sports cars and grand tourers",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q15.png",
+            "answerType": "text",
+            "answer": "Aston Martin"
+        },
+        {
+            "id": "16",
+            "type": "image",
+            "question": "A British manufacturer and marketer of luxury cars and SUVs",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q16.png",
+            "answerType": "text",
+            "answer": "Bentley"
+        },
+        {
+            "id": "17",
+            "type": "image",
+            "question": "A French car manufacturer of high-performance automobiles,",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q17.png",
+            "answerType": "text",
+            "answer": "Buggati"
+        },
+        {
+            "id": "18",
+            "type": "image",
+            "question": "A German automobile manufacturer",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q18.png",
+            "answerType": "text",
+            "answer": "Audi"
+        },
+        {
+            "id": "19",
+            "type": "image",
+            "question": "A Romanian car manufacturer",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q19.png",
+            "answerType": "text",
+            "answer": "Dacia"
+        },
+        {
+            "id": "20",
+            "type": "image",
+            "question": "An American brand of automobiles and a division of Stellantis",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q20.png",
+            "answerType": "text",
+            "answer": "Dodge"
+        },
+        {
+            "id": "21",
+            "type": "image",
+            "question": "An Italian luxury sports car manufacturer based in Maranello, Italy. ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q21.png",
+            "answerType": "text",
+            "answer": "Ferrari"
+        },
+        {
+            "id": "22",
+            "type": "image",
+            "question": "An Italian automobile manufacturer",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q22.png",
+            "answerType": "text",
+            "answer": "Fiat"
+        },
+        {
+            "id": "23",
+            "type": "image",
+            "question": "An American multinational automaker",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q23.png",
+            "answerType": "text",
+            "answer": "Ford"
+        },
+        {
+            "id": "24",
+            "type": "image",
+            "question": "A Japanese public multinational conglomerate manufacturer of automobiles, motorcycles, and power equipment",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q24.png",
+            "answerType": "text",
+            "answer": "Honda"
+        },
+        {
+            "id": "25",
+            "type": "image",
+            "question": "A South Korean multinational automotive manufacturer ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q25.png",
+            "answerType": "text",
+            "answer": "Hyundai"
+        },
+        {
+            "id": "26",
+            "type": "image",
+            "question": "A Swedish manufacturer of high-performance sports cars",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q26.png",
+            "answerType": "text",
+            "answer": "Koenigsegg"
+        },
+        {
+            "id": "27",
+            "type": "image",
+            "question": "A brand of cars manufactured by AvtoVAZ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q27.png",
+            "answerType": "text",
+            "answer": "Lada"
+        },
+        {
+            "id": "29",
+            "type": "image",
+            "question": "An Italian luxury vehicle manufacturer",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q29.png",
+            "answerType": "text",
+            "answer": "Maserati"
+        },
+        {
+            "id": "30",
+            "type": "image",
+            "question": "A Japanese multinational automaker ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q30.png",
+            "answerType": "text",
+            "answer": "Mazda"
+        },
+        {
+            "id": "31",
+            "type": "image",
+            "question": "A Japanese multinational automobile manufacturer",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q31.png",
+            "answerType": "text",
+            "answer": "Nissan"
+        },
+        {
+            "id": "32",
+            "type": "image",
+            "question": "A German automobile manufacturer ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q32.png",
+            "answerType": "text",
+            "answer": "Opel"
+        },
+        {
+            "id": "33",
+            "type": "image",
+            "question": "A French multinational automobile manufacturer established in 1899.",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q33.png",
+            "answerType": "text",
+            "answer": "Renault"
+        },
+        {
+            "id": "34",
+            "type": "image",
+            "question": "A Swedish aerospace and defence company, founded in 1937",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q34.png",
+            "answerType": "text",
+            "answer": "Saab"
+        },
+        {
+            "id": "35",
+            "type": "image",
+            "question": "A Spanish automobile manufacturer ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q35.png",
+            "answerType": "text",
+            "answer": "Seat"
+        },
+        {
+            "id": "36",
+            "type": "image",
+            "question": "A Czech automobile manufacturer founded in 1895",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q36.png",
+            "answerType": "text",
+            "answer": "Skoda"
+        },
+        {
+            "id": "37",
+            "type": "image",
+            "question": "Is the automobile manufacturing division of Japanese transportation conglomerate",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q37.png",
+            "answerType": "text",
+            "answer": "Subaru"
+        },
+        {
+            "id": "38",
+            "type": "image",
+            "question": "A Swedish multinational manufacturing company ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q38.png",
+            "answerType": "text",
+            "answer": "Volvo"
+        },
+        {
+            "id": "39",
+            "type": "image",
+            "question": "A German multinational corporation which produces luxury vehicles and motorcycles.",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q39.png",
+            "answerType": "text",
+            "answer": "BMW"
+        },
+        {
+            "id": "40",
+            "type": "image",
+            "question": "A japanese multinational automaker ",
+            "questionImageURL": "https://logoquiz.b-cdn.net/Automotive/questions/auto_q40.png",
+            "answerType": "text",
+            "answer": "Chery"
+        }
+    ]
+        }
+    ]
+    
+}
