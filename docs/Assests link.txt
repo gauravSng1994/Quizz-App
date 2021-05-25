@@ -1,2 +1,6 @@
 Kardashians- https://thekardashians.b-cdn.net/assets_7_3_21/
 Logo quiz - https://logoquiz.b-cdn.net/assets%2013_5/
+Olympics - https://theolympics.b-cdn.net/assets%2005_04_21/
+
+get font colors from app_config.json in the asset folder.
+
