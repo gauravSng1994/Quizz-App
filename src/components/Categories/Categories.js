@@ -85,11 +85,11 @@ export default {
         toggleBackgroundMusic(on){
             if(on) {
                 let res = BackgroundMusic.start()
-                localStorage.setItem(IS_SOUND_OFF,"");
+                localStorage.setItem(IS_MUSIC_OFF,"");
                 if(res) this.isMusicOn = true;
             } else {
                 let res = BackgroundMusic.stop();
-                localStorage.setItem(IS_SOUND_OFF,"true");
+                localStorage.setItem(IS_MUSIC_OFF,"true");
                 if(res) this.isMusicOn = false;
             }
         },
