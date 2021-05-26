@@ -3,6 +3,8 @@ import data from "../../data/quiz_config_v2_full.json";
 import Header from "../Header/index";
 import LetterBox from "../LetterBox/index"
 import {getQuestion, markChosen, updateAnswer} from '../../services/question';
+import {ClearSound, CorrectSound, LetterSelectSound, ProceedSelectSound, WrongSound} from "../../services/audio";
+
 export default {
     name:"Quiz",
     components:{
@@ -38,7 +40,7 @@ export default {
         this.init();
     },
     methods: {
-        init(){
+        init(isWatch){
             this.currentLetterBlock = 0;
             this.questionId = this.$router.currentRoute.params.qid;
             this.quizId = this.$router.currentRoute.params.quizId;
@@ -68,10 +70,11 @@ export default {
                 return acc;
             },{});
             if( userAnswer){
-                for(let i = 0; i < userAnswer.length; ++i ) this.typeAnswer(userAnswer[i]);
+                for(let i = 0; i < userAnswer.length; ++i ) this.typeAnswer(userAnswer[i],isWatch,true);
             }
         },
-        typeAnswer(char){
+        typeAnswer(char,isWatch,autoFill){
+            if(!(isWatch || autoFill)) LetterSelectSound.start();
             console.log('this.currentLetterBlock',this.currentLetterBlock);
             console.log('this.letterBlock',this.letterBlock);
             if(this.currentLetterBlock >= this.letterBlock.length) {
@@ -90,6 +93,7 @@ export default {
                     this.quizOver = true;
                     this.isAnswerCorrect = this.answer.toLowerCase() === givenAnswer.toLowerCase();
                     this.currentLetterBlock +=1;
+                    if(!(isWatch || autoFill)) this.isAnswerCorrect ? CorrectSound.start() : WrongSound.start();
                     updateAnswer(this.quizId,this.questionId,givenAnswer.toLowerCase());
                     // return console.log('No more entries allowed',this.answer, givenAnswer,this.isAnswerCorrect);
                 }
@@ -98,12 +102,14 @@ export default {
         clearAnswer: async function (){
             if(this.quizOver){
                 // todo move to next quiz
+                ProceedSelectSound.start();
                 await this.$router.push({ name: 'Quiz', params: { qId:this.questionId, quizId:Number(this.quizId)+1 } });
                 //since we push the same page again, vue ignores it, this.$router.go() reloads the page and 0 means to go back 0 pages
                 // this.$router.go(0)
 
                 console.log('quiz over');
             }else {
+                ClearSound.start()
                 this.typedAnswer = this.letterBlock.reduce( (acc,count,index)=>{
                     acc[index] = [];
                     return acc;

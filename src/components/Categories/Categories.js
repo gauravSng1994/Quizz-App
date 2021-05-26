@@ -6,7 +6,8 @@ import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 // optional style for arrows & dots
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 import { getAnsweredQuestions} from "../../services/question";
-import {BackgroundMusic} from "../../services/audio";
+import {BackgroundMusic, SelectSound} from "../../services/audio";
+import {IS_MUSIC_OFF,IS_SOUND_OFF} from "../../constants";
 
 export default {
     name:"Categories",
@@ -48,6 +49,8 @@ export default {
     },
     mounted(){
         console.log('refs',this.$refs);
+        this.isSoundOn = !localStorage.getItem(IS_SOUND_OFF);
+        this.isMusicOn = !localStorage.getItem(IS_MUSIC_OFF);
         this.sortedCategories = data.categories.sort( (a,b) => a.sequence - b.sequence);
         // console.log('data',this.sortedCategories);
         this.headerTitle = (data||{}).title || "";
@@ -61,12 +64,14 @@ export default {
         // this.backgroundImage = "https://www.imagediamond.com/blog/wp-content/uploads/2020/06/cartoon-boy-images-3-scaled.jpg";
     },
     methods: {
-        bottomBtnClick : function (){
+        async bottomBtnClick(){
             console.log('HELLO!!! Please implement me.');
-            this.$router.push({ name: 'QuestionList', params: { qid:this.currentCategory } });
+            await this.goToQuestionList(this.currentCategory);
+            // this.$router.push({ name: 'QuestionList', params: { qid:this.currentCategory } });
         },
         async goToQuestionList(categoryId){
             console.log('category id',categoryId);
+            SelectSound.start();
             await this.$router.push({ name: 'QuestionList', params: { qid:categoryId } });
         },
         completedQuestionsCount(category){
@@ -78,19 +83,24 @@ export default {
         //     console.log('swipe',dir);
         // },
         toggleBackgroundMusic(on){
-            console.log('Toggle background music',on);
             if(on) {
-                BackgroundMusic.start()
-                // BackgroundMusicStart();
-                this.isMusicOn = true;
+                let res = BackgroundMusic.start()
+                localStorage.setItem(IS_SOUND_OFF,"");
+                if(res) this.isMusicOn = true;
             } else {
-                BackgroundMusic.stop();
-                // BackgroundMusicStop();
-                this.isMusicOn = false;
+                let res = BackgroundMusic.stop();
+                localStorage.setItem(IS_SOUND_OFF,"true");
+                if(res) this.isMusicOn = false;
             }
         },
-        toggleSound(){
-
+        toggleSound(on){
+            if(on) {
+                localStorage.setItem(IS_SOUND_OFF,"");
+                this.isSoundOn = true;
+            } else {
+                localStorage.setItem(IS_SOUND_OFF,"true");
+                this.isSoundOn = false;
+            }
         },
         afterChange(slideInd){
             const allCategories = this.sortedCategories;

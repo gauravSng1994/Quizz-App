@@ -4,14 +4,14 @@
         <div class="category-main-div">
             <img :src="backgroundImage"/>
             <div class="sound-btns">
-<!--                <div class="audio">-->
-<!--                    <img v-if="!isSoundOn"-->
-<!--                         src="../../assets/variant/olympics/sound_on.svg"-->
-<!--                         />-->
-<!--                    <img v-else-->
-<!--                         src="../../assets/variant/olympics/sound_off.svg"-->
-<!--                         />-->
-<!--                </div>-->
+                <div class="sound">
+                    <img v-if="isSoundOn"
+                         src="../../assets/variant/olympics/sound_on.svg"
+                         @click="()=>toggleSound(false)"/>
+                    <img v-else
+                         src="../../assets/variant/olympics/sound_off.svg"
+                         @click="()=>toggleSound(true)"/>
+                </div>
                 <div class="sound">
                     <img v-if="isMusicOn"
                          src="../../assets/variant/olympics/music_on.svg"

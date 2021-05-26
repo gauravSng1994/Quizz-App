@@ -2,6 +2,7 @@ import BottomButton from "../BottomButton/index";
 // import data from "../../data/quiz_config_v2_full.json";
 import Header from "../Header/index";
 import {getAllQuestions, getAnsweredQuestions} from "../../services/question";
+import {SelectSound} from "../../services/audio";
 
 export default {
     name:"Questions",
@@ -48,6 +49,7 @@ export default {
     },
     methods: {
         goToQuiz:async function(quizId){
+            SelectSound.start();
             await this.$router.push({ name: 'Quiz', params: { qId:this.questionId, quizId:Number(quizId) } });
         },
         questionListIcon(question){
