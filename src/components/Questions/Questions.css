@@ -13,16 +13,30 @@
 .central-div{
     position: absolute;
     top:10%;
-    left: 2%;
+    width: 100vw;
+    /*left: 2%;*/
     color:white;
     height: 70%;
+    text-align: center;
+    /*margin-left: calc();*/
 }
-.questionList > img{
+.image-wrapper{
+    width: 95%;
+    margin: auto;
+}
+/*.questionList > img{*/
+/*    width: 58px;*/
+/*}*/
+.image-wrapper > img{
     width: 58px;
 }
 .questionList{
     height: 100%;
     overflow: scroll!important;
+    text-align: left;
+    width: 100%;
+    margin: auto;
+    /*margin-left: ;*/
 }
 .questionsCount{
     color:aqua;

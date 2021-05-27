@@ -19,6 +19,7 @@ body{
   overflow: hidden;
 }
 .category-main-div{
-  height:calc(100vh - 42px)!important;
+  height:calc(100vh - 47px)!important;
+  /*overflow: hidden!important;*/
 }
 </style>

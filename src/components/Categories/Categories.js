@@ -108,7 +108,7 @@ export default {
         },
         afterChange(slideInd){
             const allCategories = this.sortedCategories;
-            let changedCategory = allCategories.find( (category,ind) => ind.toString() === (slideInd||"").toString());
+            let changedCategory = allCategories.find( (category,ind) => Number(ind) === Number(slideInd));
             console.log('chCat',slideInd,allCategories,changedCategory);
             this.currentCategory = changedCategory.id;
             LocalStorage.setItem(CURRENT_SLIDE_INDEX, slideInd);

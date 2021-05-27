@@ -9,11 +9,16 @@
 }
 .back-icon{
     position: relative;
-    top:5%;
+    top:0;
+    /*top:5%;*/
     left: 1%;
     width: 35px;
+    height: 100%;
     /*display: inline-block;*/
     float: left;
+}
+.back-icon>img{
+    margin-top: calc(50% - 13px);
 }
 .header-title-div{
     padding-top: 12px;
