@@ -54,7 +54,7 @@ export default {
             // console.log('questionData',this.questionData);
             let {title,background,questions} = this.categoryData || {};
             this.backgroundImage = background;
-            this.headerTitle = title;
+            this.headerTitle = `${title} #${this.quizId}`;
             this.totalQuestionsCount = questions.length;
             this.questionData = getQuestion(this.questionId,this.quizId);
             console.log('this.qData',this.questionData);
