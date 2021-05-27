@@ -24,6 +24,7 @@
             <div class="central-div" v-if="sortedCategories">
                 <VueSlickCarousel
                         v-bind="carouselSettings"
+                        :initialSlide="Number(currentSlideIndex)"
                         @afterChange="afterChange"
                 >
                     <div v-for="category in sortedCategories"

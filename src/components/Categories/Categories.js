@@ -7,8 +7,8 @@ import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 import { getAnsweredQuestions} from "../../services/question";
 import {BackgroundMusic, SelectSound} from "../../services/audio";
-import {IS_MUSIC_OFF,IS_SOUND_OFF} from "../../constants";
-
+import {IS_MUSIC_OFF,IS_SOUND_OFF,CURRENT_SLIDE_INDEX} from "../../constants";
+import LocalStorage from "../../services/LocalStorage";
 export default {
     name:"Categories",
     components:{
@@ -33,6 +33,7 @@ export default {
             currentCategory: '',
             isSoundOn:false,
             isMusicOn:false,
+            currentSlideIndex:0,
             carouselSettings:{
                 "centerMode": true,
                 "centerPadding": "80px",
@@ -49,18 +50,21 @@ export default {
     },
     mounted(){
         console.log('refs',this.$refs);
-        this.isSoundOn = !localStorage.getItem(IS_SOUND_OFF);
-        this.isMusicOn = !localStorage.getItem(IS_MUSIC_OFF);
+        console.log('csi',LocalStorage.getItem(CURRENT_SLIDE_INDEX))
+        this.currentSlideIndex = LocalStorage.getItem(CURRENT_SLIDE_INDEX) || 0;
+        this.isSoundOn = !LocalStorage.getItem(IS_SOUND_OFF);
+        this.isMusicOn = !LocalStorage.getItem(IS_MUSIC_OFF);
         this.sortedCategories = data.categories.sort( (a,b) => a.sequence - b.sequence);
         // console.log('data',this.sortedCategories);
         this.headerTitle = (data||{}).title || "";
         const selectedCategory = this.currentCategory ? this.sortedCategories.find(cat=> cat.id === this.currentCategory) : this.sortedCategories[0];
         this.currentCategory = selectedCategory.id;
-        let { background, title, chosen_icon, questions } = selectedCategory;
-        this.backgroundImage = background;
+        let { title, chosen_icon, questions } = selectedCategory;
+        this.backgroundImage = ((data||{}).generic||{}).background || "";
         this.categoryName = title;
         this.categoryImage = chosen_icon;
         this.totalQuestionsCount = questions.length;
+        this.afterChange(this.currentSlideIndex);
         // this.backgroundImage = "https://www.imagediamond.com/blog/wp-content/uploads/2020/06/cartoon-boy-images-3-scaled.jpg";
     },
     methods: {
@@ -85,36 +89,29 @@ export default {
         toggleBackgroundMusic(on){
             if(on) {
                 let res = BackgroundMusic.start()
-                localStorage.setItem(IS_MUSIC_OFF,"");
+                LocalStorage.setItem(IS_MUSIC_OFF,"");
                 if(res) this.isMusicOn = true;
             } else {
                 let res = BackgroundMusic.stop();
-                localStorage.setItem(IS_MUSIC_OFF,"true");
+                LocalStorage.setItem(IS_MUSIC_OFF,"true");
                 if(res) this.isMusicOn = false;
             }
         },
         toggleSound(on){
             if(on) {
-                localStorage.setItem(IS_SOUND_OFF,"");
+                LocalStorage.setItem(IS_SOUND_OFF,"");
                 this.isSoundOn = true;
             } else {
-                localStorage.setItem(IS_SOUND_OFF,"true");
+                LocalStorage.setItem(IS_SOUND_OFF,"true");
                 this.isSoundOn = false;
             }
         },
         afterChange(slideInd){
             const allCategories = this.sortedCategories;
-            // let currInd;
-            let changedCategory = allCategories.find( (category,ind) => ind === slideInd);
-            // console.log('currInd',currInd,allCategories.length-1);
+            let changedCategory = allCategories.find( (category,ind) => ind.toString() === (slideInd||"").toString());
+            console.log('chCat',slideInd,allCategories,changedCategory);
             this.currentCategory = changedCategory.id;
-            this.backgroundImage = changedCategory.background;
-            // if(dir==='left' && currInd < allCategories.length-1){
-            //     console.log('left swipe');
-            //     this.currentCategory = allCategories[currInd+1].id;
-            // }else if(dir==='right' && currInd>0 ){
-            //     this.currentCategory = allCategories[currInd-1].id;
-            // }
+            LocalStorage.setItem(CURRENT_SLIDE_INDEX, slideInd);
         }
     },
     computed: {
