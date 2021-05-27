@@ -11,7 +11,10 @@
                 <div v-if="questionType === 'image'" class="questionsCount">{{questionTitle}}</div>
                 <div class="answerBox">
                     <span class="answerBlock" v-for="blockIndex in (letterBlock||[]).length">
-                        <LetterBox v-for='index in letterBlock[blockIndex-1]' :letter="typedAnswer[blockIndex-1][index-1]"/>
+                        <LetterBox
+                                v-for='index in letterBlock[blockIndex-1]'
+                                :uppercase="Number(index) === 1"
+                                :letter="typedAnswer[blockIndex-1][index-1]"/>
                     </span>
                 </div>
             </div>

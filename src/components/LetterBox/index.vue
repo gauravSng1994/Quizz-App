@@ -1,7 +1,7 @@
 <template>
     <div class="letterBox" @click="clickHandler">
         <img src="../../assets/variant/olympics/letterbox_background.svg"/>
-        <div class="text">
+        <div class="text" :style="{ 'text-transform': this.uppercase ? 'uppercase' : 'lowercase'}" >
             {{letter}}
         </div>
     </div>
@@ -10,7 +10,7 @@
 
 export default {
   name:"LetterBox",
-  props: ['letter'],
+  props: ['letter','uppercase'],
   methods:{
     clickHandler : function () {
       this.$emit('click',this.letter);
