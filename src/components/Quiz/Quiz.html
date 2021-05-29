@@ -6,15 +6,21 @@
             <div class="central-div">
                 <div class="questionImgDiv">
                     <img v-if="questionType === 'image'" :src="questionImage">
-                    <div v-else class="textQuestion">{{questionTitle}}</div>
+                    <div v-else class="textQuestion">
+                        <div class="content">
+                            {{questionTitle}}
+                        </div>
+                    </div>
                 </div>
                 <div v-if="questionType === 'image'" class="questionsCount">{{questionTitle}}</div>
                 <div class="answerBox">
                     <span class="answerBlock" v-for="blockIndex in (letterBlock||[]).length">
                         <LetterBox
                                 v-for='index in letterBlock[blockIndex-1]'
-                                :uppercase="Number(index) === 1"
-                                :letter="typedAnswer[blockIndex-1][index-1]"/>
+                                :lowercase="Number(index) !== 1"
+                                :letter="typedAnswer[blockIndex-1][index-1]"
+                                :border="letterBoxBorderType"
+                        />
                     </span>
                 </div>
             </div>

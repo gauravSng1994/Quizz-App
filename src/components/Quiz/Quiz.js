@@ -33,6 +33,7 @@ export default {
             isAnswerCorrect:false,
             quizId:'',
             questionId:'',
+            letterBoxBorderType:'neutral',
         };
     },
     mounted(){
@@ -94,6 +95,7 @@ export default {
                     this.isAnswerCorrect = this.answer.toLowerCase() === givenAnswer.toLowerCase();
                     this.currentLetterBlock +=1;
                     if(!(isWatch || autoFill)) this.isAnswerCorrect ? CorrectSound.start() : WrongSound.start();
+                    this.letterBoxBorderType = this.isAnswerCorrect ? 'correct' : 'wrong';
                     updateAnswer(this.quizId,this.questionId,givenAnswer.toLowerCase());
                     // return console.log('No more entries allowed',this.answer, givenAnswer,this.isAnswerCorrect);
                 }
@@ -132,9 +134,9 @@ export default {
             let n = arr.length;
             for(let i=0 ; i<n-1 ; ++i) {
                 let j = Math.floor(Math.random() * n);
-                let temp = arr[i];
-                arr[i] = arr[j].toLowerCase();
-                arr[j] = temp.toLowerCase();
+                let temp = arr[i].toUpperCase();
+                arr[i] = arr[j].toUpperCase();
+                arr[j] = temp.toUpperCase();
             }
             return arr.join('');
         },

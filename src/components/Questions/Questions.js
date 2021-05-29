@@ -3,7 +3,7 @@ import BottomButton from "../BottomButton/index";
 import Header from "../Header/index";
 import {getAllQuestions, getAnsweredQuestions} from "../../services/question";
 import {SelectSound} from "../../services/audio";
-
+import unansweredQuestionIcon from "../../assets/variant/olympics/question_icon_questionmark.svg"
 export default {
     name:"Questions",
     components:{
@@ -54,8 +54,9 @@ export default {
         },
         questionListIcon(question){
             if( (question||{}).isAnswered ) return this.questionAnsweredIcon;
-            if( (question||{}).isChosen ) return this.chosenIcon;
-            else return this.notChosenIcon;
+            else return unansweredQuestionIcon;
+            // if( (question||{}).isChosen ) return this.chosenIcon;
+            // else return this.notChosenIcon;
         }
     },
     computed: {

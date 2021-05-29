@@ -34,7 +34,7 @@
 }
 .central-div{
     position: absolute;
-    top:60px;
+    top:55px;
     color:white;
     /*position: absolute;*/
     /*top: 30%;*/
@@ -55,12 +55,23 @@
     border-image:url('../../assets/variant/olympics/dialog_border.svg') 5 stretch;
 }
 .textQuestion{
+    /*display: table-cell;*/
+    /*vertical-align: middle;*/
+    min-height: 25vh;
     font-size: 20px;
-    padding: 3%;
+    padding: 0 3%;
     width: 95%;
     margin: auto;
     border: 6px solid transparent;
-    border-image:url('../../assets/variant/olympics/dialog_border.svg') 2 stretch;
+    border-image:url('../../assets/variant/olympics/dialog_border.svg') 5 stretch;
+}
+.content{
+    /*margin-top: calc(50% - 15.5vh);*/
+    transform: translateY(calc(12.5vh - 50% - 6px));
+    margin-bottom: auto;
+    /*min-height: 25vh;*/
+    position: relative;
+    top:-50%
 }
 .questionsCount{
     color:aqua;
