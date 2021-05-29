@@ -12,6 +12,7 @@ import LocalStorage from "./services/LocalStorage";
 LocalStorage.setItem(IS_MUSIC_OFF,"true");
 LocalStorage.setItem(IS_SOUND_OFF,"true");
 LocalStorage.setItem(CURRENT_SLIDE_INDEX, 0);
+
 new Vue({
   router,
   store,

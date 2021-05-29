@@ -1,10 +1,11 @@
 import BottomButton from "../BottomButton/index";
-import data from "../../data/quiz_config_v2_full.json";
+// import data from "../../data/quiz_config_v2_full.json";
+
 import Header from "../Header/index";
 import LetterBox from "../LetterBox/index"
-import {getQuestion, markChosen, updateAnswer} from '../../services/question';
+import {getJsonData, getQuestion, markChosen, updateAnswer} from '../../services/question';
 import {ClearSound, CorrectSound, LetterSelectSound, ProceedSelectSound, WrongSound} from "../../services/audio";
-
+const data = getJsonData();
 export default {
     name:"Quiz",
     components:{
@@ -32,7 +33,7 @@ export default {
             quizOver:false,
             isAnswerCorrect:false,
             quizId:'',
-            questionId:'',
+            categoryId:'',
             letterBoxBorderType:'neutral',
         };
     },
@@ -43,21 +44,22 @@ export default {
     methods: {
         init(isWatch){
             this.currentLetterBlock = 0;
-            this.questionId = this.$router.currentRoute.params.qid;
+            this.categoryId = this.$router.currentRoute.params.qid;
             this.quizId = this.$router.currentRoute.params.quizId;
             console.log('initialising',this.quizId);
-            markChosen(this.quizId,this.questionId);
+            markChosen(this.quizId,this.categoryId);
+            console.log('OHHH great!!!!!1111')
             this.quizOver=false;
             this.isAnswerCorrect=false;
-            this.categoryData = data.categories.find( category => category.id === this.questionId );
+            this.categoryData =  data.categories[this.categoryId];//.find( category => category.id === this.categoryId );
             // this.questionData = this.categoryData.questions.find( q => Number(q.id) === Number(this.quizId) );
-            // console.log('categoryData',this.categoryData);
+            console.log('categoryData',this.categoryData);
             // console.log('questionData',this.questionData);
             let {title,background,questions} = this.categoryData || {};
             this.backgroundImage = background;
             this.headerTitle = `${title} #${this.quizId}`;
             this.totalQuestionsCount = questions.length;
-            this.questionData = getQuestion(this.questionId,this.quizId);
+            this.questionData = getQuestion(this.categoryId,this.quizId);
             console.log('this.qData',this.questionData);
             let {question, type, questionImageURL,answer, answerType, userAnswer } = this.questionData||{};
             this.questionTitle = question;
@@ -96,7 +98,7 @@ export default {
                     this.currentLetterBlock +=1;
                     if(!(isWatch || autoFill)) this.isAnswerCorrect ? CorrectSound.start() : WrongSound.start();
                     this.letterBoxBorderType = this.isAnswerCorrect ? 'correct' : 'wrong';
-                    updateAnswer(this.quizId,this.questionId,givenAnswer.toLowerCase());
+                    updateAnswer(this.quizId,this.categoryId,givenAnswer.toLowerCase());
                     // return console.log('No more entries allowed',this.answer, givenAnswer,this.isAnswerCorrect);
                 }
             }
@@ -105,7 +107,7 @@ export default {
             if(this.quizOver){
                 // todo move to next quiz
                 ProceedSelectSound.start();
-                await this.$router.push({ name: 'Quiz', params: { qId:this.questionId, quizId:Number(this.quizId)+1 } });
+                await this.$router.push({ name: 'Quiz', params: { qId:this.categoryId, quizId:Number(this.quizId)+1 } });
                 //since we push the same page again, vue ignores it, this.$router.go() reloads the page and 0 means to go back 0 pages
                 // this.$router.go(0)
 
@@ -134,9 +136,9 @@ export default {
             let n = arr.length;
             for(let i=0 ; i<n-1 ; ++i) {
                 let j = Math.floor(Math.random() * n);
-                let temp = arr[i].toUpperCase();
-                arr[i] = arr[j].toUpperCase();
-                arr[j] = temp.toUpperCase();
+                let temp = arr[i]
+                arr[i] = arr[j]
+                arr[j] = temp
             }
             return arr.join('');
         },

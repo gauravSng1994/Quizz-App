@@ -3,7 +3,7 @@
         :class="{'neutral-border':border==='neutral','correct-border':border==='correct','wrong-border':border==='wrong', 'letterBox':true}"
         @click="clickHandler">
         <img src="../../assets/variant/olympics/letterbox_background.svg"/>
-        <div class="text" :style="{ 'text-transform': !this.lowercase ? 'uppercase' : 'lowercase'}" >
+        <div class="text" >
             {{letter}}
         </div>
     </div>
@@ -12,7 +12,7 @@
 
 export default {
   name:"LetterBox",
-  props: ['letter','lowercase','border'],
+  props: ['letter','border'],
   mounted(){
     console.log('this.border',this.border);
   },
@@ -31,7 +31,7 @@ export default {
     position: relative;
     display: inline-block;
     margin: 0 1px;
-
+    text-transform: uppercase;
 }
 .neutral-border{
   border: 1px solid transparent;

@@ -1,7 +1,7 @@
 import BottomButton from "../BottomButton/index";
 // import data from "../../data/quiz_config_v2_full.json";
 import Header from "../Header/index";
-import {getAllQuestions, getAnsweredQuestions} from "../../services/question";
+import {getAllCategories, getAnsweredQuestions} from "../../services/question";
 import {SelectSound} from "../../services/audio";
 import unansweredQuestionIcon from "../../assets/variant/olympics/question_icon_questionmark.svg"
 export default {
@@ -25,17 +25,17 @@ export default {
             notChosenIcon:'',
             questionData:{},
             BottomButtonLabel:"Play",
-            questionId:'',
+            categoryId:'',
             questions:[]
         };
     },
     mounted(){
         console.log('this',this.$router.currentRoute.params);
-        this.questionId = this.$router.currentRoute.params.qid;
-        if(!this.questionId) alert('No question id found'); // todo handle it properly with modal alert
-        const allQuestions = getAllQuestions();
-        let answeredQuestions = getAnsweredQuestions(this.questionId);
-        this.questionData = allQuestions[this.questionId]//.categories.find( category => category.id === this.questionId );
+        this.categoryId = this.$router.currentRoute.params.qid;
+        if(!this.categoryId) alert('No question id found'); // todo handle it properly with modal alert
+        const allQuestions = getAllCategories();
+        let answeredQuestions = getAnsweredQuestions(this.categoryId);
+        this.questionData = allQuestions[this.categoryId]//.categories.find( category => category.id === this.categoryId );
         console.log('questionData',this.questionData);
         let {chosen_icon, title, not_chosen_icon, question_answered_icon, questions, background} = this.questionData || {};
         this.backgroundImage = background;
@@ -50,7 +50,7 @@ export default {
     methods: {
         goToQuiz:async function(quizId){
             SelectSound.start();
-            await this.$router.push({ name: 'Quiz', params: { qId:this.questionId, quizId:Number(quizId) } });
+            await this.$router.push({ name: 'Quiz', params: { qId:this.categoryId, quizId:Number(quizId) } });
         },
         questionListIcon(question){
             if( (question||{}).isAnswered ) return this.questionAnsweredIcon;

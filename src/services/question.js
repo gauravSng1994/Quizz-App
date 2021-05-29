@@ -1,21 +1,24 @@
 import _ from 'lodash';
 import LocalStorage from "./LocalStorage";
-import { ALL_QUESTIONS } from '../constants/index';
+import { JSON_DATA } from '../constants/index';
 
-export const getAllQuestions = () => {
-    const allQuestions = LocalStorage.getItem(ALL_QUESTIONS);
+export const getJsonData = () => {
+    const jsonData = LocalStorage.getItem(JSON_DATA);
+    return jsonData ? JSON.parse(jsonData) : {};
+}
+
+export const getAllCategories = () => {
+    const allQuestions = getJsonData().categories;
     if(!allQuestions || _.isEmpty(allQuestions)) return null;
-    return JSON.parse(allQuestions);
+    return allQuestions;
 }
 export const getQuestion = (categoryId,questionId) => {
-    const allQuestions = LocalStorage.getItem(ALL_QUESTIONS);
+    const allQuestions = getAllCategories();
     if(!allQuestions || _.isEmpty(allQuestions)) return null;
-    let parsedQuestions = (JSON.parse(allQuestions)||{});
-    console.log('parsed',parsedQuestions)
-    return parsedQuestions[categoryId].questions.find( el => Number(el.id) === Number(questionId));
+    return allQuestions[categoryId].questions.find( el => Number(el.id) === Number(questionId));
 }
 export const getAnsweredQuestions = (categoryId) => {
-    const allQuestions = getAllQuestions();
+    const allQuestions = getAllCategories();
     if(!allQuestions || _.isEmpty(allQuestions)) throw new Error('List of questions is empty.');
     const questions = (allQuestions[categoryId]||{}).questions;
     if(!questions || !Array.isArray(questions)) throw new Error('No question found for given questionId.');
@@ -23,18 +26,19 @@ export const getAnsweredQuestions = (categoryId) => {
 };
 
 const setAllQuestions = (question) => {
-    LocalStorage.setItem(ALL_QUESTIONS,JSON.stringify(question));
+    let data = getJsonData();
+    data.categories = question;
+    LocalStorage.setItem(JSON_DATA,JSON.stringify(data));
 };
 
 export const updateAnswer = (questionId, categoryId, answer) => {
     console.log('updating answer',questionId,categoryId,answer);
     if(!questionId ) throw new Error('Invalid argument for "question" field in markAnswered function.');
     if(!categoryId) throw new Error('Invalid argument for "categoryId" field in markAnswered function.');
-    const allQuestions = getAllQuestions();
+    const allQuestions = getAllCategories();
     console.log(allQuestions);
     if(!allQuestions || _.isEmpty(allQuestions)) throw new Error('List of questions is empty.');
     const questions = (allQuestions[categoryId]||{}).questions;
-    console.log('questions',questions);
     if(!questions || !Array.isArray(questions)) throw new Error('No questions found for given categoryId.');
     const modifiedQuestionList = questions.map( q => {
         if( Number(q.id) === Number(questionId)) {
@@ -55,7 +59,7 @@ export const updateAnswer = (questionId, categoryId, answer) => {
 export const markChosen = (questionId,categoryId) => {
     if(!questionId) throw new Error('Invalid argument for "question" field in markAnswered function.');
     if(!categoryId) throw new Error('Invalid argument for "categoryId" field in markAnswered function.');
-    const allQuestions = getAllQuestions();
+    const allQuestions = getAllCategories();
     const questions = (allQuestions[categoryId]||{}).questions;
     if(!questions || !Array.isArray(questions)) throw new Error('No questions found for given categoryId.');
     const modifiedQuestionList = questions.map( q => {

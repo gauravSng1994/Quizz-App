@@ -1,3 +1,5 @@
+
+
 // async function downloadImage(imageSrc) {
 //   // const image = await fetch(imageSrc)
 //   // const imageBlog = await image.blob()
@@ -30,29 +32,40 @@
 //   // Load blob as Data URL
 //   fileReader.readAsDataURL(blob);
 // }
-async function downloadImage(imageSrc) {
-    console.log(imageSrc.split('.'));
-    let imageType = imageSrc.split('.').pop();
-    const xhr = new XMLHttpRequest()
-    const fileReader = new FileReader()
-    xhr.open("GET", imageSrc, true);
-    xhr.responseType = "arraybuffer";
-    xhr.addEventListener("load", function () {
-        if (xhr.status === 200) {
-            console.log(xhr.response);
-            let blob = new Blob([xhr.response], {type: "image/"+imageType});
-            fileReader.onload = function (evt) {
-                const result = evt.target.result;
-                try {
-                    localStorage.setItem("rhino", result);
+export function downloadImage(imageSrc) {
+    return new Promise(((resolve, reject) => {
+        // console.log(imageSrc.split('.'));
+        if(!imageSrc) return reject(new Error('Invalid image source'));
+        try {
+            let imageType = imageSrc.split('.').pop();
+            const xhr = new XMLHttpRequest();
+            const fileReader = new FileReader();
+            xhr.open("GET", imageSrc, true);
+            xhr.responseType = "arraybuffer";
+            xhr.addEventListener("load", function () {
+                if (xhr.status === 200) {
+                    console.log(xhr.response);
+                    let blob = new Blob([xhr.response], {type: "image/"+imageType});
+                    fileReader.onload = function (evt) {
+                        const result = evt.target.result;
+                        try {
+                            console.log('downloadImage Result',result);
+                            return resolve(result);
+                            // localStorage.setItem("rhino", result);
+                        }
+                        catch (e) {
+                            console.log("Storage failed: " + e);
+                            return reject(e);
+                        }
+                    };
+                    fileReader.readAsDataURL(blob);
                 }
-                catch (e) {
-                    console.log("Storage failed: " + e);
-                }
-            };
-            fileReader.readAsDataURL(blob);
+            }, false);
+            xhr.send();
+        }catch (e) {
+            reject(e);
         }
-    }, false);
-    xhr.send();
+    }));
 }
-downloadImage("https://theolympics.b-cdn.net/2021%20olympics/icons/catagory_icon_chosen_2021_olympics.svg");
+// export
+// downloadImage("https://theolympics.b-cdn.net/2021%20olympics/icons/catagory_icon_chosen_2021_olympics.svg");
