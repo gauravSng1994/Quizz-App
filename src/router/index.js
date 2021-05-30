@@ -4,7 +4,8 @@ import Home from '../views/Home.vue'
 import QuestionList from '../views/QuestionList';
 import Quiz from '../views/Quizz';
 import Vuetify from "../views/Vuetify";
-import Categories from "../components/Categories/Categories";
+import Category from "../views/Category";
+// import Categories from "../components/Categories/Categories";
 
 Vue.use(VueRouter)
 
@@ -17,7 +18,7 @@ const routes = [
   {
     path: '/categories',
     name: 'Categories',
-    component: Categories
+    component: Category
   },
   {
     path: '/question-list/:qid',

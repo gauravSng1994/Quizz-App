@@ -7,7 +7,7 @@ const initialState = {
     allQuestions: {},
 };
 
-const initialiseLocalStorage = (jsonData) => {
+export const initialiseLocalStorage = (jsonData) => {
     console.log('Initialising localStorage');
     let sortedCategories = jsonData.categories.sort( (a,b) => a.sequence - b.sequence);
     let categories = {};
@@ -26,6 +26,6 @@ const initialiseLocalStorage = (jsonData) => {
     LocalStorage.setItem(JSON_DATA, LocalStorage.getItem(JSON_DATA) || JSON.stringify(data) || JSON.stringify(allQuestions));
 }
 
-initialiseLocalStorage();
+// initialiseLocalStorage();
 
 
