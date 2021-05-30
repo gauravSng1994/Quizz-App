@@ -32,6 +32,9 @@
 //   // Load blob as Data URL
 //   fileReader.readAsDataURL(blob);
 // }
+
+import axios from "axios";
+
 export function downloadImage(imageSrc) {
     return new Promise(((resolve, reject) => {
         // console.log(imageSrc.split('.'));
@@ -68,3 +71,8 @@ export function downloadImage(imageSrc) {
     }));
 }
 
+export async function GET(url){
+    console.log('making get request',url);
+    let res = await axios.get(url);
+    console.log('res',res);
+}

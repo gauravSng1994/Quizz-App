@@ -7,7 +7,7 @@ import VueFlicking from "@egjs/vue-flicking";
 Vue.use(VueFlicking);
 Vue.config.productionTip = false
 import {CURRENT_SLIDE_INDEX, IS_MUSIC_OFF, IS_SOUND_OFF} from "./constants";
-import './models/index';
+// import './models/index';
 import LocalStorage from "./services/LocalStorage";
 LocalStorage.setItem(IS_MUSIC_OFF,"true");
 LocalStorage.setItem(IS_SOUND_OFF,"true");
