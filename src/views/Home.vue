@@ -11,8 +11,8 @@
 
 <script>
 import Loader from '../components/Loader'
-// import {downloadImage, GET} from "../services/image";
-import {downloadImage} from "../services/image";
+import {downloadImage, GET} from "../services/image";
+// import {downloadImage} from "../services/image";
 // import {downloadAdditionalResources} from "../services/AdditionalResources";
 import {initialiseLocalStorage} from "../models";
 import jsonData from '../data/quiz_config_v2_full.json';
@@ -33,12 +33,12 @@ import jsonData from '../data/quiz_config_v2_full.json';
       console.log(this.$router.currentRoute);
       let json_url = this.$router.currentRoute.query.json_url;
       console.log(json_url);
-      // await GET(json_url);
+      await GET(json_url);
       initialiseLocalStorage(jsonData);
       let genericBackground = "https://theolympics.b-cdn.net/generic/default_background.png";
       let genericBackgroundImage = await downloadImage(genericBackground);
       this.backgroundImage = genericBackgroundImage;
-      this.additionalResourcesDownloadCallback(true);
+      // this.additionalResourcesDownloadCallback(true);
       // this.loading = false;
       // LocalStorage.setItem("GENERIC_BACKGROUND_IMAGE",genericBackgroundImage);
     },

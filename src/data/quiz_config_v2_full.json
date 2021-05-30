@@ -1,5 +1,8 @@
 {
 	"title": "The Olympics Quiz",
+    "image_assets": "https://theolympics.b-cdn.net/assets%2005_04_21/confg%20assets/",
+    "sound_assets": "https://theolympics.b-cdn.net/assets%2005_04_21/music/",
+    "app_config"  : "https://theolympics.b-cdn.net/assets%2005_04_21/app_config.json",
 	"generic": {
 		"background": "https://theolympics.b-cdn.net/generic/default_background.png"
 	},
@@ -359,7 +362,7 @@
         }
     ]
         },
-    
+
         {
             "id": "winter_olympics",
             "sequence": "2",
@@ -1013,7 +1016,7 @@
             "answerType": "number",
             "answer": "42"
         },
-       
+
         {
             "id": "42",
             "type": "text",
@@ -1371,8 +1374,8 @@
             "answerType": "text",
             "answer": "Bob Beamon"
         }
-       
-        
+
+
     ]
         },
         {
@@ -1385,7 +1388,7 @@
             "background": "https://theolympics.b-cdn.net/2021%20olympics/background/2021_olympics_background.png",
             "questions":  [
         {
-                
+
             "id": "1",
             "type": "text",
             "question": "In which month will the Tokyo Summer Olympics begin?",
@@ -1672,5 +1675,5 @@
     ]
         }
     ]
-    
+
 }

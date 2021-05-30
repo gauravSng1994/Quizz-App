@@ -2,7 +2,7 @@ import BottomButton from "../BottomButton/index";
 // import data from "../../data/quiz_config_v2_full.json";
 
 import Header from "../Header/index";
-import LetterBox from "../LetterBox/index"
+import LetterBox from "../LetterBox/index";
 import {getJsonData, getQuestion, markChosen, updateAnswer} from '../../services/question';
 import {ClearSound, CorrectSound, LetterSelectSound, ProceedSelectSound, WrongSound} from "../../services/audio";
 const data = getJsonData();
