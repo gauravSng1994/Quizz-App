@@ -32,7 +32,14 @@ import FileClass from "../services/FileSystem/File";
 //         //     value: '',
 //         // },
 // }
-
+const downloadAndSave = async (url,fileDirPath,fileName)=>{
+    let download = new Download(url);
+    download.download(fileDirPath,fileName).then((downloadResponse) => {
+        console.log('res',downloadResponse);
+    }).catch((downloadErrorResponse) => {
+        console.log('res',downloadErrorResponse);
+    });
+}
 const initialiseLocalStorage = async () => {
     // const dataCached = LocalStorage.getItem(DATA_CACHED);
     // if( true || !dataCached){
@@ -41,51 +48,28 @@ const initialiseLocalStorage = async () => {
         await file1.saveFile('quiz', 'jsonData.json', blob1);
         let sortedCategories = jsonData.categories.sort( (a,b) => a.sequence - b.sequence);
         let categories = {};
+        let genericImageName = `background.${jsonData.generic.background.split('.').pop()}`
+        await downloadAndSave(jsonData.generic.background,'quiz/images/generic',genericImageName);
         await Promise.all(sortedCategories.map( async category => {
-            // let tmpJsonData = {};
             try {
                 let images = ['background','not_chosen_icon','chosen_icon','question_answered_icon']
                 images.map(async img => {
                     let name = `${img}.${category[img].split('.').pop()}`
-                    let download = new Download(category[img]);
-                    download.download(`quiz/images/${category.id}`,name).then((downloadResponse) => {
-                        console.log('res',downloadResponse);
-                    }).catch((downloadErrorResponse) => {
-                        console.log('res',downloadErrorResponse);
-                        // return resolve({ success: false, error: downloadErrorResponse.error, msg: 'File could neither be located nor downloaded.' });
-                    });
+                    await downloadAndSave(category[img],`quiz/images/${category.id}`,name);
                 });
-                // category.not_chosen_iconBase64 = await downloadImage(category.not_chosen_icon);
-                // category.chosen_iconBase64 = await downloadImage(category.chosen_icon);
-                // category.question_answered_iconBase64 = await downloadImage(category.question_answered_icon);
-                // category.not_chosen_iconBase64 = await downloadImage(category.not_chosen_icon);
-                // tmpJsonData[category.chosen_icon] = await downloadImage(category.chosen_icon);
-                // tmpJsonData[category.question_answered_icon] = await downloadImage(category.question_answered_icon);
-                // tmpJsonData[category.background] = await downloadImage(category.background);
-                // tmpJsonData[category.not_chosen_icon] = await downloadImage(category.not_chosen_icon);
             }catch (e) {
                 console.log(e);
             }
             if(!categories[category.id]) categories[category.id] = category;
-            // const questions = [];
             for(let question of category.questions){
                 if(question.type === 'image') {
                     try {
                         let name = `${question.id}.${question.questionImageURL.split('.').pop()}`
-                        let download = new Download(question.questionImageURL);
-                        download.download(`quiz/images/${category.id}`,name).then((downloadResponse) => {
-                            console.log('res',downloadResponse);
-                        }).catch((downloadErrorResponse) => {
-                            console.log('res',downloadErrorResponse);
-                            // return resolve({ success: false, error: downloadErrorResponse.error, msg: 'File could neither be located nor downloaded.' });
-                        });
-                        // tmpJsonData[question.questionImageURL] = await downloadImage(question.questionImageURL);
-                        // question.questionImageURLBase64 = await downloadImage(question.questionImageURL);
+                        await downloadAndSave(question.questionImageURL,`quiz/images/${category.id}`,name);
                     }catch (e) {
                         console.log('e',e);
                     }
                 }
-                // questions.push(question);
             }
             // const blob = new Blob([JSON.stringify(tmpJsonData)], {type: "text/plain;charset=utf-8"});
             // const file = new FileClass();
