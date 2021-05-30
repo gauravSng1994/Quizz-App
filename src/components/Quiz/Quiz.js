@@ -35,6 +35,7 @@ export default {
             quizId:'',
             categoryId:'',
             letterBoxBorderType:'neutral',
+            shuffledAnswer:''
         };
     },
     mounted(){
@@ -61,22 +62,44 @@ export default {
             this.totalQuestionsCount = questions.length;
             this.questionData = getQuestion(this.categoryId,this.quizId);
             console.log('this.qData',this.questionData);
-            let {question, type, questionImageURL,answer, answerType, userAnswer } = this.questionData||{};
+            let {question, type, questionImageURL,answer, answerType, isAnswered } = this.questionData||{};
             this.questionTitle = question;
             this.questionType = type;
             this.answerType = answerType;
             this.answer = answer;
+            console.log('answer',answer);
             this.questionImage = questionImageURL;
             this.letterBlock = answer.split(' ').map( el => el.length);
             this.typedAnswer = this.letterBlock.reduce( (acc,count,index)=>{
                 acc[index] = [];
                 return acc;
             },{});
-            if( userAnswer){
-                for(let i = 0; i < userAnswer.length; ++i ) this.typeAnswer(userAnswer[i],isWatch,true);
+            if( isAnswered ){
+                for(let i = 0; i < answer.length; ++i ) this.typeAnswer(answerType[i],i,isWatch,true);
             }
+            this.shuffledAnswer = this.getShuffledAnswer();
         },
-        typeAnswer(char,isWatch,autoFill){
+        getShuffledAnswer(){
+            let arr = this.answer.split('').filter( _ =>_.trim() );
+            let alphabets = arr;
+            let chars = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+            for(let char of chars){
+                if(alphabets.length >= 18) break;
+                if(alphabets.includes(char)) continue;
+                alphabets.push(char);
+            }
+            arr = alphabets;
+            let n = arr.length;
+            for(let i=0 ; i<n-1 ; ++i) {
+                let j = Math.floor(Math.random() * n);
+                let temp = arr[i]
+                arr[i] = arr[j]
+                arr[j] = temp
+            }
+            return arr.join('');
+        },
+        typeAnswer(char,index,isWatch,autoFill){
+            this.shuffledAnswer = this.shuffledAnswer.split('').map( (el,ind) => ind === index ? " " : el).join('');
             if(!(isWatch || autoFill)) LetterSelectSound.start();
             console.log('this.currentLetterBlock',this.currentLetterBlock);
             console.log('this.letterBlock',this.letterBlock);
@@ -104,16 +127,19 @@ export default {
             }
         },
         clearAnswer: async function (){
-            if(this.quizOver){
+            if(this.quizOver && this.isAnswerCorrect){
                 // todo move to next quiz
                 ProceedSelectSound.start();
                 await this.$router.push({ name: 'Quiz', params: { qId:this.categoryId, quizId:Number(this.quizId)+1 } });
                 //since we push the same page again, vue ignores it, this.$router.go() reloads the page and 0 means to go back 0 pages
                 // this.$router.go(0)
-
                 console.log('quiz over');
             }else {
-                ClearSound.start()
+                ClearSound.start();
+                this.isAnswerCorrect = "";
+                this.quizOver = false;
+                this.letterBoxBorderType = 'neutral';
+                this.shuffledAnswer = this.getShuffledAnswer();
                 this.typedAnswer = this.letterBlock.reduce( (acc,count,index)=>{
                     acc[index] = [];
                     return acc;
@@ -123,27 +149,9 @@ export default {
         }
     },
     computed: {
-        shuffledAnswer(){
-            let arr = this.answer.split('').filter( _ =>_.trim() );
-            let alphabets = new Set(arr);
-            let chars = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
-            for(let char of chars){
-                if(alphabets.size >= 18) break;
-                if(alphabets.has(char)) continue;
-                alphabets.add(char);
-            }
-            arr = Array.from(alphabets);
-            let n = arr.length;
-            for(let i=0 ; i<n-1 ; ++i) {
-                let j = Math.floor(Math.random() * n);
-                let temp = arr[i]
-                arr[i] = arr[j]
-                arr[j] = temp
-            }
-            return arr.join('');
-        },
+
         BottomButtonLabel(){
-            return this.quizOver ? "Next" : "Clear";
+            return (this.quizOver && this.isAnswerCorrect) ? "Next" : "Clear";
         },
         gameOverText(){
           return `Your guess is ${this.isAnswerCorrect ? "correct" : "wrong"}!`

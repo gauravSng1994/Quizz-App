@@ -32,10 +32,10 @@
         <div class="button-inner-div">
             <BottomButton :button-label="BottomButtonLabel" @click="clearAnswer"/>
         </div>
-        <div class="optionBox" v-if="!quizOver">
-            <LetterBox v-for='letter in shuffledAnswer.slice(0,9)' @click="typeAnswer" :letter="letter"/>
+        <div class="optionBox" v-if="!(quizOver && isAnswerCorrect)">
+            <LetterBox v-for='(letter,index) in shuffledAnswer.slice(0,9)' @click="(char)=>typeAnswer(char,index)" :letter="letter"/>
             <br/>
-            <LetterBox v-for='letter in shuffledAnswer.slice(9)' @click="typeAnswer" :letter="letter"/>
+            <LetterBox v-for='(letter,index) in shuffledAnswer.slice(9)' @click="(char)=>typeAnswer(char,9+index)" :letter="letter"/>
         </div>
     </div>
 
