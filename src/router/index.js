@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import QuestionList from '../views/QuestionList';
 import Quiz from '../views/Quizz';
 import Vuetify from "../views/Vuetify";
+import Categories from "../components/Categories/Categories";
 
 Vue.use(VueRouter)
 
@@ -12,6 +13,11 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/categories',
+    name: 'Categories',
+    component: Categories
   },
   {
     path: '/question-list/:qid',
@@ -37,9 +43,13 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   }
 ]
-
+const isCordova = !!window.cordova;
+console.log("isCordova while setting rouer",isCordova);
+const modeObj = {};
+if (!isCordova) modeObj.mode = "history";
 const router = new VueRouter({
-  mode:"history",
+  // mode:"history",
+  ...modeObj,
   routes
 })
 

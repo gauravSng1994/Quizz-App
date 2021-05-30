@@ -1,17 +1,18 @@
 <template>
   <div>
-    <Categories/>
+    <img src="./../assets/variant/olympics/static_preloader.png" @click="gotToCategoriesPage">
   </div>
 </template>
 
 <script>
-  import Categories from "../components/Categories/";
   export default {
     name: 'Home',
     components: {
-      // HelloWorld,
-      Categories,
-      // Header
     },
+    methods : {
+      gotToCategoriesPage(){
+        this.$router.push('Categories')
+      }
+    }
   }
 </script>

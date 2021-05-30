@@ -10,6 +10,7 @@
   "dependencies": {
     "@egjs/flicking-plugins": "^3.3.0",
     "@egjs/vue-flicking": "^3.7.2",
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "lodash": "^4.17.21",
     "vue": "^2.6.11",

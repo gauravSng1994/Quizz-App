@@ -44,12 +44,12 @@ export function downloadImage(imageSrc) {
             xhr.responseType = "arraybuffer";
             xhr.addEventListener("load", function () {
                 if (xhr.status === 200) {
-                    console.log(xhr.response);
+                    // console.log(xhr.response);
                     let blob = new Blob([xhr.response], {type: "image/"+imageType});
                     fileReader.onload = function (evt) {
                         const result = evt.target.result;
                         try {
-                            console.log('downloadImage Result',result);
+                            // console.log('downloadImage Result',result);
                             return resolve(result);
                             // localStorage.setItem("rhino", result);
                         }
@@ -67,5 +67,3 @@ export function downloadImage(imageSrc) {
         }
     }));
 }
-// export
-// downloadImage("https://theolympics.b-cdn.net/2021%20olympics/icons/catagory_icon_chosen_2021_olympics.svg");

@@ -7,3 +7,4 @@ export const SELECTED_CATEGORY = 'SELECTED_CATEGORY';
 export const IS_MUSIC_OFF = 'IS_MUSIC_OFF';
 export const IS_SOUND_OFF = 'IS_SOUND_OFF';
 export const CURRENT_SLIDE_INDEX = 'CURRENT_SLIDE_INDEX';
+export const DATA_CACHED = 'DATA_CACHED';

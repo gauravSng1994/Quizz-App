@@ -8,7 +8,7 @@ import {getAllCategories, getAnsweredQuestions, getJsonData} from "../../service
 import {BackgroundMusic, SelectSound} from "../../services/audio";
 import {IS_MUSIC_OFF, IS_SOUND_OFF, CURRENT_SLIDE_INDEX} from "../../constants";
 import LocalStorage from "../../services/LocalStorage";
-import {downloadImage} from "../../services/image";
+// import {downloadImage} from "../../services/image";
 
 export default {
     name:"Categories",
@@ -50,31 +50,34 @@ export default {
             }
         };
     },
-    mounted(){
-
-        this.currentSlideIndex = LocalStorage.getItem(CURRENT_SLIDE_INDEX) || 0;
-        this.isSoundOn = !LocalStorage.getItem(IS_SOUND_OFF);
-        this.isMusicOn = !LocalStorage.getItem(IS_MUSIC_OFF);
-        this.data = getJsonData();
-        this.sortedCategories = getAllCategories();
-        console.log('Sorted cat',this.sortedCategories);
-        this.headerTitle = (this.data||{}).title || "";
-        // const selectedCategory = this.currentCategory ? this.sortedCategories.find(cat=> cat.id === this.currentCategory) : this.sortedCategories[0];
-        const selectedCategory = this.currentCategory ? this.sortedCategories[this.currentCategory] : this.sortedCategories[Object.keys(this.sortedCategories)[0]];
-        this.currentCategory = selectedCategory.id;
-        let { title, chosen_icon, questions } = selectedCategory;
-        // downloadImage(((data||{}).generic||{}).background || "").then( res => {
-        // downloadImage("https://i.picsum.photos/id/1003/1181/1772.jpg?hmac=oN9fHMXiqe9Zq2RM6XT-RVZkojgPnECWwyEF1RvvTZk").then( res => {
-        downloadImage("https://i.picsum.photos/id/1025/4951/3301.jpg?hmac=_aGh5AtoOChip_iaMo8ZvvytfEojcgqbCH7dzaz-H8Y").then( res => {
-            console.log('downloaded image',res);
-        });
-        let rhino = localStorage.getItem('rhino');
-        console.log(rhino);
-        this.backgroundImage = rhino || ((this.data||{}).generic||{}).background || "";
-        this.categoryName = title;
-        this.categoryImage = chosen_icon;
-        this.totalQuestionsCount = questions.length;
-        this.afterChange(this.currentSlideIndex,true);
+    async mounted(){
+        document.addEventListener("deviceready", onDeviceReady, false);
+        async function onDeviceReady() {
+            console.log(window.cordova.file);
+            this.currentSlideIndex = LocalStorage.getItem(CURRENT_SLIDE_INDEX) || 0;
+            this.isSoundOn = !LocalStorage.getItem(IS_SOUND_OFF);
+            this.isMusicOn = !LocalStorage.getItem(IS_MUSIC_OFF);
+            this.data = await getJsonData();
+            this.sortedCategories = await getAllCategories();
+            // console.log('Sorted cat',this.sortedCategories);
+            this.headerTitle = (this.data||{}).title || "";
+            // const selectedCategory = this.currentCategory ? this.sortedCategories.find(cat=> cat.id === this.currentCategory) : this.sortedCategories[0];
+            const selectedCategory = this.currentCategory ? this.sortedCategories[this.currentCategory] : this.sortedCategories[Object.keys(this.sortedCategories)[0]];
+            this.currentCategory = selectedCategory.id;
+            let { title, chosen_icon, questions } = selectedCategory;
+            // downloadImage(((data||{}).generic||{}).background || "").then( res => {
+            // downloadImage("https://i.picsum.photos/id/1003/1181/1772.jpg?hmac=oN9fHMXiqe9Zq2RM6XT-RVZkojgPnECWwyEF1RvvTZk").then( res => {
+            // downloadImage("https://i.picsum.photos/id/1025/4951/3301.jpg?hmac=_aGh5AtoOChip_iaMo8ZvvytfEojcgqbCH7dzaz-H8Y").then( res => {
+            //     console.log('downloaded image',res);
+            // });
+            // let rhino = localStorage.getItem('rhino');
+            // console.log(rhino);
+            this.backgroundImage = ((this.data||{}).generic||{}).background || "";
+            this.categoryName = title;
+            this.categoryImage = chosen_icon;
+            this.totalQuestionsCount = questions.length;
+            await this.afterChange(this.currentSlideIndex,true);
+        }
         // this.backgroundImage = "https://www.imagediamond.com/blog/wp-content/uploads/2020/06/cartoon-boy-images-3-scaled.jpg";
     },
     methods: {
@@ -85,8 +88,8 @@ export default {
             SelectSound.start();
             await this.$router.push({ name: 'QuestionList', params: { qid:categoryId } });
         },
-        completedQuestionsCount(category){
-            let answeredQuestions = getAnsweredQuestions(category.id);
+        async completedQuestionsCount(category){
+            let answeredQuestions = await getAnsweredQuestions(category.id);
             if(answeredQuestions && Array.isArray(answeredQuestions)) return answeredQuestions.length;
             else return 0;
         },
@@ -110,9 +113,9 @@ export default {
                 this.isSoundOn = false;
             }
         },
-        afterChange(slideInd,disableSound){
+        async afterChange(slideInd,disableSound){
             if(!disableSound) SelectSound.start();
-            const allCategories = getAllCategories();
+            const allCategories = await getAllCategories();
             let changedCategory = allCategories[Object.keys(allCategories).find( (key,ind) => Number(ind) === Number(slideInd))];
             this.currentCategory = changedCategory.id;
             LocalStorage.setItem(CURRENT_SLIDE_INDEX, slideInd);
