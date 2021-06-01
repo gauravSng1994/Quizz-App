@@ -3,9 +3,9 @@ import BottomButton from "../BottomButton/index";
 
 import Header from "../Header/index";
 import LetterBox from "../LetterBox/index";
-import {getJsonData, getQuestion, markChosen, updateAnswer} from '../../services/question';
+import {getJsonData, getQuestion, updateAnswer} from '../../services/question';
 import {ClearSound, CorrectSound, LetterSelectSound, ProceedSelectSound, WrongSound} from "../../services/audio";
-const data = getJsonData();
+
 export default {
     name:"Quiz",
     components:{
@@ -44,12 +44,13 @@ export default {
     },
     methods: {
         init(isWatch){
+            const data = getJsonData();
             this.currentLetterBlock = 0;
             this.categoryId = this.$router.currentRoute.params.qid;
             this.quizId = this.$router.currentRoute.params.quizId;
             console.log('initialising',this.quizId);
-            markChosen(this.quizId,this.categoryId);
-            console.log('OHHH great!!!!!1111')
+            // markChosen(this.quizId,this.categoryId);
+            console.log('OHHH great!!!!!1111',data);
             this.quizOver=false;
             this.isAnswerCorrect=false;
             this.categoryData =  data.categories[this.categoryId];//.find( category => category.id === this.categoryId );
