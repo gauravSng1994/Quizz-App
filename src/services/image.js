@@ -75,4 +75,5 @@ export async function GET(url){
     console.log('making get request',url);
     let res = await axios.get(url);
     console.log('res',res);
+    return res.data;
 }

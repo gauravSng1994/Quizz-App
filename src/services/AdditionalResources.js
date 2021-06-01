@@ -1,5 +1,5 @@
 import Download from "./FileSystem/Download";
-import FileClass from "./FileSystem/File";
+// import FileClass from "./FileSystem/File";
 import LocalStorage from "./LocalStorage";
 import {JSON_DATA} from "../constants";
 
@@ -25,12 +25,12 @@ export const downloadAdditionalResources = async (callback) => {
     try {
         // const dataCached = LocalStorage.getItem(DATA_CACHED);
         // if( true || !dataCached){
-        const jsonData = await LocalStorage.getItem(JSON_DATA);
+        const jsonData = JSON.parse(LocalStorage.getItem(JSON_DATA));
 
         /** Store jsonData file in mobile storage */
-        const blob1 = new Blob([JSON.stringify(jsonData)], {type: "text/plain;charset=utf-8"});
-        const file1 = new FileClass();
-        await file1.saveFile('quiz', 'jsonData.json', blob1);
+        // const blob1 = new Blob([JSON.stringify(jsonData)], {type: "text/plain;charset=utf-8"});
+        // const file1 = new FileClass();
+        // await file1.saveFile('quiz', 'jsonData.json', blob1);
 
         /** Store additional images/icons required by quiz in mobile storage */
         // let sortedCategories = jsonData.categories.sort( (a,b) => a.sequence - b.sequence);
@@ -51,7 +51,7 @@ export const downloadAdditionalResources = async (callback) => {
                 if(question.type === 'image') {
                     try {
                         let name = `${question.id}.${question.questionImageURL.split('.').pop()}`
-                        await downloadAndSave(question.questionImageURL,`quiz/images/${category.id}`,name);
+                        downloadAndSave(question.questionImageURL,`quiz/images/${category.id}`,name);
                     }catch (e) {
                         console.log('e',e);
                     }
