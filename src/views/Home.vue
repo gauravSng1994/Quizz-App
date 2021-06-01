@@ -11,11 +11,12 @@
 
 <script>
 import Loader from '../components/Loader'
-import {downloadImage, GET} from "../services/image";
+// import {downloadImage, GET} from "../services/image";
 // import {downloadImage} from "../services/image";
-import {downloadAdditionalResources} from "../services/AdditionalResources";
+// import {downloadAdditionalResources} from "../services/AdditionalResources";
 import {initialiseLocalStorage} from "../models";
-// import jsonData from '../data/quiz_config_v2_full.json';
+import jsonData from '../data/quiz_config_v2_full.json';
+import preLoaderImage from "../assets/variant/olympics/static_preloader.png";
 // import LocalStorage from "../services/LocalStorage";
   export default {
     name: 'Home',
@@ -29,30 +30,34 @@ import {initialiseLocalStorage} from "../models";
       }
     },
     async mounted() {
-      document.addEventListener("deviceready", ()=>downloadAdditionalResources(this.additionalResourcesDownloadCallback), false);
-      console.log(this.$router.currentRoute);
-      let json_url = this.$router.currentRoute.query.json_url;
-      console.log(json_url);
-      let data = await GET(json_url);
-      initialiseLocalStorage(data);
-      let genericBackground = "https://theolympics.b-cdn.net/generic/default_background.png";
-      let genericBackgroundImage = await downloadImage(genericBackground);
-      this.backgroundImage = genericBackgroundImage;
+      // document.addEventListener("deviceready", ()=>downloadAdditionalResources(this.additionalResourcesDownloadCallback), false);
+      // console.log(this.$router.currentRoute);
+      // let json_url = this.$router.currentRoute.query.json_url;
+      // console.log(json_url);
+      // let data = await GET(json_url);
+      initialiseLocalStorage(jsonData);
+      // let genericBackground = "https://theolympics.b-cdn.net/generic/default_background.png";
+      // let genericBackgroundImage = await downloadImage(genericBackground);
+      // this.backgroundImage = genericBackgroundImage;
+      this.backgroundImage = preLoaderImage;
       // this.additionalResourcesDownloadCallback(true);
       this.loading = false;
+      setTimeout(()=>{
+        this.gotToCategoriesPage();
+      },1000);
       // LocalStorage.setItem("GENERIC_BACKGROUND_IMAGE",genericBackgroundImage);
     },
     methods : {
       gotToCategoriesPage(){
         this.$router.push('/categories')
       },
-      additionalResourcesDownloadCallback(res){
-        console.log('got back in callback',res);
-        this.loading = false;
-        setTimeout(()=>{
-          this.gotToCategoriesPage();
-        },1000);
-      }
+      // additionalResourcesDownloadCallback(res){
+      //   console.log('got back in callback',res);
+      //   this.loading = false;
+      //   setTimeout(()=>{
+      //     this.gotToCategoriesPage();
+      //   },1000);
+      // }
     }
   }
 </script>

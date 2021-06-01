@@ -99,6 +99,7 @@ export default {
             return arr.join('');
         },
         typeAnswer(char,index,isWatch,autoFill){
+            if( !(char||"").trim()) return ;
             this.shuffledAnswer = this.shuffledAnswer.split('').map( (el,ind) => ind === index ? " " : el).join('');
             if(!(isWatch || autoFill)) LetterSelectSound.start();
             console.log('this.currentLetterBlock',this.currentLetterBlock);
