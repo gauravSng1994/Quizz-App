@@ -12,6 +12,7 @@ export const initialiseLocalStorage = async (json_url) => {
     console.log('Initialising localStorage');
     const storedJsonUrl = LocalStorage.getItem('JSON_URL');
     if(storedJsonUrl === json_url) return;
+    localStorage.clear();
     let jsonData = await GET(json_url);
     LocalStorage.setItem('JSON_URL',json_url);
     let sortedCategories = jsonData.categories.sort( (a,b) => a.sequence - b.sequence);
