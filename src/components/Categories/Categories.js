@@ -65,12 +65,13 @@ export default {
         let { title, chosen_icon, questions } = selectedCategory;
         // downloadImage(((data||{}).generic||{}).background || "").then( res => {
         // downloadImage("https://i.picsum.photos/id/1003/1181/1772.jpg?hmac=oN9fHMXiqe9Zq2RM6XT-RVZkojgPnECWwyEF1RvvTZk").then( res => {
-        downloadImage("https://i.picsum.photos/id/1025/4951/3301.jpg?hmac=_aGh5AtoOChip_iaMo8ZvvytfEojcgqbCH7dzaz-H8Y").then( res => {
-            console.log('downloaded image',res);
-        });
-        let rhino = localStorage.getItem('rhino');
-        console.log(rhino);
-        this.backgroundImage = rhino || ((this.data||{}).generic||{}).background || "";
+        // downloadImage("https://i.picsum.photos/id/1025/4951/3301.jpg?hmac=_aGh5AtoOChip_iaMo8ZvvytfEojcgqbCH7dzaz-H8Y").then( res => {
+        //     console.log('downloaded image',res);
+        // });
+        // let rhino = localStorage.getItem('rhino');
+        // console.log(rhino);
+        // this.backgroundImage = rhino || ((this.data||{}).generic||{}).background || "";
+        this.backgroundImage = ((this.data||{}).generic||{}).background || "";
         this.categoryName = title;
         this.categoryImage = chosen_icon;
         this.totalQuestionsCount = questions.length;
