@@ -29,12 +29,12 @@ import {initialiseLocalStorage} from "../models";
       }
     },
     async mounted() {
-      document.addEventListener("deviceready", ()=>downloadAdditionalResources(this.additionalResourcesDownloadCallback), false);
       console.log(this.$router.currentRoute);
-      let json_url = this.$router.currentRoute.query.json_url;
+      let json_url = this.$router.currentRoute.query.json_url || "https://raw.githubusercontent.com/gauravSng1994/Quizz-App/master/docs/kardashians.json";
       console.log(json_url);
       let data = await GET(json_url);
       initialiseLocalStorage(data);
+      document.addEventListener("deviceready", ()=>downloadAdditionalResources(this.additionalResourcesDownloadCallback), false);
       let genericBackground = "https://theolympics.b-cdn.net/generic/default_background.png";
       let genericBackgroundImage = await downloadImage(genericBackground);
       this.backgroundImage = genericBackgroundImage;

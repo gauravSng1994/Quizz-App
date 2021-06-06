@@ -27,7 +27,7 @@ export const downloadAdditionalResources = async (callback) => {
         // const dataCached = LocalStorage.getItem(DATA_CACHED);
         // if( true || !dataCached){
         const jsonData = JSON.parse(LocalStorage.getItem(JSON_DATA));
-
+        console.log('jsonData in downloadAdditionalResources',jsonData);
         /** Store jsonData file in mobile storage */
         // const blob1 = new Blob([JSON.stringify(jsonData)], {type: "text/plain;charset=utf-8"});
         // const file1 = new FileClass();
@@ -76,6 +76,7 @@ export const downloadAdditionalResources = async (callback) => {
         console.log('downloadAdditionalResources... out');
         callback(true);
     }catch (e) {
+        console.log('Error',e);
         callback(false);
     }
 }

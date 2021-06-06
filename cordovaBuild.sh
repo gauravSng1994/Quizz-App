@@ -7,6 +7,6 @@ cp -r dist cordova/www
 echo dist moved to travApp and renamed as www
 cd cordova
 cordova build
-cp ./platforms/android/app/build/outputs/apk/debug/app-debug.apk /home/codalien/Desktop/quizApp.apk
+cp ./platforms/android/app/build/outputs/apk/debug/app-debug.apk /home/codalien/Desktop/quizApp/quizApp.apk
 echo apk copied to desktop
 cd ..

@@ -2,7 +2,7 @@ module.exports = {
   transpileDependencies: [
     'vuetify'
   ],
-  // publicPath:"./",
-  // filenameHashing:false,
-  // assetsDir:"./"
+  publicPath:"./",
+  filenameHashing:false,
+  assetsDir:"./"
 }
