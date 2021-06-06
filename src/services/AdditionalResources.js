@@ -23,6 +23,7 @@ const downloadAndSave = async (url,fileDirPath,fileName) => {
 }
 export const downloadAdditionalResources = async (callback) => {
     try {
+        console.log('downloadAdditionalResources... in');
         // const dataCached = LocalStorage.getItem(DATA_CACHED);
         // if( true || !dataCached){
         const jsonData = JSON.parse(LocalStorage.getItem(JSON_DATA));
@@ -72,6 +73,7 @@ export const downloadAdditionalResources = async (callback) => {
                 await downloadAndSave(`${imageUrl}${imageLabel}`,`quiz/assets}`,imageLabel);
             })
         ]);
+        console.log('downloadAdditionalResources... out');
         callback(true);
     }catch (e) {
         callback(false);
