@@ -11,7 +11,6 @@
 
 <script>
 import Loader from '../components/Loader'
-import { GET} from "../services/image";
 // import {downloadImage} from "../services/image";
 // import {downloadAdditionalResources} from "../services/AdditionalResources";
 import {initialiseLocalStorage} from "../models";
